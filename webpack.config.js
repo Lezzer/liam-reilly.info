@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devServer: {
@@ -9,9 +9,10 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            title: 'liam-reilly.info'
-        })
+        new CopyWebpackPlugin(
+            [ { from: './public/index.html', to: './index.html', force:true } ],
+            { copyUnmodified: true }
+        )
     ],
     module: {
         rules: [
@@ -21,7 +22,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['env']
+                        presets: ['env', 'react']
                     }
                 }
             }
