@@ -1,0 +1,28 @@
+{
+  "name": "liam-reilly.info",
+  "version": "1.0.0",
+  "description": "Home of Liam Reilly & various tech content",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lezzer/liam-reilly.info.git"
+  },
+  "author": "Liam Reilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lezzer/liam-reilly.info/issues"
+  },
+  "homepage": "https://github.com/Lezzer/liam-reilly.info#readme",
+  "devDependencies": {
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1",
+    "html-webpack-plugin": "^3.0.7",
+    "clean-webpack-plugin": "^0.1.19"
+  }
+}
