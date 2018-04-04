@@ -1,9 +1,18 @@
 .header {
-    position: absolute;
+    display: flex;
     top: 0;
     left: 0;
-    height: 5rem;
+    height: 15rem;
     width: 100%;
     text-align: center;
-    background-color: yellow;
+    background-color: #33333C;
+    color: #ff0000;
+    justify-content: center;
+}
+
+.header img {
+    align-self: center;
+    border-radius: 1rem;
+    border: #ff0000 solid thin;
+    height: 12.5rem;
 }
