@@ -1,18 +1,30 @@
 .header {
     display: flex;
+    flex-direction: row;
+    flex-grow: 1;
     top: 0;
     left: 0;
-    height: 15rem;
     width: 100%;
-    text-align: center;
+    height: 6rem;
     background-color: #33333C;
     color: #ff0000;
-    justify-content: center;
+    transition: height 1s ease;
 }
-
 .header img {
-    align-self: center;
+    flex-direction: column;
     border-radius: 1rem;
     border: #ff0000 solid thin;
-    height: 12.5rem;
+    height: 4rem;
+    transition: height 1s ease;
+}
+
+@media only screen and (min-width: 960px) {
+    .header {
+        height: 15rem;
+        transition: height 1s ease;
+    }
+    .header img {
+        height: 12.5rem;
+        transition: height 1s ease;
+    }
 }
