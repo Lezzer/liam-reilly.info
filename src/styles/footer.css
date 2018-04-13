@@ -1,5 +1,22 @@
 .footer {
     min-height: 250px;
     background-color: #33333C;
-    color: red;
+}
+
+.footer .main {
+    min-height: 225px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer .copy {
+    display: flex;
+    bottom: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1c1c1c;
+    height: 25px;
+    justify-content: left;
+    align-items: center;
+    text-transform: uppercase;
 }

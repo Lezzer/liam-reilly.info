@@ -6,7 +6,12 @@ export default class Footer extends Component
     render() {
         return (
             <div className={css.footer}>
-                Stuff will go here...
+                <div className={css.main}>
+                    Stuff will go here...
+                </div>
+                <div className={css.copy}>
+                    © Liam Reilly 2018
+                </div>
             </div>
         );
     }
