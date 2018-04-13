@@ -7,6 +7,21 @@
     min-height: 225px;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.footer h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.footer .main a {
+    color: red;
+}
+
+.footer .main p {
+    font-size: 1.2rem;
 }
 
 .footer .copy {
@@ -24,6 +39,12 @@
 }
 
 @media only screen and (min-width: 960px) {
+    .footer .main h1 {
+        font-size: 1.8rem;
+    }
+    .footer .main p {
+        font-size: 1.6rem;
+    }
     .footer .copy {
         height: 5rem;
         font-size: 1.4rem;
