@@ -6,6 +6,17 @@ body {
     color: silver;
 }
 
+a {
+    color: silver;
+    text-decoration: none;
+}
+a.visited {
+    color: silver;
+}
+a.hover{
+    color: red;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
