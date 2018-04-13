@@ -15,8 +15,17 @@
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #1c1c1c;
-    height: 25px;
+    height: 3rem;
     justify-content: left;
     align-items: center;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 960px) {
+    .footer .copy {
+        height: 5rem;
+        font-size: 1.4rem;
+    }
 }
