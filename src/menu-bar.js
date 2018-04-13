@@ -7,10 +7,10 @@ export default class MenuBar extends Component
         return (
             <div className={css["menu-bar"]}>
                 <ul>
-                    <li className={css.active}>home</li>
-                    <li>resume</li>
-                    <li>blog</li>
-                    <li>contact</li>
+                    <li><a className={css.active} href="#">home</a></li>
+                    <li><a href="#">resume</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
                 </ul>
             </div>
         );

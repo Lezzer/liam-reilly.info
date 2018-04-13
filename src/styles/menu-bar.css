@@ -18,7 +18,7 @@
     border-right: 1px solid red;
 }
 
-.menu-bar ul li.active {
+.menu-bar ul li a.active {
     color: red;
 }
 

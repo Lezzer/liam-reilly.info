@@ -12,6 +12,7 @@
     transition: height 1s ease;
 }
 .header img {
+    
     border-radius: 1rem;
     border: #ff0000 solid thin;
     height: 5rem;
