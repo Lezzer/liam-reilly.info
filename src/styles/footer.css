@@ -1,5 +1,5 @@
 .footer {
-    flex-grow: 1;
+    min-height: 250px;
     background-color: #33333C;
     color: red;
 }

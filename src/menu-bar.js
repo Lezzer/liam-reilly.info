@@ -7,7 +7,7 @@ export default class MenuBar extends Component
         return (
             <div className={css["menu-bar"]}>
                 <ul>
-                    <li>home</li>
+                    <li className={css.active}>home</li>
                     <li>resume</li>
                     <li>blog</li>
                     <li>contact</li>

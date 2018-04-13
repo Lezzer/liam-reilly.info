@@ -1,7 +1,8 @@
 .header {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    align-items: center;
+    padding-left: 0.50rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,7 +15,7 @@
     flex-direction: column;
     border-radius: 1rem;
     border: #ff0000 solid thin;
-    height: 4rem;
+    height: 5rem;
     transition: height 1s ease;
 }
 
