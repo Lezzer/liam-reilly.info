@@ -12,7 +12,6 @@
     transition: height 1s ease;
 }
 .header img {
-    flex-direction: column;
     border-radius: 1rem;
     border: #ff0000 solid thin;
     height: 5rem;
@@ -21,11 +20,14 @@
 
 @media only screen and (min-width: 960px) {
     .header {
+        flex-direction: column;
+        justify-items: center;
         height: 15rem;
         transition: height 1s ease;
     }
     .header img {
         height: 12.5rem;
         transition: height 1s ease;
+        margin-top: 0.2rem; 
     }
 }
