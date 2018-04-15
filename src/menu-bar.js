@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import css from './styles/menu-bar.css';
 
 export default class MenuBar extends Component
@@ -7,10 +9,10 @@ export default class MenuBar extends Component
         return (
             <div className={css["menu-bar"]}>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="/resume">resume</a></li>
-                    <li><a href="/blog">blog</a></li>
-                    <li><a href="/contact">contact</a></li>
+                    <li><Link to={'/'}>home</Link></li>
+                    <li><Link to={'/resume'}>resume</Link></li>
+                    <li><Link to={'/blog'}>blog</Link></li>
+                    <li><Link to={'/contact'}>contact</Link></li>
                 </ul>
             </div>
         );
