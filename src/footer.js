@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import css from './styles/footer.css';
+import FooterMenuBar from "./footer-menu-bar";
 
 export default class Footer extends Component
 {
@@ -14,15 +15,7 @@ export default class Footer extends Component
                         <p>It was this profound idea, this reluctance to repeat tasks that could be automated that pushed him into a life of professional development.</p>
                         <p>And rather ironically, a life of never ending learning and hard work!</p>
                     </div>
-                    <div className={css.nav}>
-                        <h1>Navigation</h1>
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">resume</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </div>
+                    <FooterMenuBar/>
                 </div>
                 <div className={css.copy}>
                     © Liam Reilly 2018

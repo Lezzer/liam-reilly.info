@@ -1,0 +1,25 @@
+.nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: silver;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.nav ul li {
+    line-height: 3.5rem;
+    border-bottom: red solid 1px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 960px) {
+    .nav {
+        flex: 1;
+    }
+    .nav ul li {
+        line-height: 4.5rem;
+    }}

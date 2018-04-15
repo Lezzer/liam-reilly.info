@@ -12,8 +12,8 @@
 
 
 .footer .about {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 1rem;
 }
 .footer .about a {
@@ -24,29 +24,11 @@
     line-height: 1.8rem;
 }
 
-.footer .nav {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-}
-.footer .nav ul {
-    list-style-type: none;
-    text-transform: uppercase;
-    color: silver;
-    padding: 0;
-    margin-bottom: 2rem;
-}
-.footer .nav ul li {
-    line-height: 3.5rem;
-    border-bottom: red solid 1px;
-    font-size: 1.2rem;
-}
 
 .copy {
     display: flex;
     bottom: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
     background-color: #1c1c1c;
     height: 3rem;
     justify-content: left;
@@ -63,12 +45,7 @@
     .footer .about {
         flex: 2;
     }
-    .footer .nav {
-        flex: 1;
-    }
-    .footer .nav ul li {
-        line-height: 4.5rem;
-    }
+
     .footer .about h1 {
         font-size: 1.8rem;
     }
