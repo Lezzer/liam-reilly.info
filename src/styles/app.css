@@ -10,10 +10,15 @@ a {
     color: silver;
     text-decoration: none;
 }
-a.visited {
+
+a:visited {
     color: silver;
 }
-a.hover{
+a:hover{
+    color: red;
+}
+
+.active {
     color: red;
 }
 
