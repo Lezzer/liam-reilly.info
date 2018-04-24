@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-jest": "^22.4.3",
     "css-loader": "^0.28.11",
     "style-loader": "^0.20.3",
     "webpack": "^4.2.0",
@@ -30,17 +32,33 @@
     "webpack-dev-server": "^3.1.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
-    "jest": "^22.4.3"
+    "jest": "^22.4.3",
+    "jest-enzyme": "^6.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "expect": "^22.4.3"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "redux": "^3.7.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "redux": "^4.0.0",
     "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.0"
+    "react-router-dom": "^4.2.2"
   },
   "jest": {
     "automock": false,
-    "clearMocks": true
+    "bail": false,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "tests/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ],
+    "clearMocks": true,
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   }
 }
