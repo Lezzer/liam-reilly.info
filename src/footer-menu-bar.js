@@ -13,9 +13,10 @@ export default class FooterMenuBar extends Component
                     <li><Link to={'/resume'}>resume</Link></li>
                     <li><Link to={'/blog'}>blog</Link></li>
                     <li><Link to={'/contact'}>contact</Link></li>
-                    <li><a href="https://www.github.com/lezzer">github</a></li>
+                    <li><a target={'_blank'} href="https://www.github.com/lezzer">github</a></li>
                 </ul>
             </div>
         );
     }
 }
+g
