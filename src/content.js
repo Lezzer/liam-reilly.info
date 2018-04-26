@@ -12,9 +12,9 @@ export default class Content extends Component
         return (
             <div className={css.content}>
                 <Route exact={true} path={'/'} component={Home} />
-                <Route path={'/resume'} component={Resume} />
-                <Route path={'/blog'} component={Blog} />
-                <Route path={'/contact'} component={Contact} />
+                <Route path={'/resume/'} component={Resume} />
+                <Route path={'/blog/'} component={Blog} />
+                <Route path={'/contact/'} component={Contact} />
             </div>
         );
     }
