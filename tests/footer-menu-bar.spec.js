@@ -5,15 +5,14 @@ import '../tests/setup';
 
 describe('the menu renders as expected', () => {
 
-    it('renders without crashing', () => {
-        const wrapper = shallow(<FooterMenuBar />);
 
-        expect(wrapper.length).toBe(1);
+    let wrapper;
 
-    });
+    beforeAll(() => wrapper = shallow(<FooterMenuBar/>));
+
+    it('renders without crashing', () => expect(wrapper.length).toBe(1));
 
     it('it contains 5x links', () => {
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
 
         expect(menu.children().length).toEqual(5);
@@ -21,7 +20,6 @@ describe('the menu renders as expected', () => {
 
     it('the first link points to home', () => {
         const expectedUri = '/';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(0);
 
@@ -31,7 +29,6 @@ describe('the menu renders as expected', () => {
 
     it('the first link points says home', () => {
         const expectedUri = 'home';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(0);
 
@@ -41,7 +38,6 @@ describe('the menu renders as expected', () => {
 
     it('the second link points to resume', () => {
         const expectedUri = '/resume/';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(1);
 
@@ -51,7 +47,6 @@ describe('the menu renders as expected', () => {
 
     it('the second link points says resume', () => {
         const expectedUri = 'resume';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(1);
 
@@ -61,7 +56,6 @@ describe('the menu renders as expected', () => {
 
     it('the third link points to blog', () => {
         const expectedUri = '/blog/';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(2);
 
@@ -71,7 +65,6 @@ describe('the menu renders as expected', () => {
 
     it('the third link points says blog', () => {
         const expectedUri = 'blog';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(2);
 
@@ -81,7 +74,6 @@ describe('the menu renders as expected', () => {
 
     it('the fourth link points to contact', () => {
         const expectedUri = '/contact/';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(3);
 
@@ -91,7 +83,6 @@ describe('the menu renders as expected', () => {
 
     it('the fourth link points says contact', () => {
         const expectedUri = 'contact';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(3);
 
@@ -101,7 +92,6 @@ describe('the menu renders as expected', () => {
 
     it('the fifth link points to gitub', () => {
         const expectedUri = 'https://www.github.com/lezzer/';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(4);
 
@@ -111,7 +101,6 @@ describe('the menu renders as expected', () => {
 
     it('the fifth link points says github', () => {
         const expectedUri = 'github';
-        const wrapper = shallow(<FooterMenuBar/>);
         const menu = wrapper.find('ul');
         const home = menu.childAt(4);
 

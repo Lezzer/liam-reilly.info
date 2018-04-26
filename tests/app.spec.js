@@ -10,13 +10,9 @@ describe('the app renders as expected', () => {
 
     let wrapper;
     
-    beforeAll(() => {
-        wrapper = shallow(<App />);
-    });
+    beforeAll(() => wrapper = shallow(<App/>));
 
-    it('renders without crashing', () => {
-        expect(wrapper.length).toBe(1);
-    });
+    it('renders without crashing', () => expect(wrapper.length).toBe(1));
 
     it('should contain a header', () => {
         const header = wrapper.find(Header);

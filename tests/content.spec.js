@@ -11,14 +11,15 @@ import '../tests/setup';
 
 describe('the content section renders as expected', () => {
 
-    it('renders without crashing', () => {
-        const wrapper = shallow(<Content />);
+    let wrapper;
 
-        expect(wrapper.length).toBe(1);
+    beforeAll(() => {
+        wrapper = shallow(<Content />);
     });
+    
+    it('renders without crashing', () => expect(wrapper.length).toBe(1));
 
     it('renders correct components for routes', () => {
-        const wrapper = shallow(<Content/>);
         const pathMap = wrapper
             .find(Route)
             .reduce((pathMap, route) => {
