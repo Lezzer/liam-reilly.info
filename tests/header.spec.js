@@ -19,5 +19,4 @@ describe('the header renders as expected', () => {
 
         expect(menuBar.length).toBe(1);
     });
-
 });
