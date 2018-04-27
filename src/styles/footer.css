@@ -7,7 +7,6 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-size: 1.5rem;
 }
 
 
@@ -44,10 +43,6 @@
     }
     .footer .about {
         flex: 2;
-    }
-
-    .footer .about h1 {
-        font-size: 1.8rem;
     }
     .footer .about p {
         font-size: 1.6rem;

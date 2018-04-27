@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './styles/resume.css';
 
 export default class Resume extends Component
 {
     render() {
         return (
-            <div>
-                <p>This this the resume page</p>
+            <div id={"page"}>
+                <h1>liam reilly</h1>
             </div>
         );
     }

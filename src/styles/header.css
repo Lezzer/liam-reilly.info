@@ -1,21 +1,18 @@
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding-left: 1rem;
     top: 0;
     left: 0;
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     background-color: #33333C;
     color: #ff0000;
     transition: height 1s ease;
 }
 .header img {
-    
     border-radius: 1rem;
     border: #ff0000 solid thin;
-    height: 5rem;
     transition: height 1s ease;
 }
 
