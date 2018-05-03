@@ -12,7 +12,7 @@ export default class Resume extends Component
                 <h1>liam reilly</h1>
                 
                 <div className={css.contact_info}>
-                    {/*<div>*/}
+                    <div>
                         <span>
                             <FontAwesomeIcon icon={faEnvelope} spin={false} />
                             hire@liam-reilly.info
@@ -27,7 +27,7 @@ export default class Resume extends Component
                             <FontAwesomeIcon icon={faLocationArrow} />
                             stretford
                         </span>
-                    {/*</div>*/}
+                    </div>
                 </div>
                 
                 <hr />                
@@ -45,7 +45,9 @@ export default class Resume extends Component
                     
                     <p>Looking forward to the future I'm keen to do more work in the distributed systems space, and I have an interest in container platforms such as Docker/Kubernetes. I am looking for a new role that will allow me to continue to learn and grow personally, and continue to help other developers progress.</p>
                 </div>
-                
+
+                <hr />
+
                 <div className={css.technical_skills}>
                     <h2>technical skills</h2>
                     
@@ -61,7 +63,9 @@ export default class Resume extends Component
                         </li>
                     </ul>
                 </div>
-                
+
+                <hr />
+
                 <div className={css.business_skills}>
                     <h2>business skills</h2>
                     
@@ -73,7 +77,9 @@ export default class Resume extends Component
                         <li>People management: <span>A supportive, mentor to junior team members, developing skills and training.</span></li>
                     </ul>
                 </div>
-                
+
+                <hr />
+
                 <div className={css.projects}>
                     <h2>projects</h2>
                     
@@ -88,7 +94,9 @@ export default class Resume extends Component
                         <li>Display Campaign Manager: <span>Participated in the design and implementation of a web application using ASP.NET MVC and Entity Framework, and designed a rich, user focused interface, heavily reliant upon KnockoutJS. The application increased the speed of advertising campaign planning and increased efficiency through creation of sheets necessary for a automated trafficking tool.</span></li>
                     </ul>
                 </div>
-                
+
+                <hr />
+
                 <div className={css.experience}>
                     <h2>experience</h2>
 

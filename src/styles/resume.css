@@ -20,7 +20,7 @@
     margin: 0;
 }
 .page div {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 .page hr {
     display: block;
@@ -36,22 +36,20 @@
 }
 
 .contact_info {
-    display: flex;
-    /*flex-direction: column;  */
-    align-items: center;
-    justify-content: space-between;
-    width: 98%;
+    text-align: center;
+    width: 100%;
     font-size: 1.1rem;
 }
-/*.contact_info div {*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
-/*}*/
+.contact_info div {
+}
+.contact_info span {
+    padding-left: 2px;
+    padding-right: 5px;
+}
 .contact_info span svg {
     padding-right: 4px;
 }
-.contact_info .location {
+.contact_info div .location {
     text-transform: capitalize;
 }
 
@@ -94,12 +92,7 @@
     
 
     .contact_info {
-        display: flex;
-        align-items: center;
-        
         font-size: 2rem;
-        width: 100%;
-        text-align: center;
     }
     .contact_info span {
         padding-left: 5px;
