@@ -6,7 +6,7 @@ export default class MenuBar extends Component
 {
     render() {
         return (
-            <div className={css["menu-bar"]}>
+            <div className={css.menu_bar}>
                 <ul>
                     <li><Link to={'/'}>home</Link></li>
                     <li><Link to={'/resume/'}>resume</Link></li>
