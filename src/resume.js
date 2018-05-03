@@ -12,14 +12,22 @@ export default class Resume extends Component
                 <h1>liam reilly</h1>
                 
                 <div className={css.contact_info}>
-                    <FontAwesomeIcon icon={faEnvelope} spin={false} />
-                    <span>hire@liam-reilly.info</span>
-
-                    <FontAwesomeIcon icon={faPhoneVolume} />
-                    <span>07802 385 455</span>
-
-                    <FontAwesomeIcon icon={faLocationArrow} />
-                    <span>stretford</span>
+                    {/*<div>*/}
+                        <span>
+                            <FontAwesomeIcon icon={faEnvelope} spin={false} />
+                            hire@liam-reilly.info
+                        </span>
+    
+                        <span>
+                            <FontAwesomeIcon icon={faPhoneVolume} />
+                            07802 385 455
+                        </span>
+    
+                        <span className={css.location}>
+                            <FontAwesomeIcon icon={faLocationArrow} />
+                            stretford
+                        </span>
+                    {/*</div>*/}
                 </div>
                 
                 <hr />                
