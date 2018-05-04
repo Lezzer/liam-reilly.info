@@ -1,11 +1,27 @@
 .technical_skills {
+    width: 100%;
+}
+.technical_skills ul {
+    font-size: 1.2rem;
+    padding: 0;
+    list-style: none;
+}
 
+.technical_skills ul li {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.technical_skills ul li span {
+    padding-left: .5rem;
+    font-weight: 300;
 }
 
 @media only screen and (min-width: 960px) {
 
-    .technical_skills {
-
+    .technical_skills ul {
+        font-size: 1.8rem;
     }
-
+    .technical_skills ul li span {
+        padding-left: 1rem;
+    }
 }
