@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneVolume, faLocationArrow } from '@fortawesome/fontawesome-free-solid';
-
+import ResumeHeader from "./resume-header";
 import css from './styles/resume.css';
 
 export default class Resume extends Component
@@ -11,24 +9,7 @@ export default class Resume extends Component
             <div className={css.page}>
                 <h1>liam reilly</h1>
                 
-                <div className={css.contact_info}>
-                    <div>
-                        <span>
-                            <FontAwesomeIcon icon={faEnvelope} spin={false} />
-                            hire@liam-reilly.info
-                        </span>
-    
-                        <span>
-                            <FontAwesomeIcon icon={faPhoneVolume} />
-                            07802 385 455
-                        </span>
-    
-                        <span className={css.location}>
-                            <FontAwesomeIcon icon={faLocationArrow} />
-                            stretford
-                        </span>
-                    </div>
-                </div>
+                <ResumeHeader/>
                 
                 <hr />                
                 
