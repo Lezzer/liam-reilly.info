@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import css from './styles/resume-experience.css';
+import ResumeJobHistoryItem from "./resume-job-history-item";
 
 export default class ResumeExperience extends Component{
 
@@ -8,56 +8,63 @@ export default class ResumeExperience extends Component{
         return (
             <div className={css.experience}>
                 <h2>experience</h2>
+                
+                <ResumeJobHistoryItem 
+                    company={"Zuto"}
+                    location={"Manchester"}
+                    start={"2016"}
+                    end={"Present"}
+                    position={"Senior Software Engineer"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">Zuto</span>
-                    <span id="job_location">Manchester</span>
-                    <span id="job_time">2016 - Present</span>
-                    <div id="job_title">Senior Software Engineer</div>
-                </div>
+                <ResumeJobHistoryItem
+                    company={"SoNQ"}
+                    location={"Manchester"}
+                    start={"2015"}
+                    end={"2016"}
+                    position={"Senior Software Developer (Team Leader)"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">SoNQ</span>
-                    <span id="job_location">Manchester</span>
-                    <span id="job_time">2015 - 2016</span>
-                    <div id="job_title">Senior Software Developer (Team Leader)</div>
-                </div>
+                <ResumeJobHistoryItem
+                    company={"MediaCom North"}
+                    location={"Manchester"}
+                    start={"2012"}
+                    end={"2015"}
+                    position={"Senior Systems Developer"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">MediaCom North</span>
-                    <span id="job_location">Manchester</span>
-                    <span id="job_time">2012 - 2015</span>
-                    <div id="job_title">Senior Systems Developer</div>
-                </div>
+                <ResumeJobHistoryItem
+                    company={"3-Si Limited"}
+                    location={"Newcastle-Under-Lyme"}
+                    start={"2010"}
+                    end={"2012"}
+                    position={"Software Developer"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">3-Si Limited</span>
-                    <span id="job_location">Newcastle-Under-Lyme</span>
-                    <span id="job_time">2010 - 2012</span>
-                    <div id="job_title">Software Developer</div>
-                </div>
+                <ResumeJobHistoryItem
+                    company={"Shire Dental / Consulsoft (Midshire)"}
+                    location={"Middlewich"}
+                    start={"2006"}
+                    end={"2010"}
+                    position={"Software Developer"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">Shire Dental / Consulsoft (Midshire)</span>
-                    <span id="job_location">Middlewich</span>
-                    <span id="job_time">2006 - 2010</span>
-                    <div id="job_title">Software Developer</div>
-                </div>
+                <ResumeJobHistoryItem
+                    company={"Huntleigh Renray"}
+                    location={"Winsford"}
+                    start={"2004"}
+                    end={"2006"}
+                    position={"Software Developer"}
+                />
 
-                <div className="job_section">
-                    <span id="job_company">Huntleigh Renray</span>
-                    <span id="job_location">Winsford</span>
-                    <span id="job_time">2004 - 2006</span>
-                    <div id="job_title">Software Developer</div>
-                </div>
-
-                <div className="job_section">
-                    <span id="job_company">Tissue Science Laboratories</span>
-                    <span id="job_location">Winsford</span>
-                    <span id="job_time">2001 - 2004</span>
-                    <div id="job_title">Software Developer</div>
-                </div>
-
+                <ResumeJobHistoryItem
+                    company={"Tissue Science Laboratories"}
+                    location={"Winsford"}
+                    start={"2001"}
+                    end={"2004"}
+                    position={"Software Developer"}
+                />
+                
             </div>
         );
     }

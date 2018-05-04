@@ -1,0 +1,27 @@
+.job_history_item {
+    width: 100%;   
+    text-align: left;
+    font-size: 1.2rem;
+}
+.job_history_item ul {
+    padding: 0;
+    margin-bottom: .52em;
+    font-weight: bold;
+}
+.job_history_item li {
+    display: inline;
+    list-style: none;
+}
+.job_history_item li:after {
+    content: " - ";
+}
+.job_history_item li:last-child:after {
+    content: normal;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .job_history_item {
+        font-size: 1.8rem;
+    }
+}
