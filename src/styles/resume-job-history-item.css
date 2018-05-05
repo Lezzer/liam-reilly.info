@@ -13,7 +13,8 @@
     list-style: none;
 }
 .job_history_item li:after {
-    content: " - ";
+    content: " | ";
+    padding: 1rem;
 }
 .job_history_item li:last-child:after {
     content: normal;
