@@ -8,19 +8,20 @@ export default class ResumeTechnicalSkills extends Component{
         return (
             <div className={css.technical_skills}>
                 <h2>technical skills</h2>
-
+                
                 <ul>
-                    <li>Languages: <span>C#, VB, Python, PHP</span></li>
-                    <li>Web: <span>React, Redux, Webpack, Angular, ES6, Typescript, KnockoutJS, ASP.NET MVC &amp WebAPI</span></li>
-                    <li>Databases: <span>DynamoDB, MS SQL, PostgreSQL & MySQL</span></li>
-                    <li>Operating Systems: <span>Linux, Windows &amp  Mac OS</span></li>
-                    <li>Platforms: <span>Docker</span></li>
-                    <li>Version control: <span>Git/Mercurial, </span></li>
-                    <li>Microsoft Technologies: <span>WCF, WPF &amp Win/Web Forms</span></li>
-                    <li>Messaging: <span>RabbitMQ, Azure Service Bus, Celery &amp MassTransit</span></li>
-                    <li>DevOps: <span>Puppet, Ansible, Docker, Vagrant &amp Octopus Deploy</span>
-                    </li>
+                    <li>Cloud: <span>Amazon Web Services, Microsoft Azure</span></li>
+                    <li>Languages: <span>C# (Full .NET and .NET Core 2)</span></li>
+                    <li>Web: <span>React, Redux, GraphQL, Webpack, ES6, ASP.NET MVC, WebAPI</span></li>
+                    <li>Databases: <span>DynamoDB, MS SQL</span></li>
+                    <li>Messaging: <span>SQS, Azure Service Bus</span></li>
+                    <li>DevOps: <span>Terraform, Docker, Vagrant, Rancher</span></li>
+                    <li>CI/CD: <span>GoCD</span></li>
+                    <li>Version control: <span>Git</span></li>
+                    <li>Desktop: <span>WCF, WPF</span></li>
                 </ul>
+                
+                <p>** The list above only includes technologies I have worked with day to day the previous 12 months **</p>
             </div>
         );
     }

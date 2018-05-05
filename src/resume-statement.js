@@ -7,17 +7,18 @@ export default class ResumeStatement extends Component{
     render() {
         return (
             <div className={css.statement}>
-                <h2>statement</h2>
+                <h2>personal statement</h2>
 
-                <p>I'm a very passionate developer and I pride myself on writing quality, clean code. I've been described as being on the religious side when it comes to architecting maintainable code that adheres to SOLID design principles.</p>
+                <p>As a seasoned developer with over a decade in the software industry, I am able to call upon my extensive experience and quickly identify, recommend and build solutions for your business.</p>
 
-                <p>I care deeply about doing things the right way, and always strive to deliver the perfect solution. I do not believe in sacrificing code quality just to get the job done. But I also believe that when you approach software development properly, utilising common design patterns you really don't have to.</p>
+                <p>My excitement and passion for technology is still as strong today as it was when I was starting out, which has naturally led me on the path of aspiring to become a principal software engineer.</p>
 
-                <p>Over the last couple of years I've enjoyed writing distributed systems and I have a particular interest in message brokers such as RabbitMQ. I've recently implemented the "Routing Slip" pattern to break apart a legacy monolithic code base and replaced it with focussed, distributed sagas accessible via Web API.</p>
+                <p>I’m a natural leader in the software squads that I have worked in.  I have been very effective with combining todays cloud offerings, with my attitude to learning and building modern software solutions to repeatedly introduce new platforms/techniques to the businesses which I have worked in, and to the team members I have worked with.</p>
 
-                <p>In my current role I have really enjoyed using my many years of experience to introduce other developers to SOLID principles and TDD. I was promoted to team leader and asked to mentor junior developers before I had completed my initial probation period. I've enjoyed code reviews and helping junior and senior developers alike, to think in new ways when it comes to writing code.</p>
+                <p>Whilst my approach is primarily from a technical angle, I have also proven capable of identifying and suggesting new non-technical concepts, that have formed completely new key business strategies.</p>
 
-                <p>Looking forward to the future I'm keen to do more work in the distributed systems space, and I have an interest in container platforms such as Docker/Kubernetes. I am looking for a new role that will allow me to continue to learn and grow personally, and continue to help other developers progress.</p>
+                <p>I am looking forward now to my next move, where I can hopefully lead and inspire people to build exciting new technical solutions utilising cloud, serverless and container based solutions.</p>
+
             </div>
         );
     }
