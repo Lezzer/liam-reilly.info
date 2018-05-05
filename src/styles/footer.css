@@ -53,3 +53,12 @@
         font-size: 1.4rem;
     }
 }
+
+@media print  {
+    .footer {
+        display: none;
+    }
+    .copy {
+        display: none;
+    }
+}
