@@ -5,7 +5,7 @@ export default class Blog extends Component
     render() {
         return (
             <div>
-                <p>This this the blog page</p>
+                <p>Blogs are coming soon!</p>
             </div>
         );
     }
