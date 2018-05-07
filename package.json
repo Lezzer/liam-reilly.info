@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --hot --inline",
     "test": "jest"
   },
   "repository": {

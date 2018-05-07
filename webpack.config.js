@@ -5,7 +5,10 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         port: 3001,
-        index: 'index.html'
+        index: 'index.html',
+        hot: true,
+        inline: true,
+        historyApiFallback: true
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
