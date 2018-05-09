@@ -15,13 +15,14 @@ export default class ResumeTechnicalSkills extends Component{
                     <li>Web: <span>React, Redux, GraphQL, Webpack, ES6, ASP.NET MVC, WebAPI</span></li>
                     <li>Databases: <span>DynamoDB, MS SQL</span></li>
                     <li>Messaging: <span>SQS, Azure Service Bus</span></li>
+                    <li>Testing: <span>NUnit, SpecFlow, Jest, Enzyme, Stubby, Mountebank</span></li>
                     <li>DevOps: <span>Terraform, Docker, Vagrant, Rancher</span></li>
                     <li>CI/CD: <span>GoCD</span></li>
                     <li>Version control: <span>Git</span></li>
                     <li>Desktop: <span>WCF, WPF</span></li>
                 </ul>
                 
-                <p>** The list above only includes technologies I have worked with day to day the previous 12 months **</p>
+                <p>** The list above only includes technologies I have worked with day to day in my current role **</p>
             </div>
         );
     }
