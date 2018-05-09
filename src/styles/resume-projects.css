@@ -5,6 +5,7 @@
     font-size: 1.2rem;
     padding: 0;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .projects ul li {
@@ -20,6 +21,7 @@
     flex-direction: row;
     align-items: center;
     font-size: 1.6rem;
+    margin-top: 0;
 }
 .projects h3 .font_awesome_icon {
     padding-right: .5rem;

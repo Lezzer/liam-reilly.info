@@ -9,3 +9,9 @@
     }
 
 }
+
+@media print {
+    .experience {
+        page-break-before: always;
+    }
+}
