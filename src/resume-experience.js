@@ -42,7 +42,7 @@ export default class ResumeExperience extends Component{
                 />
 
                 <ResumeJobHistoryItem
-                    company={"Shire Dental / Consulsoft (Midshire)"}
+                    company={"Shire Dental/Consulsoft"}
                     location={"Middlewich"}
                     start={"2006"}
                     end={"2010"}

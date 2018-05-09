@@ -8,6 +8,10 @@ h2 {
     font-size: 1.5rem;
     font-weight: bolder;
 }
+h3 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 
 p {
     font-size: 1.4rem;
@@ -49,7 +53,10 @@ a:hover{
         font-size: 1.8rem;
         font-weight: bolder;
     }
-
+    h3 {
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
     p {
         font-size: 2rem;
     }

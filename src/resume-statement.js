@@ -13,7 +13,7 @@ export default class ResumeStatement extends Component{
 
                 <p>My excitement and passion for technology is still as strong today as it was when I was starting out, which has naturally led me on the path of aspiring to become a principal software engineer.</p>
 
-                <p>A natural software leader, I've repeatedly led my teams when building new solutions which utilise new technologies available in todays modern, cloud first world. </p>
+                <p>A natural software leader, I've repeatedly led my teams when building new solutions which utilise new technologies available in todays modern, mobile-first, cloud-first world. </p>
 
                 <p>Whilst my approach is primarily from a technical angle, I have also proven capable of identifying and suggesting new non-technical concepts, that have formed completely new key business strategies.</p>
 
