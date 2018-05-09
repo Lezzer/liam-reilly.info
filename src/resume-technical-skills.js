@@ -22,7 +22,7 @@ export default class ResumeTechnicalSkills extends Component{
                     <li>Desktop: <span>WCF, WPF</span></li>
                 </ul>
                 
-                <p>** The list above only includes technologies I have worked with day to day in my current role **</p>
+                <p>** The list above only includes tech used daily in my current role **</p>
             </div>
         );
     }

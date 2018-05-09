@@ -10,16 +10,19 @@
 }
 
 .page h1 {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
 }
 .page h2 {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+}
+.page h3 {
+    
 }
 .page p {
     font-size: 1.2rem;
@@ -44,10 +47,10 @@
     }
 
     .page h1 {
-        font-size: 5rem;
+        font-size: 8rem;
     }
     .page h2 {
-        font-size: 2.8rem;
+        font-size: 4rem;
         padding: 1.5rem 0 1.5rem;
     }
     .page p {
