@@ -22,7 +22,7 @@ export default class ResumeHeader extends Component{
 
                     <span id={"location"} className={css.location}>
                         <FontAwesomeIcon icon={faLocationArrow} />
-                        stretford
+                        manchester
                     </span>
                 </div>
             </div>
