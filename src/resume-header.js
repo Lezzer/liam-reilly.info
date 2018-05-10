@@ -10,17 +10,17 @@ export default class ResumeHeader extends Component{
         return (
             <div className={css.contact_info}>
                 <div>
-                    <span>
+                    <span id={"email"}>
                         <FontAwesomeIcon icon={faEnvelope} spin={false} />
                         hire@liam-reilly.info
                     </span>
 
-                    <span>
+                    <span id={"phone"}>
                         <FontAwesomeIcon icon={faPhoneVolume} />
                         07802 385 455
                     </span>
 
-                    <span className={css.location}>
+                    <span id={"location"} className={css.location}>
                         <FontAwesomeIcon icon={faLocationArrow} />
                         stretford
                     </span>

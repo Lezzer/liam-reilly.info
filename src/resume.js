@@ -13,7 +13,7 @@ export default class Resume extends Component
     render() {
         return (
             <div className={css.page}>
-                <h1>liam reilly</h1>
+                <h1 id={"name"}>liam reilly</h1>
                 
                 <ResumeHeader/>
                 
