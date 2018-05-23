@@ -12,7 +12,9 @@ export default class Home extends Component
                     title={"At long last... liam-reilly.info is born!"}
                     content={[
                         "After much procrastination, the website is finally here!",
-                        "Not much to see just yet, but blog posts will be coming thick and fast!"
+                        "Not much to see just yet, but blog posts will be coming thick and fast!",
+                        "Feel free to have a look around, and get in touch to talk about projects :)",
+                        "Cheers, Liam"
                     ]}
                 />
             </div>

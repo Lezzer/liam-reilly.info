@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2rem;
     padding: 1rem;
     border: #C21F39 2px solid;
@@ -11,13 +13,21 @@
     display: flex;
     align-items: center;
 }
+hr {
+    display: block;
+    border: 0 solid #000;
+    border-bottom: 1px solid #C21F39;
+    margin-top: 1rem;
+    width: 100%;
+}
+
 .calendar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 5rem;
-    height: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
     background-color: #C21F39;
     color: white;
     font-size: 1.75rem;
@@ -28,6 +38,28 @@ h4 {
     margin: 0 0 0 1rem;
 }
 
-.content {
+p:first-child {
+     margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 2rem;
+}
+
+.post_link {
+    font-size: 1.4rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.new_blog_post span a {
+    color: #C21F39;
+    border-bottom: #C21F39 1px dashed;
+}
+
+
+@media only screen and (min-width: 960px) {
+
+    .post_link {
+        font-size: 2rem;
+    }
     
 }
