@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import css from './styles/contact.css';
+import ContactIcon from "./contact-icon";
 
 export default class Contact extends Component
 {
     render() {
         return (
-            <div>
-                <p>The contact page is coming soon!</p>
+            <div className={css.contact}>
+
+                <h1>contact liam</h1>
+                <h2>Hit me up on social media/email</h2>
                 
-                <p>You can find contact details on the <Link to={'/resume/'}>resume</Link> page if you wish to talk with me.</p>
+                <ContactIcon />
+                
+                    
             </div>
         );
     }
