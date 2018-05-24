@@ -20,6 +20,7 @@ export default class ContactIcon extends Component
                         </div>
                     </div>
                 </a>
+                
                 <a href={"https://twitter.com/___lezzer___"}>
                     <div className={css.circle}>
                         <div>

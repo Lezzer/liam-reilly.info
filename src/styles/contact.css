@@ -17,3 +17,20 @@
     font-size: 30rem;
     color: #C21F39;
 }
+
+@media only screen and (min-width: 960px) {
+
+    .contact h1 {
+        font-size: 8rem;
+        margin: 1rem auto 0 auto;
+    }
+    .contact h2 {
+        font-size: 4rem;
+        margin: 0 0 5rem 0;
+    }
+
+    .contact svg {
+        font-size: 100rem;
+        color: #C21F39;
+    }
+}
