@@ -15,9 +15,9 @@ export default class ResumeStatement extends Component{
 
                 <p>A natural software leader, I've repeatedly led my teams when building new solutions which utilise new technologies available in todays modern, mobile-first, cloud-first world. </p>
 
-                <p>Whilst my approach is primarily from a technical angle, I have also proven capable of identifying and suggesting new non-technical concepts, that have formed completely new key business strategies.</p>
+                <p>Whilst my focus is primarily technology, I have also proven capable of identifying and suggesting new non-technical concepts, that have formed completely new key business strategies.</p>
 
-                <p>I am looking now to my future, to step up and become a principal engineer officially, where I can hopefully lead and inspire people to build exciting new technical solutions utilising cloud, serverless and container based solutions.</p>
+                <p>I am looking now to my future, to step up and become a principal engineer officially, where I hope to lead and inspire people to build exciting new technical solutions utilising cloud, serverless and container based solutions.</p>
             </div>
         );
     }
