@@ -4,9 +4,11 @@
   "description": "Home of Liam Reilly & various tech content",
   "main": "webpack.config.js",
   "scripts": {
+    "pre-start": "npm i",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --hot --inline",
+    "start-dev": "webpack-dev-server --hot --inline",
+    "start": "node dist/server.js",
     "test": "jest"
   },
   "repository": {
@@ -16,9 +18,9 @@
   "author": "Liam Reilly",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lezzer/liam-reilly.info/issues"
+    "url": "https://github.com/liam-reilly/liam-reilly.info/issues"
   },
-  "homepage": "https://github.com/Lezzer/liam-reilly.info#readme",
+  "homepage": "https://github.com/liam-reilly/liam-reilly.info#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -49,7 +51,10 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^4.0.0",
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.1",
+    "path": "^0.12.7",
+    "express": "^4.16.3",
+    "babel-cli": "^6.26.0"
   },
   "jest": {
     "automock": false,
