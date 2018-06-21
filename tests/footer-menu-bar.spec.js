@@ -91,7 +91,7 @@ describe('the menu renders as expected', () => {
     });
 
     it('the fifth link points to gitub', () => {
-        const expectedUri = 'https://www.github.com/lezzer/';
+        const expectedUri = 'https://github.com/liam-reilly/';
         const menu = wrapper.find('ul');
         const home = menu.childAt(4);
 

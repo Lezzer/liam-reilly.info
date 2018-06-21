@@ -18,7 +18,7 @@ export default class NewBlogPost extends Component
                 <hr/>
                 <div className={css.content}>
                     {
-                        this.props.content.map((x, i) => <p id={i}>{x}</p>)
+                        this.props.content.map((x, i) => <p key={i}>{x}</p>)
                     }
                 </div>
                 <hr/>
