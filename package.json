@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "start-dev": "webpack-dev-server --hot --inline",
     "start": "node dist/server.js",
-    "test": "jest"
+    "tests": "jest"
   },
   "repository": {
     "type": "git",

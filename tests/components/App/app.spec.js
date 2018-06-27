@@ -1,10 +1,10 @@
 import React from 'react';
-import App from "../src/components/App/app";
-import Header from '../src/components/Header/header';
-import Content from '../src/components/MainContent/content';
-import Footer from '../src/components/Footer/footer';
+import App from "../../../src/components/App/app";
+import Header from '../../../src/components/Header/header';
+import Content from '../../../src/components/MainContent/content';
+import Footer from '../../../src/components/Footer/footer';
 import { shallow } from 'enzyme';
-import '../tests/setup';
+import '../../setup';
 
 describe('the app renders as expected', () => {
 

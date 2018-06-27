@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Content from '../src/components/MainContent/content';
+import Content from '../../../src/components/MainContent/content';
 import { shallow } from 'enzyme';
-import Home from '../src/components/Home/home';
-import Resume from '../src/components/Resume/resume';
-import Blog from '../src/components/Blog/blog';
-import Contact from '../src/components/Contact/contact';
+import Home from '../../../src/components/Home/home';
+import Resume from '../../../src/components/Resume/resume';
+import Blog from '../../../src/components/Blog/blog';
+import Contact from '../../../src/components/Contact/contact';
 
-import '../tests/setup';
+import '../../setup';
 
 describe('the content section renders as expected', () => {
 

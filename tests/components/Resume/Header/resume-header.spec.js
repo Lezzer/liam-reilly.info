@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import '../tests/setup';
-import ResumeHeader from '../src/components/Resume/Header/resume-header';
+import ResumeHeader from '../../../../src/components/Resume/Header/resume-header';
+
+import '../../../setup';
 
 describe('the resume header renders as expected', () => {
 

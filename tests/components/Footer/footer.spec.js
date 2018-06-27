@@ -1,8 +1,9 @@
 import React from 'react';
-import Footer from '../src/components/Footer/footer';
+import Footer from '../../../src/components/Footer/footer';
 import { shallow } from 'enzyme';
-import '../tests/setup';
-import FooterMenuBar from "../src/components/Footer/MenuBar/footer-menu-bar";
+import FooterMenuBar from "../../../src/components/Footer/MenuBar/footer-menu-bar";
+
+import '../../setup';
 
 describe('the footer renders as expected', () => {
 

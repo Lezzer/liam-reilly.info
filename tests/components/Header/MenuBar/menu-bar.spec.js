@@ -1,7 +1,7 @@
 import React from 'react';
-import MenuBar from '../src/components/Header/MenuBar/menu-bar';
+import MenuBar from '../../../../src/components/Header/MenuBar/menu-bar';
 import { shallow } from 'enzyme';
-import '../tests/setup';
+import '../../../setup';
 
 describe('the menu renders as expected', () => {
 

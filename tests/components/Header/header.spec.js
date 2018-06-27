@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../src/components/Header/header';
+import Header from '../../../src/components/Header/header';
 import { shallow } from 'enzyme';
-import '../tests/setup';
-import MenuBar from '../src/components/Header/MenuBar/menu-bar';
+import MenuBar from '../../../src/components/Header/MenuBar/menu-bar';
+import '../../setup';
 
 describe('the header renders as expected', () => {
 

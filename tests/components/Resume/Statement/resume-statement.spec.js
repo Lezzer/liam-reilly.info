@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import '../tests/setup';
+import ResumeStatement from "../../../../src/components/Resume/Statement/resume-statement";
 
-import ResumeStatement from "../src/components/Resume/Statement/resume-statement";
+import '../../../setup';
 
 describe('the resume statement component renders as expected', () => {
 
