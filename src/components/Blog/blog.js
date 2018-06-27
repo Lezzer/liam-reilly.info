@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
-export default class Blog extends Component
-{
+export default class Blog extends Component {
+    componentDidMount() {
+        ReactGA.pageview('/blog/');
+    }
+    
     render() {
         return (
             <div>
