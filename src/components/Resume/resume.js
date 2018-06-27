@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import css from './resume.css';
 
 import ResumeHeader from "./Header/resume-header";
@@ -9,11 +8,8 @@ import ResumeBusinessSkills from "./BusinessSkills/resume-business-skills";
 import ResumeProjects from "./Projects/resume-projects";
 import ResumeExperience from "./Experience/resume-experience";
 
-export default class Resume extends Component {
-    componentDidMount() {
-        ReactGA.pageview('/resume/');
-    }
-
+export default class Resume extends Component 
+{
     render() {
         return (
             <div className={css.page}>

@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 import css from './contact.css';
 import ContactIcons from "./Icons/contact-icons";
 
-export default class Contact extends Component {
-    componentDidMount() {
-        ReactGA.pageview('/blog/');
-    }
-    
+export default class Contact extends Component 
+{
     render() {
         return (
             <div className={css.contact}>
