@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import '../tests/setup';
 
-import ResumeJobHistoryItem from "../src/resume-job-history-item";
+import ResumeJobHistoryItem from "../src/components/Resume/Experience/JobHistoryItem/resume-job-history-item";
 
 describe('the resume statement component renders as expected', () => {
 

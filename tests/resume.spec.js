@@ -1,14 +1,14 @@
 import React from 'react';
-import Resume from '../src/resume';
+import Resume from '../src/components/Resume/resume';
 import { shallow } from 'enzyme';
 import '../tests/setup';
 
-import ResumeHeader from '../src/resume-header';
-import ResumeStatement from "../src/resume-statement";
-import ResumeTechnicalSkills from "../src/resume-technical-skills";
-import ResumeBusinessSkills from "../src/resume-business-skills";
-import ResumeProjects from "../src/resume-projects";
-import ResumeExperience from "../src/resume-experience";
+import ResumeHeader from '../src/components/Resume/Header/resume-header';
+import ResumeStatement from "../src/components/Resume/Statement/resume-statement";
+import ResumeTechnicalSkills from "../src/components/Resume/TechSkills/resume-technical-skills";
+import ResumeBusinessSkills from "../src/components/Resume/BusinessSkills/resume-business-skills";
+import ResumeProjects from "../src/components/Resume/Projects/resume-projects";
+import ResumeExperience from "../src/components/Resume/Experience/resume-experience";
 
 describe('the resume component renders as expected', () => {
 

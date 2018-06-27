@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
 import { faEnvelope } from '@fortawesome/fontawesome-free-solid';
-import css from './styles/contact-icons.css';
+import css from './contact-icons.css';
 
 export default class ContactIcons extends Component
 {

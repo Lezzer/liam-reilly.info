@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import '../tests/setup';
-import NewBlogPost from "../src/new-blog-post";
+import NewBlogPost from "../src/components/NewBlogPost/new-blog-post";
 
 describe('the new blog post component renders as expected', () => {
 

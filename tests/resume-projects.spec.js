@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import '../tests/setup';
 
-import ResumeProjects from "../src/resume-projects";
+import ResumeProjects from "../src/components/Resume/Projects/resume-projects";
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 

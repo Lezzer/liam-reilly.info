@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NewBlogPost from "./new-blog-post";
+import NewBlogPost from "../NewBlogPost/new-blog-post";
 
 export default class Home extends Component
 {

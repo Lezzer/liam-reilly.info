@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterMenuBar from '../src/footer-menu-bar';
+import FooterMenuBar from '../src/components/Footer/MenuBar/footer-menu-bar';
 import { shallow } from 'enzyme';
 import '../tests/setup';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import App from "../src/app";
-import Header from '../src/header';
-import Content from '../src/content';
-import Footer from '../src/footer';
+import App from "../src/components/App/app";
+import Header from '../src/components/Header/header';
+import Content from '../src/components/MainContent/content';
+import Footer from '../src/components/Footer/footer';
 import { shallow } from 'enzyme';
 import '../tests/setup';
 

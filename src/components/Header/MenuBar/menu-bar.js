@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import css from './styles/menu-bar.css';
+import css from './menu-bar.css';
 
 export default class MenuBar extends Component
 {

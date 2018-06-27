@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import css from './styles/resume.css';
+import css from './resume.css';
 
-import ResumeHeader from "./resume-header";
-import ResumeStatement from "./resume-statement";
-import ResumeTechnicalSkills from "./resume-technical-skills";
-import ResumeBusinessSkills from "./resume-business-skills";
-import ResumeProjects from "./resume-projects";
-import ResumeExperience from "./resume-experience";
+import ResumeHeader from "./Header/resume-header";
+import ResumeStatement from "./Statement/resume-statement";
+import ResumeTechnicalSkills from "./TechSkills/resume-technical-skills";
+import ResumeBusinessSkills from "./BusinessSkills/resume-business-skills";
+import ResumeProjects from "./Projects/resume-projects";
+import ResumeExperience from "./Experience/resume-experience";
 
 export default class Resume extends Component
 {

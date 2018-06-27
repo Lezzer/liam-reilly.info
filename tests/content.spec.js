@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Content from '../src/content';
+import Content from '../src/components/MainContent/content';
 import { shallow } from 'enzyme';
-import Home from '../src/home';
-import Resume from '../src/resume';
-import Blog from '../src/blog';
-import Contact from '../src/contact';
+import Home from '../src/components/Home/home';
+import Resume from '../src/components/Resume/resume';
+import Blog from '../src/components/Blog/blog';
+import Contact from '../src/components/Contact/contact';
 
 import '../tests/setup';
 

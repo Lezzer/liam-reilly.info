@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneVolume, faLocationArrow } from '@fortawesome/fontawesome-free-solid';
 
-import css from './styles/resume-header.css';
+import css from './resume-header.css';
 
 export default class ResumeHeader extends Component{
     

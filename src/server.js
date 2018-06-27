@@ -14,6 +14,6 @@ app.set('port', port);
 
 app.get('/', (req, res) => res.status(200).sendFile(__dirname + "/index.html"));
 
-const server = app.listen(app.get('port'), function () {
+app.listen(app.get('port'), function () {
     console.log('listening...on port ' + port + ' - ' + staticPath);
 });

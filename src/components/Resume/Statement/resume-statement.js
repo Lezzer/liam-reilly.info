@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import css from './styles/resume-statement.css';
+import css from './resume-statement.css';
 
 export default class ResumeStatement extends Component{
 

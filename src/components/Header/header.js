@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MenuBar from './menu-bar';
-import css from './styles/header.css';
+import MenuBar from './MenuBar/menu-bar';
+import css from './header.css';
 
 export default class Header extends Component
 {

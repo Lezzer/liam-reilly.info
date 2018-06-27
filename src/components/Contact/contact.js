@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import css from './styles/contact.css';
-import ContactIcons from "./contact-icons";
+import css from './contact.css';
+import ContactIcons from "./Icons/contact-icons";
 
 export default class Contact extends Component
 {

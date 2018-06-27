@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/fontawesome-free-solid';
 
-import css from './styles/resume-projects.css';
+import css from './resume-projects.css';
 
 export default class ResumeProjects extends Component{
 

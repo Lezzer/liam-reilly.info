@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import css from './styles/content.css';
+import css from './content.css';
 import { Route } from 'react-router-dom';
-import Home from "./home";
-import Resume from "./resume";
-import Contact from "./contact";
-import Blog from "./blog";
+import Home from "../Home/home";
+import Resume from "../Resume/resume";
+import Contact from "../Contact/contact";
+import Blog from "../Blog/blog";
 
 export default class Content extends Component
 {

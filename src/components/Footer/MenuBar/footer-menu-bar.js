@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import css from './styles/footer-menu-bar.css';
+import css from './footer-menu-bar.css';
 
 export default class FooterMenuBar extends Component
 {

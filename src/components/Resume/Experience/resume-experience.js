@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import css from './styles/resume-experience.css';
-import ResumeJobHistoryItem from "./resume-job-history-item";
+import css from './resume-experience.css';
+import ResumeJobHistoryItem from "./JobHistoryItem/resume-job-history-item";
 
 export default class ResumeExperience extends Component{
 

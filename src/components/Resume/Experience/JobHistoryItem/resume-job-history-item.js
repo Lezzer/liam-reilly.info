@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import css from './styles/resume-job-history-item.css';
+import css from './resume-job-history-item.css';
 
 export default class ResumeJobHistoryItem extends Component{
 

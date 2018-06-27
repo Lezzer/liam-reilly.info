@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import css from './styles/footer.css';
-import FooterMenuBar from "./footer-menu-bar";
+import css from '../Footer/footer.css';
+import FooterMenuBar from "../Footer/MenuBar/footer-menu-bar";
 
 export default class Footer extends Component
 {
