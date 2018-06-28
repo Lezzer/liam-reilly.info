@@ -17,9 +17,41 @@ module.exports = {
             { copyUnmodified: true }
         ),
         new CopyWebpackPlugin(
+            [ { from: './public/android-chrome-192x192.png', to: 'android-chrome-192x192.png', force:true } ],
+            { copyUnmodified: true }
+        ),
+        new CopyWebpackPlugin(
+            [ { from: './public/android-chrome-256x256.png', to: 'android-chrome-256x256.png', force:true } ],
+            { copyUnmodified: true }
+        ),        
+        new CopyWebpackPlugin(
+            [ { from: './public/apple-touch-icon.png', to: 'apple-touch-icon.png', force:true } ],
+            { copyUnmodified: true }
+        ),
+        new CopyWebpackPlugin(
+            [ { from: './public/favicon-16x16.png', to: 'favicon-16x16.png', force:true } ],
+            { copyUnmodified: true }
+        ),
+        new CopyWebpackPlugin(
+            [ { from: './public/favicon-32x32.png', to: 'favicon-32x32.png', force:true } ],
+            { copyUnmodified: true }
+        ),
+        new CopyWebpackPlugin(
+            [ { from: './public/favicon.ico', to: 'favicon.ico', force:true } ],
+            { copyUnmodified: true }
+        ),        
+        new CopyWebpackPlugin(
+            [ { from: './public/mstile-150x150.png', to: 'mstile-150x150.png', force:true } ],
+            { copyUnmodified: true }
+        ),
+        new CopyWebpackPlugin(
+            [ { from: './public/safari-pinned-tab.svg', to: 'safari-pinned-tab.svg', force:true } ],
+            { copyUnmodified: true }
+        ),        
+        new CopyWebpackPlugin(
             [ { from: './src/server.js', to: 'server.js', force:true } ],
             { copyUnmodified: true }
-        )
+        ),
     ],
     module: {
         rules: [

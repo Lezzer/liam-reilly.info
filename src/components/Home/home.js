@@ -8,6 +8,18 @@ export default class Home extends Component
             <div>
                 <Post
                     month={"June"}
+                    day={"28"}
+                    title={"Quickly adding all the things!"}
+                    content={[
+                        "Added a few new bits to the site today.",
+                        "You should notice the website now has it's very own fancy favicon. How very modern!",
+                        "And there is a fancy new 404 Not Found page for when you hit a bad URL."
+                    ]}
+                    link={{post_text: "You can try it out  ", url: "/not-found/", url_text: "here"}}
+                />
+                
+                <Post
+                    month={"June"}
                     day={"27"}
                     title={"A tale of two fevers!"}
                     content={[
