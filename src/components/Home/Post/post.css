@@ -15,7 +15,6 @@ hr {
     display: block;
     border: 0 solid #000;
     border-bottom: 1px solid #C21F39;
-    margin-top: 1rem;
     width: 100%;
 }
 
@@ -40,19 +39,21 @@ p:first-child {
      margin-top: 0;
 }
 p:last-child {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .post_link {
     font-size: 1.4rem;
-    padding: 1rem 0 1rem 0;
+    padding: .5rem 0 .5rem 0;
 }
 
-.new_blog_post span a {
+.post_link a {
     color: #C21F39;
     border-bottom: #C21F39 1px dashed;
 }
-
+.post_link a:visited {
+    color: #C21F39;
+}
 
 @media only screen and (min-width: 960px) {
     
@@ -62,6 +63,7 @@ p:last-child {
 
     .post_link {
         font-size: 2rem;
+        padding: 1rem 0 1rem 0;
     }
     
 }

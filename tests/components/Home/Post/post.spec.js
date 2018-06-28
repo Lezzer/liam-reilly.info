@@ -16,5 +16,5 @@ describe('the post component renders as expected', () => {
 
 
     it('renders without crashing', () => expect(wrapper.length).toBe(1));
-
+    
 });

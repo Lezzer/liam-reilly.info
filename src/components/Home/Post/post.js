@@ -21,15 +21,31 @@ export default class Post extends Component
                         this.props.content.map((x, i) => <p key={i}>{x}</p>)
                     }
                 </div>
-                <hr/>
-                <span className={css.post_link}>You will be able to find blog posts <Link to={'/blog/'}>here</Link></span>
+                <hr/> 
+                {
+                    this.renderLinkIfSupplied()
+                }
             </div>
         );
+    }
+    
+    renderLinkIfSupplied() {
+        if (!this.props.link) return "";
+        
+        return <span className={css.post_link}>{this.props.link.post_text} 
+                <Link to={this.props.link.url}>{this.props.link.url_text}</Link>
+            </span>
     }
 }
 
 Post.propTypes = {
     month: PropTypes.string.isRequired,  
     day: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    link: PropTypes.shape({
+        show: PropTypes.bool,
+        post_text: PropTypes.string,
+        url: PropTypes.string,
+        url_text: PropTypes.string
+    })
 };
