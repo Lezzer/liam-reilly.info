@@ -1,4 +1,4 @@
-.new_blog_post {
+.post {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -56,7 +56,7 @@ p:last-child {
 
 @media only screen and (min-width: 960px) {
     
-    .new_blog_post {
+    .post {
         margin: 1rem auto 2rem auto;
     }
 

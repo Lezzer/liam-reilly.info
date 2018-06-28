@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import css from './new-blog-post.css';
+import css from './post.css';
 
-export default class NewBlogPost extends Component
+export default class Post extends Component
 {
     render() {
         return (
-            <div className={css.new_blog_post}>
+            <div className={css.post}>
                 <div className={css.header}>
                     <div className={css.calendar}>
                         <span>{this.props.day}</span>
@@ -28,7 +28,7 @@ export default class NewBlogPost extends Component
     }
 }
 
-NewBlogPost.propTypes = {
+Post.propTypes = {
     month: PropTypes.string.isRequired,  
     day: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired

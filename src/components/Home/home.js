@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import NewBlogPost from "../NewBlogPost/new-blog-post";
+import Post from "./Post/post";
 
 export default class Home extends Component
 {
     render() {
         return (
             <div>
-                <NewBlogPost
+                <Post
                     month={"June"}
                     day={"27"}
                     title={"A tale of two fevers!"}
@@ -18,7 +18,7 @@ export default class Home extends Component
                     ]}
                 />
                 
-                <NewBlogPost 
+                <Post 
                     month={"May"} 
                     day={"22"} 
                     title={"At long last... liam-reilly.info is born!"}

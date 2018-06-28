@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NewBlogPost from "../../../src/components/NewBlogPost/new-blog-post";
-import '../../setup';
+import Post from "../../../../src/components/Home/Post/post";
+import '../../../setup';
 
-describe('the new blog post component renders as expected', () => {
+describe('the post component renders as expected', () => {
 
-    const wrapper = shallow(<NewBlogPost 
+    const wrapper = shallow(<Post 
         month={"May"} 
         day={"22"} 
         title={"liam-reilly.info is born!"} 
