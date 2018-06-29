@@ -46,6 +46,7 @@
     "@fortawesome/fontawesome-free-solid": "latest",
     "@fortawesome/fontawesome-free-brands": "latest",
     "@fortawesome/react-fontawesome": "latest",
+    "@fortawesome/fontawesome-svg-core": "latest",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
