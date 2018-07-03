@@ -7,6 +7,19 @@ export default class Home extends Component
         return (
             <div>
                 <Post
+                    month={"July"}
+                    day={"03"}
+                    title={"Resume Update!"}
+                    content={[
+                        "Made a few small tweaks to the resume page today, in light of me accepting a new job!",
+                        "I'm very happy to report that I am now a Principal Software Engineer for Ditto Music.",
+                        "And do we have some bold plans for the future...",
+                        "Time to change the music industry!"
+                    ]}
+                    link={{post_text: "You can check Ditto out ", url: "https://www.dittomusic.com/", url_text: "here"}}
+                />
+                
+                <Post
                     month={"June"}
                     day={"28"}
                     title={"Quickly adding all the things!"}

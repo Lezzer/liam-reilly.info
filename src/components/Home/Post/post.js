@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import css from './post.css';
 
 export default class Post extends Component
@@ -33,7 +32,7 @@ export default class Post extends Component
         if (!this.props.link) return "";
         
         return <span className={css.post_link}>{this.props.link.post_text} 
-                <Link to={this.props.link.url}>{this.props.link.url_text}</Link>
+                <a href={this.props.link.url}>{this.props.link.url_text}</a>
             </span>
     }
 }

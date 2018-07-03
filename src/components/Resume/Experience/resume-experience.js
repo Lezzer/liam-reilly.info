@@ -8,12 +8,20 @@ export default class ResumeExperience extends Component{
         return (
             <div className={css.experience}>
                 <h2>experience</h2>
+
+                <ResumeJobHistoryItem
+                    company={"Ditto Music"}
+                    location={"Liverpool / Remote"}
+                    start={"2018"}
+                    end={"Present"}
+                    position={"Principal Software Engineer"}
+                />
                 
                 <ResumeJobHistoryItem 
                     company={"Zuto"}
                     location={"Manchester"}
                     start={"2016"}
-                    end={"Present"}
+                    end={"2018"}
                     position={"Senior Software Engineer"}
                 />
 
