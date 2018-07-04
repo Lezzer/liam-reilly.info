@@ -41,7 +41,7 @@ jobs:
              
   deploy:
     docker:
-      - image: circleci/python:latest
+      - image: circleci/python:jessie-node
       
     working_directory: ~/code/
     steps:
