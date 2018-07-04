@@ -22,14 +22,14 @@ jobs:
       - run: npm run build
       - run:
           name: create project zip
-          command: zip -r9 ./build/liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
+          command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
           path: ./liam-reilly.info.zip
           destination: liam-reilly.info.zip
-  persist_to_workspace:
-    root: /tmp/dir
-    paths:
-      - build
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - liam-reilly.info.zip
   test:
     docker:
       - image: circleci/node:10
