@@ -24,9 +24,9 @@ jobs:
           name: create project zip
           command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
       - persist_to_workspace:
-          root: ~/code/build
+          root: ~/code
           paths:
-            - ~/code/liam.reilly.info.zip
+            - ./liam.reilly.info.zip
   test:
     docker:
       - image: circleci/node:10
