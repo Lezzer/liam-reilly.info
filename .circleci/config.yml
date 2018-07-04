@@ -29,7 +29,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp
           paths:
-            - liam-reilly.info.zip
+            - ./liam-reilly.info.zip
   test:
     docker:
       - image: circleci/node:10
