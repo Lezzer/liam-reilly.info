@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
       - run:
           name: create project zip
-          command: zip -r9 build/liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
+          command: zip -r9 ./build/liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
           path: ./liam-reilly.info.zip
           destination: liam-reilly.info.zip
