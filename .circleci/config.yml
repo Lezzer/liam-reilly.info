@@ -21,6 +21,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm run build
       - run:
+          name: make build dir
+          command: mkdir build
+      - run:
           name: create project zip
           command: zip -r9 ./build/liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
