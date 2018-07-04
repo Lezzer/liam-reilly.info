@@ -55,9 +55,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: 
-        name: Build
-        command: npm run build
+      - run: npm run build
       - run:
           name: Install awscli
           command: sudo apt-get -y -qq install awscli
@@ -73,9 +71,7 @@ workflows:
   build_test_deploy:
     jobs:
       - build
-      - test:
-          requires:
-            - build
+      - test
       - deploy:
           requires:
             - test
