@@ -41,7 +41,7 @@ jobs:
              
   deploy:
     docker:
-      - image: circleci/node:10
+      - image: circleci/python:latest
       
     working_directory: ~/code/
     steps:
@@ -58,7 +58,7 @@ jobs:
       - run: npm run build
       - run:
           name: Install awscli
-          command: sudo apt-get -y -qq install awscli
+          command: sudo pip install awscli
       - run:
           name: Create artifact
           command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json 
