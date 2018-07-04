@@ -14,13 +14,19 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
       - run: npm i
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm run build
+      - run:
+          name: create project zip
+          command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
+      - persist_to_workspace:
+          root: /build/
+          paths:
+            - liam.reilly.info.zip
   test:
     docker:
       - image: circleci/node:10
@@ -31,7 +37,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
       - run: npm i
       - save_cache:
           paths:
@@ -49,7 +54,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
       - run: npm i
       - save_cache:
           paths:
@@ -60,11 +64,8 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - run:
-          name: Create artifact
-          command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json 
-      - run:
           name: Deploy to S3
-          command: aws s3 cp liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
+          command: aws s3 cp ./build/liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
           
 workflows:
   version: 2
