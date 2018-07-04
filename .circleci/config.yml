@@ -54,8 +54,6 @@ workflows:
       - build
       - test
   deploy_to_aws:
-    requires:
-      - build_and_test
     jobs:
       - deploy
 
