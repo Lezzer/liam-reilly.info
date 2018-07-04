@@ -27,7 +27,7 @@ jobs:
           path: ./liam-reilly.info.zip
           destination: liam-reilly.info.zip
       - persist_to_workspace:
-          root: /tmp
+          root: /
           paths:
             - ./liam-reilly.info.zip
   test:
@@ -54,13 +54,13 @@ jobs:
     working_directory: ~/code/
     steps:
       - attach_workspace:
-          at: /tmp
+          at: /
       - run:
           name: Install awscli
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 cp ./build/liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
+          command: aws s3 cp ./liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
           
 workflows:
   version: 2
