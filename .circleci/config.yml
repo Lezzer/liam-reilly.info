@@ -27,9 +27,9 @@ jobs:
           path: ./liam-reilly.info.zip
           destination: liam-reilly.info.zip
       - persist_to_workspace:
-          root: /
+          root: /build
           paths:
-            - ./liam-reilly.info.zip
+            - liam-reilly.info.zip
   test:
     docker:
       - image: circleci/node:10
@@ -54,7 +54,7 @@ jobs:
     working_directory: ~/code/
     steps:
       - attach_workspace:
-          at: /
+          at: /build
       - run:
           name: Install awscli
           command: sudo pip install awscli
