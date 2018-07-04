@@ -27,7 +27,7 @@ jobs:
           path: ./liam-reilly.info.zip
           destination: liam-reilly.info.zip
       - persist_to_workspace:
-          root: /root/code
+          root: /home/circleci/code
           paths:
             - liam-reilly.info.zip
   test:
@@ -54,7 +54,7 @@ jobs:
     working_directory: ~/code/
     steps:
       - attach_workspace:
-          at: /build
+          at: /home/circleci/code
       - run:
           name: Install awscli
           command: sudo pip install awscli
