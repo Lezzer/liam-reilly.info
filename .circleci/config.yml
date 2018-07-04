@@ -6,34 +6,58 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:7.10
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
 
     working_directory: ~/code/
     steps:
       - checkout
-
-      # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
       - run: npm i
-
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
+      - run: npm run build
+      
+  test:
+    docker:
+      - image: circleci/node:7.10
+    
+    working_directory: ~/code/
+    steps:
       - run: npm run tests
+      
+  deploy:
+    docker:
+      - image: circleci/node:7.10
+      
+    working_directory: ~/code/
+    steps:
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Create artifact
+          command: zip -r9 liam-reilly.info-{{ $CIRCLE_PREVIOUS_BUILD_NUM }}.zip ./dist/ ./package.json ./package-lock.json 
+      - run:
+          name: Deploy to S3
+          command: aws s3 cp liam-reilly.info-{{ $CIRCLE_PREVIOUS_BUILD_NUM }}.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
+          
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
+  deploy_to_aws:
+    requires:
+      - build_and_test
+    jobs:
+      - deploy
 
 
 
