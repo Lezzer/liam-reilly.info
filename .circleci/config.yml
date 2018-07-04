@@ -24,7 +24,7 @@ jobs:
           name: create project zip
           command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
       - persist_to_workspace:
-          root: /tmp/dir
+          root: ~/code/build
           paths:
             - ~/code/liam.reilly.info.zip
   test:
