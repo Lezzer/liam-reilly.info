@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:10
 
     working_directory: ~/code/
     steps:
@@ -23,7 +23,7 @@ jobs:
       - run: npm run build
   test:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:10
 
     working_directory: ~/code/
     steps:
@@ -41,7 +41,7 @@ jobs:
              
   deploy:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:10
       
     working_directory: ~/code/
     steps:
