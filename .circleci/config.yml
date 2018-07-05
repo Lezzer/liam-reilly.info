@@ -86,11 +86,12 @@ workflows:
       - build
       - test
       - hold:
-        type: approval
-        requires:
-          - build
-          - test
-      - deploy
-        
+          type: approval
+          requires:
+            - build
+            - test
+      - deploy:
+          requires:
+            - hold
 
 
