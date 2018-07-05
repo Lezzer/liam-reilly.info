@@ -76,6 +76,9 @@ jobs:
       - run:
           name: create application version
           command: aws elasticbeanstalk create-application-version --application-name "liam.reilly-info" --version-label ${SOURCE_LABEL} --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="${ZIP_FILE_NAME}" --region "eu-west-2"
+      - run:
+          name: deploy new version
+          command: aws elasticbeanstalk update-environment --application-name "liam.reilly-info" --environment-name "liam-reilly-info" --version-label ${SOURCE_LABEL} --region "eu-west-2"
 workflows:
   version: 2
   build_test_deploy:
