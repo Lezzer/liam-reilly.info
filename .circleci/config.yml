@@ -24,8 +24,8 @@ jobs:
           name: create project zip
           command: zip -r9 liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
-          path: ./liam-reilly.info.zip
-          destination: liam-reilly.info.zip
+          path: ./liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip
+          destination: liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip
       - persist_to_workspace:
           root: /home/circleci/code
           paths:
@@ -63,7 +63,7 @@ jobs:
           command: aws s3 cp ./liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip
       - run:
           name: Create application version
-          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label "liam-reilly.info-source-12" --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip"
+          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label "liam-reilly.info-source-12" --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key=liam-reilly.info-{{CIRCLE_BUILD_NUM}}.zip
 workflows:
   version: 2
   build_test_deploy:
