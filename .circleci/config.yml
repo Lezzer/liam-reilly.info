@@ -31,12 +31,12 @@ jobs:
           name: create project zip
           command: zip -r9 ${ZIP_FILE_NAME} ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
-          path: ./"${ZIP_FILE_NAME}"
-          destination: "${ZIP_FILE_NAME}"
+          path: ./liam-reilly.info-${CIRCLE_BUILD_NUM}.zip
+          destination: liam-reilly.info-${CIRCLE_BUILD_NUM}.zip
       - persist_to_workspace:
           root: /home/circleci/code
           paths:
-            - "${ZIP_FILE_NAME}"
+            - liam-reilly.info-${CIRCLE_BUILD_NUM}.zip
   test:
     docker:
       - image: circleci/node:10
