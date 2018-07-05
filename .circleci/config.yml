@@ -85,10 +85,12 @@ workflows:
     jobs:
       - build
       - test
-      - deploy:
-          requires:
-            - build
-            - test
+      - hold:
+        type: approval
+        requires:
+          - build
+          - test
+      - deploy
         
 
 
