@@ -8,8 +8,8 @@ jobs:
     docker:
       - image: circleci/node:10
         environment:
-          ZIP_FILE_NAME: liam-reilly.info-${CIRCLE_BUILD_NUM}.zip
-          
+          ZIP_FILE_NAME: liam-reilly.info-{{$CIRCLE_BUILD_NUM}}.zip
+                    
     working_directory: ~/code/
     steps:
       - checkout
@@ -24,14 +24,10 @@ jobs:
       - run: 
           name: build the code 
           command: npm run build
-      - run: echo $ZIP_FILE_NAME
-      - run: echo $(ZIP_FILE_NAME)
       - run: echo ${ZIP_FILE_NAME}
-      - run: echo {{ZIP_FILE_NAME}}
-      - run: echo {{$ZIP_FILE_NAME}}
       - run:
           name: create project zip
-          command: zip -r9 $ZIP_FILE_NAME ./dist/ ./package.json ./package-lock.json
+          command: zip -r9 ${ZIP_FILE_NAME} ./dist/ ./package.json ./package-lock.json
       - store_artifacts:
           path: ./${ZIP_FILE_NAME}
           destination: ${ZIP_FILE_NAME}
