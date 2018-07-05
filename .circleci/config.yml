@@ -7,9 +7,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
-        environment:
-          ZIP_FILE_NAME: liam-reilly.info-{{$CIRCLE_BUILD_NUM}}.zip
-                    
     working_directory: ~/code/
     steps:
       - checkout
@@ -24,9 +21,8 @@ jobs:
       - run:
           name: generate zip file variable name
           command: |
-            echo 'export ZIP_NAME=${CIRCLE_BUILD_NUM}' >> $BASH_ENV
+            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_BUILD_NUM}.zip' >> $BASH_ENV
             source $BASH_ENV
-      - run: echo ${ZIP_NAME}
       - run: echo ${ZIP_FILE_NAME}
       - run: 
           name: build the code 
