@@ -24,6 +24,11 @@ jobs:
       - run: 
           name: build the code 
           command: npm run build
+      - run: echo $ZIP_FILE_NAME
+      - run: echo $(ZIP_FILE_NAME)
+      - run: echo ${ZIP_FILE_NAME}
+      - run: echo {{ZIP_FILE_NAME}}
+      - run: echo {{$ZIP_FILE_NAME}}
       - run:
           name: create project zip
           command: zip -r9 $ZIP_FILE_NAME ./dist/ ./package.json ./package-lock.json
