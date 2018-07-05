@@ -75,7 +75,7 @@ jobs:
           command: aws s3 cp liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
       - run:
           name: create application version
-          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label liam-reilly.info-source.zip --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key=liam-reilly.info-source.zip
+          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label liam-reilly.info-source.zip --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="liam-reilly.info-source.zip"
 workflows:
   version: 2
   build_test_deploy:
