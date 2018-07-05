@@ -29,11 +29,11 @@ jobs:
           command: npm run build
       - run:
           name: create project zip
-          command: zip -r9 liam-reilly.info.zip ./dist/ ./package.json ./package-lock.json
+          command: zip -r9 ${ZIP_FILE_NAME} ./dist/ ./package.json ./package-lock.json
       - persist_to_workspace:
           root: /home/circleci/code
           paths:
-            - ./liam-reilly.info.zip
+            - ./${ZIP_FILE_NAME}
   test:
     docker:
       - image: circleci/node:10
@@ -72,10 +72,10 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: deploy to S3
-          command: aws s3 cp liam-reilly.info.zip s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
+          command: aws s3 cp ${ZIP_FILE_NAME} s3://elasticbeanstalk-eu-west-2-701350138046/liam-reilly.info.zip
       - run:
           name: create application version
-          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label liam-reilly.info-source.zip --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="liam-reilly.info-source.zip"
+          command: aws elasticbeanstalk create-application-version --application-name "liam.reilly-info" --version-label ${SOURCE_LABEL} --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="${ZIP_FILE_NAME}"
 workflows:
   version: 2
   build_test_deploy:
