@@ -25,9 +25,7 @@ jobs:
       - run:
           name: create zip file variable name
           command: |
-            echo 'export ${CIRCLE_BUILD_NUM}
-            echo 'export ZIP_NAME=liam-reilly.info-${CIRCLE_BUILD_NUM}.zip' >> $ZIP_FILE_NAME'
-            source ${ZIP_FILE_NAME}
+            $ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_BUILD_NUM}.zip
       - run:
           name: create project zip
           command: zip -r9 $ZIP_FILE_NAME ./dist/ ./package.json ./package-lock.json
