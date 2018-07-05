@@ -21,7 +21,7 @@ jobs:
       - run:
           name: generate zip file variable name
           command: |
-            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_BUILD_NUM}.zip' >> $BASH_ENV
+            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_SHA1}.zip' >> $BASH_ENV
             source $BASH_ENV
       - run: echo ${ZIP_FILE_NAME}
       - run: 
@@ -62,7 +62,7 @@ jobs:
       - run:
           name: generate zip file variable name
           command: |
-            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_BUILD_NUM}.zip' >> $BASH_ENV
+            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_SHA1}.zip' >> $BASH_ENV
             source $BASH_ENV
       - run: echo ${ZIP_FILE_NAME}          
       - run:
@@ -73,7 +73,7 @@ jobs:
           command: aws s3 cp ${ZIP_FILE_NAME} s3://elasticbeanstalk-eu-west-2-701350138046/${ZIP_FILE_NAME}
       - run:
           name: Create application version
-          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label liam-reilly.info-source-${CIRCLE_BUILD_NUM} --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key=${ZIP_FILE_NAME}
+          command: aws elasticbeanstalk --application-name "liam.reilly-info" --version-label liam-reilly.info-source-${CIRCLE_SHA1} --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key=${ZIP_FILE_NAME}
 workflows:
   version: 2
   build_test_deploy:
