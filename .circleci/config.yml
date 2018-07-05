@@ -21,10 +21,16 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: generate zip file variable name
+          command: |
+            echo 'export ZIP_NAME=${CIRCLE_BUILD_NUM}' >> $BASH_ENV
+            source $BASH_ENV
+      - run: echo ${ZIP_NAME}
+      - run: echo ${ZIP_FILE_NAME}
       - run: 
           name: build the code 
           command: npm run build
-      - run: echo ${ZIP_FILE_NAME}
       - run:
           name: create project zip
           command: zip -r9 ${ZIP_FILE_NAME} ./dist/ ./package.json ./package-lock.json
