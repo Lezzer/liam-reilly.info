@@ -33,7 +33,7 @@ jobs:
       - persist_to_workspace:
           root: /home/circleci/code
           paths:
-            - ${ZIP_FILE_NAME}
+            - ./
   test:
     docker:
       - image: circleci/node:10
