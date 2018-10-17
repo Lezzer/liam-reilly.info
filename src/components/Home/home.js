@@ -7,6 +7,19 @@ export default class Home extends Component
         return (
             <div>
                 <Post
+                    month={"October"}
+                    day={"17"}
+                    title={"Summers are great and all but..."}
+                    content={[
+                        "Have you ever tried getting any work done?!",
+                        "It's time to get this site launched properly.",
+                        "So blog content will be coming very soon!",
+
+                    ]}
+                    link={{post_text: "Peace!", url: "", url_text: ""}}
+                />
+                
+                <Post
                     month={"July"}
                     day={"05"}
                     title={"Website now deployed automatically via CircleCI"}
