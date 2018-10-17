@@ -7,12 +7,14 @@ export default class Home extends Component
         return (
             <div>
                 <Post
-                    month={"October"}
+                    month={"Oct"}
                     day={"17"}
                     title={"Summers are great and all but..."}
                     content={[
                         "Have you ever tried getting any work done?!",
-                        "It's time to get this site launched properly.",
+                        "I've had a very busy and exciting summer with awesome family holidays and trips to theme parks.",
+                        "Plus I've been pretty busy with the new job which I love!",
+                        "But that hasn't left much time to concentrate on this website but now it's time to get this site launched properly.",
                         "So blog content will be coming very soon!",
 
                     ]}
