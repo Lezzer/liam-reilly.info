@@ -16,6 +16,9 @@ jobs:
       - run:
           name: update-npm
           command: npm i
+      - run:
+          name: install webpack
+          command: npm i webpack          
 #      - save_cache:
 #          paths:
 #            - node_modules
