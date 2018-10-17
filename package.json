@@ -4,12 +4,10 @@
   "description": "Home of Liam Reilly & various tech content",
   "main": "webpack.config.js",
   "scripts": {
-    "pre-start": "npm i",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start-dev": "webpack-dev-server --hot --inline",
     "start": "node dist/server.js",
-    "pretest": "npm i",
     "tests": "jest"
   },
   "repository": {
