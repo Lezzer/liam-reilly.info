@@ -1,0 +1,37 @@
+.blog {
+    
+}
+
+.blog body {
+    margin: 0;
+}
+
+.blog h1 {
+    font-size: xx-large;
+    color: #1c1c1c;
+}
+
+.blog h2 {
+    font-size: x-large;
+    color: #1c1c1c;
+}
+
+.blog h3 {
+    font-size: large;
+    color: #1c1c1c;
+}
+
+.blog h4 {
+    font-size: medium;
+    color: #1c1c1c;
+}
+
+.blog h5 {
+    font-size: small;
+    color: #1c1c1c;
+}
+
+.blog h6 {
+    font-size: smaller;
+    color: #1c1c1c;
+}

@@ -15,7 +15,7 @@ export default class Content extends Component
                 <Switch>
                     <Route exact={true} path={'/'} component={Home} />
                     <Route path={'/resume/'} component={Resume} />
-                    <Route path={'/blog/'} component={Blog} />
+                    <Route path={'/blog/:post'} component={Blog} />
                     <Route path={'/contact/'} component={Contact} />
                     <Route component={NotFound} />
                 </Switch>

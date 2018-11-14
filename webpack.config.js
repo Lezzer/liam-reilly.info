@@ -55,7 +55,7 @@ module.exports = {
         new CopyWebpackPlugin(
             [ { from: './src/server.js', to: 'server.js', force:true } ],
             { copyUnmodified: true }
-        ),
+        )
     ],
     module: {
         rules: [
