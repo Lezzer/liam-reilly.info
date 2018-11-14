@@ -2,6 +2,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+    entry: [
+        'babel-polyfill',
+        './src/index.js'
+    ],
     devServer: {
         contentBase: './dist',
         port: 3000,
@@ -61,7 +65,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['env', 'react']
+                        presets: ['es2017', 'react']
                     }
                 }
             },
@@ -76,6 +80,10 @@ module.exports = {
                     modules: true,
                     localIdentName: '[name]__[local]___[hash:base64:5]'
                 }
+            },
+            {
+                test: /\.md$/i,
+                use: 'raw-loader'
             }
         ]
     }
