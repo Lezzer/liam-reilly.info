@@ -26,7 +26,7 @@ describe('the menu renders as expected', () => {
         expect(homeProps.children.props.to).toBe(expectedUri);
     });
 
-    it('the first link points says home', () => {
+    it('the first link says home', () => {
         const expectedUri = 'home';
         const menu = wrapper.find('ul');
         const home = menu.childAt(0);
@@ -44,7 +44,7 @@ describe('the menu renders as expected', () => {
         expect(homeProps.children.props.to).toBe(expectedUri);
     });
 
-    it('the second link points says resume', () => {
+    it('the second link says resume', () => {
         const expectedUri = 'resume';
         const menu = wrapper.find('ul');
         const home = menu.childAt(1);
@@ -62,7 +62,7 @@ describe('the menu renders as expected', () => {
         expect(homeProps.children.props.to).toBe(expectedUri);
     });
 
-    it('the third link points says blog', () => {
+    it('the third link says blog', () => {
         const expectedUri = 'blog';
         const menu = wrapper.find('ul');
         const home = menu.childAt(2);
@@ -80,7 +80,7 @@ describe('the menu renders as expected', () => {
         expect(homeProps.children.props.to).toBe(expectedUri);
     });
 
-    it('the fourth link points says contact', () => {
+    it('the fourth link says contact', () => {
         const expectedUri = 'contact';
         const menu = wrapper.find('ul');
         const home = menu.childAt(3);

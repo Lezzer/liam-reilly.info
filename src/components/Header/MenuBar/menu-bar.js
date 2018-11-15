@@ -10,7 +10,7 @@ export default class MenuBar extends Component
                 <ul>
                     <li><Link to={'/'}>home</Link></li>
                     <li><Link to={'/resume/'}>resume</Link></li>
-                    <li><Link to={'/blog/test.md'}>blog</Link></li>
+                    <li><Link to={'/blog/'}>blog</Link></li>
                     <li><Link to={'/contact/'}>contact</Link></li>
                 </ul>
             </div>

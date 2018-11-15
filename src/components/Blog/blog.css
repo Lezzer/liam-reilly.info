@@ -1,5 +1,5 @@
 .blog {
-    
+
 }
 
 .blog body {
@@ -34,4 +34,10 @@
 .blog h6 {
     font-size: smaller;
     color: #1c1c1c;
+}
+
+.blog code {
+    padding: 0.5rem;
+    background-color: #F6C6CE;
+    font-family: monospace;
 }

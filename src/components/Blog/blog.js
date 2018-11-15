@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
+import PostNotification from './PostNotification/post-notification';
 import css from './blog.css';
 
 export default class Blog extends Component
 {
     render() {
-        const { match: { params } } = this.props;
-        
-        const content = require('../../../public/blog/posts/' + params.post);
-        
         return (
             <div className={css.blog}>
-                <ReactMarkdown source={content}/>
+                
+                <PostNotification 
+                    month={"Nov"} 
+                    day={"15"} 
+                    title={"My first blog post"}
+                    content={[
+                        "After a long wait the blog feature is finally live!"
+                    ]}
+                    link={"/blog/test.md"}
+                />
             </div>
         );
     }
