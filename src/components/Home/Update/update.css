@@ -5,8 +5,13 @@
     margin: 1rem auto 1rem auto;
     padding: 1rem;
     border: #C21F39 2px solid;
-    font-family: Roboto, 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', 'Open Sans', sans-serif;
 }
+
+.update p {
+    font-family: 'Ubuntu', 'Open Sans', sans-serif;
+}
+
 .header {
     display: flex;
     align-items: center;
