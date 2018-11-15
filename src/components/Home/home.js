@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
-import Post from "./Post/post";
+import Update from "./Update/update";
 
 export default class Home extends Component
 {
     render() {
         return (
             <div>
-                <Post
+                <Update
+                    month={"Nov"}
+                    day={"15"}
+                    title={"Blog support is here..."}
+                    content={[
+                        "So after considering a number of different options including Github Pages, Jekyll, Hugo.  I finally decided to scrap them all and build my blog support right into this site.",
+                        "I wanted a quick way to write blog posts as simple markdown files, which could then be posted here, and to other sites such as Medium.",
+                        "Jekyll seemed tempting at first, Github pages supports it natively, but it just seemed like I had to make too many compromises.",
+                        "So I've decided to build it myself, right here.  The implementation is a little basic, and I will be iterating on it and blogging about how it evolves.",
+                        "Oh and the blog post listings page will change dramatically don't worry!"
+                    ]}
+                    link={{post_text: "Content is on it's way. Peace!", url: "", url_text: ""}}
+                />
+                
+                <Update
                     month={"Oct"}
                     day={"17"}
                     title={"Summers are great and all but..."}
@@ -21,7 +35,7 @@ export default class Home extends Component
                     link={{post_text: "Peace!", url: "", url_text: ""}}
                 />
                 
-                <Post
+                <Update
                     month={"July"}
                     day={"05"}
                     title={"Website now deployed automatically via CircleCI"}
@@ -34,7 +48,7 @@ export default class Home extends Component
                     link={{post_text: "Cheers Liam", url: "", url_text: ""}}
                 />
                 
-                <Post
+                <Update
                     month={"July"}
                     day={"03"}
                     title={"Resume Update!"}
@@ -47,7 +61,7 @@ export default class Home extends Component
                     link={{post_text: "You can check Ditto out ", url: "https://www.dittomusic.com/", url_text: "here"}}
                 />
                 
-                <Post
+                <Update
                     month={"June"}
                     day={"28"}
                     title={"Quickly adding all the things!"}
@@ -59,7 +73,7 @@ export default class Home extends Component
                     link={{post_text: "You can try it out  ", url: "/not-found/", url_text: "here"}}
                 />
                 
-                <Post
+                <Update
                     month={"June"}
                     day={"27"}
                     title={"A tale of two fevers!"}
@@ -71,7 +85,7 @@ export default class Home extends Component
                     link={{post_text: "Cheers, Liam", url: "", url_text: ""}}
                 />
                 
-                <Post 
+                <Update 
                     month={"May"} 
                     day={"22"} 
                     title={"At long last... liam-reilly.info is born!"}

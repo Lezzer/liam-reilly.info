@@ -1,4 +1,4 @@
-.post {
+.update {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -30,7 +30,7 @@ hr {
     font-size: 1.75rem;
 }  
 
-.post h4 {
+.update h4 {
     color: #C21F39;
     margin: 0 0 0 1rem;
 }
@@ -57,7 +57,7 @@ p:last-child {
 
 @media only screen and (min-width: 960px) {
     
-    .post {
+    .update {
         margin: 1rem auto 2rem auto;
     }
 

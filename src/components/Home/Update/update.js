@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import css from './post.css';
+import css from './update.css';
 
 export default class Post extends Component
 {
     render() {
         return (
-            <div className={css.post}>
+            <div className={css.update}>
                 <div className={css.header}>
                     <div className={css.calendar}>
                         <span>{this.props.day}</span>
