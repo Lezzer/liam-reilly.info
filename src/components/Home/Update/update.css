@@ -38,6 +38,7 @@ hr {
 .update h4 {
     color: #C21F39;
     margin: 0 0 0 1rem;
+    font-size: 2rem;
 }
 
 p:first-child {
@@ -65,6 +66,13 @@ p:last-child {
     .update {
         margin: 1rem auto 2rem auto;
     }
+
+    .update h4 {
+        color: #C21F39;
+        margin: 0 0 0 1rem;
+        font-size: 3rem;
+    }
+
 
     .post_link {
         font-size: 2rem;
