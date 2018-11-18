@@ -67,6 +67,16 @@
     width:100%;
 }
 
+.post a {
+    color: #C21F39;
+    border-bottom: #C21F39 1px dashed;
+}
+
+.post a:visited {
+    color: #C21F39;
+    border-bottom: #C21F39 1px dashed;
+}
+
 @media only screen and (min-width: 960px) {
 
     .post {
