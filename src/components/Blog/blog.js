@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import PostNotification from './PostNotification/post-notification';
-import css from './blog.css';
 
 export default class Blog extends Component
 {
     render() {
         return (
-            <div className={css.blog}>
-                
+            <div>
                 <PostNotification 
                     month={"Nov"} 
                     day={"15"} 

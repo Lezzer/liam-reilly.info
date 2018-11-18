@@ -10,7 +10,7 @@ export default class Post extends Component
         const content = require('../../../../public/blog/posts/' + params.post);
 
         return (
-            <div>
+            <div className={css.post}>
                 <ReactMarkdown source={content}/>
             </div>
         );

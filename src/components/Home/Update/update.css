@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
 }
+
 hr {
     display: block;
     border: 0 solid #000;
@@ -68,11 +69,8 @@ p:last-child {
     }
 
     .update h4 {
-        color: #C21F39;
-        margin: 0 0 0 1rem;
         font-size: 3rem;
     }
-
 
     .post_link {
         font-size: 2rem;
