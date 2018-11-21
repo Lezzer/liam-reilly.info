@@ -5,15 +5,15 @@
 
 ### Quick update 
 
-You may or may not know that I recently changed jobs.  I'm now a Principal Software Engineer now at [Ditto Music](https://www.dittomusic.com/).  
+You may or may not know that I recently changed jobs.  I'm now a Principal Software Engineer at [Ditto Music](https://www.dittomusic.com/).  
 
 I was brought in, along with a couple of other friends (we've all worked together previously) to form a new team to build a completely new cloud infrastructure in AWS, and design and build all new systems/services to allow the company to grow and scale.
 
 Whilst we've all been coding together for years and building and deploying apps across all of AWS product offerings using Terraform keeping all our infrastructure as code,  we are all new to the music industry so there is an awful lot to learn!  
 
-As you can imagine, we've been extremely busy. Starting from absolutely nothing, we've now got a number of fully terraformed AWS environments.  We've not only built out the infrastructure though, we've also been working on a brand new product, featuring a slick React UI, many C# WebAPI micro services, ElasticSearch, GraphQL and utilising many of the different AWS products. Including but not limited to Lambda, ECS, SQS, S3, ElastiCache, ElasticSearch, CloudFront, Route53. The list goes on and on! 
+As you can imagine, we've been extremely busy. Starting from absolutely nothing, we've now got a number of fully terraformed AWS environments.  We've not only built out the infrastructure though, we've also been working on a brand new product, featuring a slick React UI, many C# WebAPI micro services, ElasticSearch, GraphQL and utilising many of the different AWS products. Including but not limited to Lambda, ECS, SQS, S3, ElastiCache, EC2, ElasticSearch, CloudFront, Route53, CloudWatch. The list goes on and on! 
 
-But even with all this going on, and the pressure to deliver to prove our worth to the business.  We are lucky to work in an environment, and for a great manager that not only values 10% time, but rather actively pushes us to ensure we take it, and this I absolutely love!
+But even with all this going on, and the pressure to deliver and prove our worth to the business.  We are lucky to work in an environment, and for a great manager that not only values 10% time, but rather actively pushes us to ensure we take it, and this I absolutely love!
 
 ### Ten percent time - Say what? 
 
@@ -30,9 +30,9 @@ But it's the hidden benefits which I really think are worth a mention.
 
 The first thing I believe is there is no better initiative, that provides such a great opportunity to developers. To be able to experiment and try out new things. New tools, languages, platforms etc.
 
-Some of the things we try might come to nothing, or they may not have an immediate benefit to the business. But adding experience, and new tools to the arsenal will always reward somewhere down the line.
+Some of the things we try might come to nothing, or they may not have an immediate or obvious benefit to the business. But adding experience, and new tools to the arsenal will always reward somewhere down the line.
 
-I've worked in companies before that have tried to make this process far too formal, and it's had the opposite effect. It's made trying new things seem more like a chore, and taken the fun away from what we might normally even choose to do for fun in our spare time! 
+I've worked in companies before that have tried to make this process far too formal, and it's had the opposite effect. It's made trying new things seem more like a chore, and taken the enjoyment out of what we might normally even choose to do for fun in our spare time! 
 
 The next benefit for me at least is overall happiness and feeling that the business I am working for really values me, and my continued progression.  When you're given such freedom to experiment, I think it shows a certain level of trust from the business that they know they've got good people, who want to find real value in that time.
 
@@ -40,7 +40,7 @@ Another benefit of 10% time it might not be a side project or new idea that gets
 
 Because we are free to do anything we choose, often times it might just be the little nice to haves like this that we focus on. So the business is getting little tweaks here and there, along side the normal day to day releases.
 
-I actually did this for my last 10% time.  Just built a handy tool that the business would find useful, that wasn't important enough to prioritise over anything else. But just makes 1 thing a little easier to manage.
+I actually did this for my last 10% time.  I just built a handy tool that the business would find useful, that wasn't important enough to prioritise over anything else. But just makes 1 thing a little easier to manage.
 
 
 ### My next 10% time idea - Vault
