@@ -8,8 +8,8 @@ export default class Home extends Component
             <div>
                 <Update
                     month={"Nov"}
-                    day={"15"}
-                    title={"Blog support is here..."}
+                    day={"21"}
+                    title={"The first blog post is live..."}
                     content={[
                         "So after considering a number of different options including Github Pages, Jekyll, Hugo.  I finally decided to scrap them all and build my blog support right into this site.",
                         "I wanted a quick way to write blog posts as simple markdown files, which could then be posted here, and to other sites such as Medium.",
@@ -17,7 +17,7 @@ export default class Home extends Component
                         "So I've decided to build it myself, right here.  The implementation is a little basic, and I will be iterating on it and blogging about how it evolves.",
                         "Oh and the blog post listings page will change dramatically don't worry!"
                     ]}
-                    link={{post_text: "Content is on it's way. Peace!", url: "", url_text: ""}}
+                    link={{post_text: "", url: "/blog", url_text: "Check it out"}}
                 />
                 
                 <Update
