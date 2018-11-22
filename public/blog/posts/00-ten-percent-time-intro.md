@@ -55,9 +55,9 @@ Not just passwords of course, as developers we have to store all kinds of detail
 
 At home I use KeePass.  I keep a copy of the DB in my Google Drive, I keep the keys elsewhere and the password in my head.  But this is a chore, especially when trying to keep multiple machines in sync.
 
-This problem is bad enough for me on my own, but imaging this in a business.  Nightmare.
+This problem is bad enough for me on my own, but imagine this in a business.  Nightmare.
 
-So I decided I would build a solution.  I have the tech stack clear in my head. I've definied a card in our Trello board.  It's almost time to start.
+So I decided I would build a solution.  I have the tech stack clear in my head. I've defined a card in our Trello board.  It's almost time to start.
 
 I have a key principle for the system.  Simplicity.  Borrowing from Google I want to keep the application UI to be as simple as absoutely possible. 
 
