@@ -15,9 +15,14 @@ I'm basically building a simple system to allow people to securely encrypt and s
 
 So I've decided to build a fancy web application using [React](https://reactjs.org/). This will be super simple, I envisage a huge search bar, which a user types into, and any credentials/objects they've got access to view/decrypt will be displayed on screen. Filtered in real time as they type, with options to view/download.
 
-I see a couple of options, Add / Browse. When they user clicks add, they will have a very simple screen with very few options. They will be able to create a name/description. They will be able to type a secure string (either a simple password type of string, or a larger piece of text), or attach a file.
+I see just a couple of options
 
-They will have 3 options to choose from, which will dictate who is able to decrypt the object again later.
+* Add
+* Browse
+
+When the user clicks Add, they will have a very simple screen with just a few options. They will be able to create a name/description. They will be able to type a secure string (either a simple password type of string, or a larger piece of text), or attach a file.
+
+When it comes to who can decrypt the document/object again, they will have 3 options to choose from
 
 1. Just Me
 2. Everyone
@@ -31,7 +36,7 @@ I did consider adding roles/user groups etc, but I really don't want to deal wit
 
 The front end web app will be powered by an API on the backend. This will be WebAPI project, written in C# .NET Core 2.2. 
 
-This will where all the work is done, such as encrypting objects and persisting to the database/object store, and retrieving/decrypting again and sending back to the end user.
+This will be where all the work is done, such as encrypting objects and persisting to the database/object store, and retrieving/decrypting again and sending back to the end user.
 
 I've decided to use AWS [Fargate](https://aws.amazon.com/fargate/) to host the API. I expect the application to get quite a lot of regular use, so [Lambda](https://aws.amazon.com/lambda/) didn't seem to make as much sense. 
 
