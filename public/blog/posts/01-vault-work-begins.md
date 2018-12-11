@@ -13,7 +13,7 @@ I'm basically building a simple system to allow people to securely encrypt and s
 
 ### Frontend
 
-So I've decided to build a fancy web application using [React](https://reactjs.org/). This will be super simple, I envisage a huge search bar, which a user types into, and any credentials/objects they've got access to view/decrypt will be displayed on screen. Filtered in real time as they type, with options to view/download.
+So I've decided to build a fancy web application using [React](https://reactjs.org/). This will be super simple.  I envisage a huge search bar which a user types into, and any credentials/objects they've got access to view/decrypt will be displayed on screen. Filtered in real time as they type, with options to view/download.
 
 I see just a couple of options
 

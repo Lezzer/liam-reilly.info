@@ -70,6 +70,15 @@
     width:100%;
 }
 
+
+.post ul {
+    line-height: 3.2rem;
+}
+
+.post ul li {
+    font-size: 2rem;
+}
+
 .post ol {
     line-height: 3.2rem;
 }
@@ -142,6 +151,14 @@
     .post pre {
         padding: 1.5rem;
         background-color: #F6C6CE;
+    }
+
+    .post ul {
+        line-height: 5rem;
+    }
+
+    .post ul li {
+        font-size: 2.4rem;
     }
     
     .post ol {
