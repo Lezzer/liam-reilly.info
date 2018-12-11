@@ -68,3 +68,5 @@ I'm really hoping I can build an app that people love, and find real value in.
 So stick around. I will be starting the application in the next few days, and blog posts will be coming at every step of the journey!  
 
 Wish me luck!
+
+[Part Two](/blog/01-vault-work-begins.md)

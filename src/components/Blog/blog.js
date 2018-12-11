@@ -6,6 +6,17 @@ export default class Blog extends Component
     render() {
         return (
             <div>
+                <PostNotification
+                    month={"Dec"}
+                    day={"11"}
+                    title={"Work on the Vault has begun!"}
+                    content={[
+                        "It's 10% day again this Friday and I will be continuing on with Vault! I did a little work 2 weeks ago, but it's been mostly setting things up, and design work so far.",
+                        "But now that's all out the way, it's full steam ahead with coding coding coding come Friday!",
+                        "Before we get into that though, I think I should explain what I have decided to do."
+                    ]}
+                    link={"/blog/01-vault-work-begins.md"}
+                />
                 <PostNotification 
                     month={"Nov"} 
                     day={"21"} 

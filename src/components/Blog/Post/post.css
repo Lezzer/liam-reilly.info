@@ -10,6 +10,7 @@
 .post p {
     padding: 1rem 0 1rem 0;
     font-size: 1.8rem;
+    line-height: 3rem;
 }
 
 .post h1 {
@@ -69,6 +70,26 @@
     width:100%;
 }
 
+.post ol {
+    line-height: 3.2rem;
+}
+
+.post ol li {
+    font-size: 2rem;
+}
+
+.post blockquote {
+    border-left: 5px solid #C21F39;
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+.post blockquote p {
+    font-size: 2rem;
+    color: #C21F39;
+    padding-top: 1.5rem;
+}
+
 .post a {
     color: #C21F39;
     border-bottom: #C21F39 1px dashed;
@@ -89,6 +110,8 @@
     .post p {
         padding: 1.5rem 0 1.5rem 0;
         font-size: 2.4rem;
+        font-weight: lighter;
+        line-height: 3.8rem;
     }
 
     .post h1 {
@@ -120,6 +143,14 @@
         padding: 1.5rem;
         background-color: #F6C6CE;
     }
+    
+    .post ol {
+        line-height: 5rem;
+    }
+    
+    .post ol li {
+        font-size: 2.4rem;
+    }
 
     .post code {
         background-color: #F6C6CE;
@@ -127,5 +158,15 @@
         font-size: 1.25rem;
         width:100%;
         padding: 0.5rem;
+    }
+
+    .post blockquote {
+        margin-left: 0;
+        padding-left: 2.5rem;
+    }
+
+    .post blockquote p {
+        font-size: 3rem;
+        padding-top: 2rem;
     }
 }

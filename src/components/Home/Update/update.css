@@ -10,6 +10,7 @@
 
 .update p {
     font-family: 'Ubuntu', 'Open Sans', sans-serif;
+    line-height: 2rem;
 }
 
 .header {
@@ -66,6 +67,10 @@ p:last-child {
     
     .update {
         margin: 1rem auto 2rem auto;
+    }
+
+    .update p {
+        line-height: 3.8rem;
     }
 
     .update h4 {
