@@ -7,6 +7,17 @@ export default class Home extends Component
         return (
             <div>
                 <Update
+                    month={"Dec"}
+                    day={"11"}
+                    title={"A new blog post has been added..."}
+                    content={[
+                        "Just a quick update.  I've added a new blog post, continuing the series on 10% time and my project Vault.",
+                        "This post gives some background on what I've decided to build, and the decisions I've made so far."
+                    ]}
+                    link={{post_text: "", url: "/blog/01-vault-work-begins.md", url_text: "Check it out"}}
+                />
+
+                <Update
                     month={"Nov"}
                     day={"21"}
                     title={"The first blog post is live..."}
@@ -17,7 +28,7 @@ export default class Home extends Component
                         "So I've decided to build it myself, right here.  The implementation is a little basic, and I will be iterating on it and blogging about how it evolves.",
                         "Oh and the blog post listings page will change dramatically don't worry!"
                     ]}
-                    link={{post_text: "", url: "/blog", url_text: "Check it out"}}
+                    link={{post_text: "", url: "/blog/00-ten-percent-time-intro.md", url_text: "Check it out"}}
                 />
                 
                 <Update
