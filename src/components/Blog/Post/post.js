@@ -11,8 +11,8 @@ export default class Post extends Component
 
         const content = require('../../../../public/blog/posts/' + params.post);
         
-        // const img = 'https://liam-reilly.info/public/liam-reilly-info.png';
-        // const url = 'https://liam-reilly.info/public/blog/posts/' + params.post;
+        // const img = 'https://www.liam-reilly.info/public/liam-reilly-info.png';
+        // const url = 'https://www.liam-reilly.info/public/blog/posts/' + params.post;
         
         return (
             <div className={css.post}>
