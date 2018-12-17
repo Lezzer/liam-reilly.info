@@ -181,7 +181,7 @@ EOF
 
 #### IAM Policies
 
-Next we attach a few `aws_iam_role_policy` objects to the `IAM_ROLE` we just created. These just set up the basic things for now. Such as being able to access the ECR, some EC2 interfaces, the load balancer and cloudwatch.
+Next we attach a few `aws_iam_role_policy` objects to the `aws_iam_role` we just created. These just set up the basic things for now. Such as being able to access the ECR, some EC2 interfaces, the load balancer and cloudwatch.
 
 ```
 resource "aws_iam_role_policy" "ecr" {
