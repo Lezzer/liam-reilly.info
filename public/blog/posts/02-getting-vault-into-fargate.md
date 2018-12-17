@@ -156,7 +156,7 @@ Next I am going to build up an `aws_iam_role`, that the container task will use 
 
 ```
 resource "aws_iam_role" "vault-role" {
-  name = "${var.app_name}-role"
+  name = "vault-api-role"
 
   assume_role_policy = <<EOF
 {
@@ -185,7 +185,7 @@ Next we attach a few `aws_iam_role_policy` objects to the `aws_iam_role` we just
 
 ```
 resource "aws_iam_role_policy" "ecr" {
-  name = "${var.app_name}-ecr"
+  name = "vault-api-ecr"
   role = "${aws_iam_role.vault-role.name}"
   policy = <<EOF
 {
@@ -206,7 +206,7 @@ EOF
 }
 
 resource "aws_iam_role_policy" "vpc" {
-  name = "${var.app_name}-vpc"
+  name = "vault-api-vpc"
   role = "${aws_iam_role.vault-role.name}"
   policy = <<EOF
 {
@@ -229,7 +229,7 @@ EOF
 }
 
 resource "aws_iam_role_policy" "lb-access" {
-  name = "${var.app_name}-lb"
+  name = "vault-api-lb"
   role = "${aws_iam_role.vault-role.name}"
   policy = <<EOF
 {	
@@ -248,7 +248,7 @@ EOF
 }
 
 resource "aws_iam_role_policy" "cloudwatch" {
-  name = "${var.app_name}-cloudwatch"
+  name = "vault-api-cloudwatch"
   role = "${aws_iam_role.vault-role.name}"
   policy = <<EOF
 {	
@@ -384,8 +384,8 @@ resource "aws_ecs_service" "vault-api" {
   }
 
   load_balancer {
-    container_name   = "${var.app_name}"
-    container_port   = "${var.container_port}"
+    container_name   = "vault-api"
+    container_port   = 80
     target_group_arn = "${aws_lb_target_group.vault-api.arn}"
   }
 }
@@ -404,13 +404,60 @@ Cloudwatch logging is different here too, compared to EC2 ECS. Pay attention to 
 resource "aws_ecs_task_definition" "definition" {
   family                   = "vault-api"
   network_mode             = "awsvpc"
-  cpu                      = 256
+  cpu                      = "256
   memory                   = 512
   requires_compatibilities = ["FARGATE"]
   execution_role_arn       = "${aws_iam_role.vault-role.arn}" 
   task_role_arn            = "${data.aws_iam_role.ecs-task-execution-role.arn}" 
 
-  container_definitions = <
+  container_definitions = <<DEFINITION
+[
+  {
+    "name": "${var.app_name}",
+    "image": "${data.aws_caller_identity.current.account_id}.dkr.ecr.eu-west-2.amazonaws.com/vault-api:${var.application_version}",
+    "essential": true,
+    "cpu": ${var.cpu},
+    "memory": ${var.memory},
+    "networkMode": "awsvpc",
+    "networkConfiguration": {
+      "awsvpcConfiguration": {
+          "subnets": [
+              "${join(",", data.aws_subnet_ids.private.ids)}"
+          ], 
+          "securityGroups": [
+              "${aws_security_group.ecs_tasks.id}"
+          ], 
+          "assignPublicIp": "DISABLED"
+      }
+    }, 
+    "portMappings": [
+      {
+        "containerPort": ${var.container_port},
+        "protocol": "tcp"
+      }
+    ],
+    "environment": [
+      {
+          "name": "ApplicationVersion",
+          "value": "${var.application_version}"
+      }
+    ],
+    "logConfiguration": { 
+       "logDriver": "awslogs",
+       "options": { 
+          "awslogs-create-group": "true",
+          "awslogs-group" : "ecs/fargate/ditto-vault",
+          "awslogs-region": "eu-west-2",
+          "awslogs-stream-prefix": "vault"
+      }
+    },
+    "requiresCompatibilities": [
+        "FARGATE"
+    ]
+  }
+]
+DEFINITION
+}
 ```
 
 ### Wrap Up 
