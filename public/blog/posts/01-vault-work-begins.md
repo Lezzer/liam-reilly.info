@@ -58,4 +58,4 @@ I will be explaining the terraform in the next post, which will be up in the nex
 
 Stay tuned for part 3!
 
-[Part One](/blog/00-ten-percent-time-intro.md)
+[Part One](/blog/00-ten-percent-time-intro.md) <----> [Part Three](/blog/02-getting-vault-into-fargate.md)

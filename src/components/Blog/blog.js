@@ -8,6 +8,15 @@ export default class Blog extends Component
             <div>
                 <PostNotification
                     month={"Dec"}
+                    day={"17"}
+                    title={"Getting the Vault API into Fargate!"}
+                    content={[
+                        "When I sat down to start building the Vault project there was a number of places I could have chosen to start. I could have started building the fancy React based UI, or I could have started by writing Terraform and putting some resources in my AWS account, things such as a DynamoDB table, or an S3 bucket."
+                    ]}
+                    link={"/blog/02-getting-vault-into-fargate.md"}
+                />
+                <PostNotification
+                    month={"Dec"}
                     day={"11"}
                     title={"Work on the Vault has begun!"}
                     content={[

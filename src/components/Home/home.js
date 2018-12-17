@@ -8,6 +8,16 @@ export default class Home extends Component
             <div>
                 <Update
                     month={"Dec"}
+                    day={"17"}
+                    title={"The Vault blog series continues with Fargate..."}
+                    content={[
+                        "If you're interested in Terraform and/or Fargate check out the latest blog post now!",
+                    ]}
+                    link={{post_text: "", url: "/blog/02-getting-vault-into-fargate.md", url_text: "Check it out"}}
+                />
+
+                <Update
+                    month={"Dec"}
                     day={"11"}
                     title={"A new blog post has been added..."}
                     content={[

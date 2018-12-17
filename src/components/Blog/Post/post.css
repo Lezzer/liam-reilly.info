@@ -65,9 +65,14 @@
 
 .post code {
     background-color: #F6C6CE;
+    border-radius: 0.2rem;
     font-family: monospace;
     font-size: 1rem;
     width:100%;
+}
+
+.post p code {
+    font-size:1.8rem;
 }
 
 
@@ -176,6 +181,11 @@
         width:100%;
         padding: 0.5rem;
     }
+
+    .post p code {
+        font-size: 1.25rem;
+    }
+
 
     .post blockquote {
         margin-left: 0;
