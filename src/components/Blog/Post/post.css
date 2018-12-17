@@ -67,7 +67,7 @@
     background-color: #F6C6CE;
     border-radius: 0.2rem;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width:100%;
 }
 
@@ -178,7 +178,7 @@
     .post code {
         background-color: #F6C6CE;
         font-family: monospace;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         width:100%;
         padding: 0.5rem;
         line-height: 2rem;
