@@ -446,7 +446,7 @@ resource "aws_ecs_task_definition" "definition" {
        "logDriver": "awslogs",
        "options": { 
           "awslogs-create-group": "true",
-          "awslogs-group" : "ecs/fargate/ditto-vault",
+          "awslogs-group" : "ecs/fargate/vault",
           "awslogs-region": "eu-west-2",
           "awslogs-stream-prefix": "vault"
       }
