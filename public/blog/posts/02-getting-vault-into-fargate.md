@@ -58,21 +58,21 @@ I am going to assume that you already have this in place, and instead just detai
 So first of all we need to be able to reference the existing `private` load balancer. We do this by using a couple of terraform data sources.
 
 ```
-data "aws_alb" "private-lb" {
-  name = "alb-private"
+data "aws_lb" "private-lb" {
+  name = "lb-private"
 }
 
-data "aws_alb_listener" "private" {
+data "aws_lb_listener" "private" {
   load_balancer_arn = "${data.aws_lb.private-lb.arn}"
   port              = 443
 }
 ```
 
-Once we have these, we can create a new `aws_alb_listener_rule` for vault-api.
+Once we have these, we can create a new `aws_lb_listener_rule` for vault-api.
 
 ```
-resource "aws_alb_listener_rule" "vault-api" {
-  listener_arn = "${data.aws_alb_listener.private.arn}"
+resource "aws_lb_listener_rule" "vault-api" {
+  listener_arn = "${data.aws_lb_listener.private.arn}"
   priority     = 1
 
   action {
@@ -92,7 +92,7 @@ resource "aws_alb_listener_rule" "vault-api" {
 Next we create the `aws_alb_target_group` that the `aws_alb_listener_rule` is pointing to. Notice the target type is `ip` rather than `instance`. This might catch you out if you're also coming from the classic EC2/ECS world. Remember we have no fixed instances as such to route to in the world of Fargate.
 
 ```
-resource "aws_alb_target_group" "vault-api" {
+resource "aws_lb_target_group" "vault-api" {
   name        = "vault-api"
   protocol    = "HTTP"
   port        = "80"
@@ -270,13 +270,13 @@ EOF
 }
 ```
 
-Note: There is another new data source here. `data.aws_caller_identity.current.account_id`.
+Note: There is another new data source here `data.aws_caller_identity.current.account_id` which can be found like this:
 
 ```
 data "aws_caller_identity" "current" {}
 ```
 
-That's all there is to it. It just gives you access to things such as the AWS AccountId.
+That's all there is to it. It just gives you access details of your AWS account such as AccountId.
 
 #### ECR Repository 
 
@@ -404,7 +404,7 @@ Cloudwatch logging is different here too, compared to EC2 ECS. Pay attention to 
 resource "aws_ecs_task_definition" "definition" {
   family                   = "vault-api"
   network_mode             = "awsvpc"
-  cpu                      = "256
+  cpu                      = 256
   memory                   = 512
   requires_compatibilities = ["FARGATE"]
   execution_role_arn       = "${aws_iam_role.vault-role.arn}" 
@@ -416,8 +416,8 @@ resource "aws_ecs_task_definition" "definition" {
     "name": "${var.app_name}",
     "image": "${data.aws_caller_identity.current.account_id}.dkr.ecr.eu-west-2.amazonaws.com/vault-api:${var.application_version}",
     "essential": true,
-    "cpu": ${var.cpu},
-    "memory": ${var.memory},
+    "cpu": 256,
+    "memory": 512,
     "networkMode": "awsvpc",
     "networkConfiguration": {
       "awsvpcConfiguration": {
@@ -432,7 +432,7 @@ resource "aws_ecs_task_definition" "definition" {
     }, 
     "portMappings": [
       {
-        "containerPort": ${var.container_port},
+        "containerPort": 80,
         "protocol": "tcp"
       }
     ],
