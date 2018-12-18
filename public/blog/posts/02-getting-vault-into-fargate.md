@@ -95,13 +95,13 @@ Next we create the `aws_lb_target_group` that the `aws_lb_listener_rule` is poin
 resource "aws_lb_target_group" "vault-api" {
   name        = "vault-api"
   protocol    = "HTTP"
-  port        = "80"
+  port        = 80
   vpc_id      = "${data.aws_vpc.vpc.id}"
   target_type = "ip"
 
   health_check {
     path                = "/vault"
-    port                = "80"
+    port                = 80
     healthy_threshold   = 5
     unhealthy_threshold = 2
     timeout             = 5
