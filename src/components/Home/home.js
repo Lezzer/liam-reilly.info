@@ -8,6 +8,16 @@ export default class Home extends Component
             <div>
                 <Update
                     month={"Dec"}
+                    day={"24"}
+                    title={"Christmas is coming!"}
+                    content={[
+                        "Merry Christmas one and all!",
+                    ]}
+                    link={{post_text: "", url: "", url_text: ""}}
+                />
+                
+                <Update
+                    month={"Dec"}
                     day={"17"}
                     title={"The Vault blog series continues with Fargate..."}
                     content={[
