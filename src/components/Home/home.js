@@ -7,6 +7,17 @@ export default class Home extends Component
         return (
             <div>
                 <Update
+                    month={"Jan"}
+                    day={"17"}
+                    title={"Resume page updated."}
+                    content={[
+                        "It's been a busy and productive 7 months at Ditto Music, so I thought I best put a few updates on my CV to show the things I've been up to.",
+                        "Just in case you haven't been reading my blog :)",
+                    ]}
+                    link={{post_text: "", url: "", url_text: ""}}
+                />
+
+                <Update
                     month={"Dec"}
                     day={"24"}
                     title={"Christmas is coming!"}
