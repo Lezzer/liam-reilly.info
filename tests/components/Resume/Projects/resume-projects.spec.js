@@ -19,7 +19,7 @@ describe('the resume projects component renders as expected', () => {
 
     it('contains 3x font awesome icons', () => {
         const items = wrapper.find(FontAwesomeIcon);
-        expect(items.length).toBe(3);
+        expect(items.length).toBe(4);
     });
     
     it('contains an unordered list with 3x zuto projects', () => {

@@ -16,8 +16,6 @@ export default class ResumeStatement extends Component{
                 <p>A natural software leader, I've repeatedly led my teams when building new solutions which utilise a wide variety of the cutting edge technologies available in todays modern, mobile-first, cloud-first world. </p>
 
                 <p>Whilst my primary focus is the technology.  I have proven myself capable of identifying and introducing new non-technical concepts, that have formed key business strategies.</p>
-
-                <p>Having just accepted a new Principal Engineer role I am excited to lead and inspire my new team to build exciting new solutions, utilising blockchain, cloud, serverless and container based technologies.</p>
             </div>
         );
     }

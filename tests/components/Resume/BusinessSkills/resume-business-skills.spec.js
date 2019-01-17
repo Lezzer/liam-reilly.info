@@ -21,6 +21,6 @@ describe('the resume statement component renders as expected', () => {
 
         const ul = wrapper.find(".business_skills ul");
         const items = ul.children().length;
-        expect(items).toBe(5);
+        expect(items).toBe(6);
     });
 });
