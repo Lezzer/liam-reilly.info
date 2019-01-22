@@ -7,6 +7,15 @@ export default class Blog extends Component
         return (
             <div>
                 <PostNotification
+                    month={"Jan"}
+                    day={"22"}
+                    title={"CQRS and the API"}
+                    content={[
+                        "..."
+                    ]}
+                    link={"/blog/03-cqrs-and-the-api.md"}
+                />
+                <PostNotification
                     month={"Dec"}
                     day={"17"}
                     title={"Getting the Vault API into Fargate!"}

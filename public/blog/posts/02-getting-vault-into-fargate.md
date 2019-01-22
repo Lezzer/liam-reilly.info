@@ -467,5 +467,3 @@ As you can see there is quite a bit of terraform to write, just to set up the in
 As I mentioned in the previous post, I have built a pipeline that utilises a couple of shell scripts in order to build/run the Vault API solution.  
 
 This creates the Dockerfile and runs the terraform and deploys the code to Fargate.  But I will go through this more in a subsequent post. 
-
-[Part Two](/blog/01-vault-work-begins.md)

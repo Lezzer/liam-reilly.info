@@ -57,5 +57,3 @@ I also now have a master key in KMS which will be used to encrypt and decrypt do
 I will be explaining the terraform in the next post, which will be up in the next couple of days. I was going to include it in this post but this has gotten longer than I expected and there is quite a bit to go through.
 
 Stay tuned for part 3!
-
-[Part One](/blog/00-ten-percent-time-intro.md) <----> [Part Three](/blog/02-getting-vault-into-fargate.md)
