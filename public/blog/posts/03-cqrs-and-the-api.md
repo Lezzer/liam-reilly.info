@@ -54,7 +54,7 @@ public interface ICommand
 }
 ```
 
-The code below is the complete code for our command.  You may be wondering where its method is? How does it do anything. This can't be any use surely? 
+The code below is the complete code for our command.
 
 ```
 public class SaveObjectToS3Command : ICommand
@@ -68,6 +68,8 @@ public class SaveObjectToS3Command : ICommand
     public byte[] Bytes { get; set; }
 }
 ```
+
+You may be wondering where its method is? How does it do anything. This can't be any use surely? 
 
 As I said earlier, in CQRS each command is just the meta data needed to signal intent.  A command is then passed to a `CommandHandler` which will do the work.
 
@@ -178,7 +180,7 @@ Note:  The key is generated here in the API and returned to the user.  The key c
 
 Implementing other commands is done in the exact same way.  The Vault API needs a 2nd `Command`. Enter `DeleteObjectFromS3Command`.
 
-This command is even simpler.  The user only needs to pass an 'ObjectId' for the object (file) that we stored in S3.
+This command is even simpler.  The user only needs to pass an `ObjectId` for the object (file) which we stored in S3.
 
 ```
 public class DeleteObjectFromS3Command : Command
@@ -187,7 +189,7 @@ public class DeleteObjectFromS3Command : Command
 }
 ```
 
-Then the handler much like in the previous example looks like this.
+Then the `CommandHandler` much like in the previous example looks like this.
 
 ```
 public class DeleteObjectFromS3CommandHandler : ICommandHandler<DeleteObjectFromS3Command>
@@ -219,7 +221,7 @@ public class DeleteObjectFromS3CommandHandler : ICommandHandler<DeleteObjectFrom
 }
 ```
 
-The calling code in the API again is very similar.  We update the `ObjectController` to inject a second `CommandHandler` implementation and call again from a new `Action`.
+The calling code in the API is again very similar.  We update the `ObjectController` to inject a second `CommandHandler` implementation and call again from a new `Action`.
 
 ```
 [HttpDelete("delete/{objectId}")]
@@ -236,8 +238,8 @@ public async Task<IActionResult> DeleteObject(string objectId)
 }
 ```
 
-This action is much simpler.  We create the command, pass the `id` of the object we need deleting, and await that to happen.  Then return a `200 OK` response again.
+This action compared to the previous action is much simpler.  We create the command, pass the `id` of the object we request be deleted, and await that to happen.  Then finally we return a `200 OK` response again.
 
 ### Wrapping Up
 
-In this post you've learned the basics of `CQRS`.  Or at least the `Command` side of `CQRS` and how I've chosen to use it to store and to delete objects in S3.  In the next post which should be up shortly.  I will introduce more commands which will store meta documents in DynamoDB, and also show you how I implemented some `Query` objects that aid these commands and allow a user to find things they are entitled to see.
+In this post you've learned the basics of `CQRS`.  Or at least the `Command` side of `CQRS` and how I've chosen to use it to store and to delete objects in S3.  In the next post, which should be posted up shortly.  I will introduce more commands which will store meta documents in DynamoDB, and also show you how I implemented some `Query` objects that aid these commands and allow a user to find things they are entitled to see.
