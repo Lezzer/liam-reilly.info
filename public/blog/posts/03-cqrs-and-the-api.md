@@ -6,7 +6,7 @@
 
 In the previous post I concentrated on the resources required to host an API in [Fargate](https://aws.amazon.com/fargate/) on [AWS](https://aws.amazon.com/), and the [Terraform](https://www.terraform.io/) needed to create those resources.  
 
-By the end of the post, whilst I had an API running inside of Fargate, accessible via a load balancer at `/vault`.  The API didn't yet do anything useful. 
+By the end of the post, whilst I had an API running inside of Fargate, accessible via a load balancer at `/vault` the API didn't yet do anything useful. 
 
 So when I next sat down to work on Vault I decided to concentrate on implementing the API.
 
@@ -24,19 +24,19 @@ DynamoDB is a great NoSQL product provided by Amazon.  Using this I could easily
 
 ### CQRS
 
-As I thought about the way in which the user would interact with the API, it was clear that the UX would be very task oriented.  The user uploads a file, the user deletes a file etc. Those are very clearly commands which the user performs.  
+As I thought about the way in which the user would interact with the API, it was obvious that the UX would be very task oriented.  The user uploads a file, the user deletes a file etc. Those are very clearly commands which the user performs.  
 
 Another use case for the API is to query/view/retrieve objects, which could be used to populate the UI for example.  This is very clearly a query or a series of queries.
 
 One pattern I've used before and really like for a number of reasons is [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation).
 
-Whilst this pattern can be extremely complex and very hard to grok overall.  In its most basic form it can be very simple to understand and to start using. 
+Whilst this pattern can be extremely complex and very hard to grok overall, in its most basic form it can be very simple to understand and to start using. 
 
-The very clear segregation of commands and queries gives a very clear distinction across your code base and makes your code very self documenting. It's easy to see just from the file structure which classes will perform an action that does something (a command), and which classes will return something (a query).
+The very distinct segregation of commands and queries, combined with the right folder structure across your code base, makes your code very self documenting. It's easy to see just from the file structure which classes will perform an action that does something (a command), and which classes will return something (a query).
 
 When I started to implement the API I chose to do it very incrementally.  The first objective was to store a file in S3.  The accompanying document relating to this in DynamoDB could come later.
 
-So my first command was clear. `SaveObjectToS3Command`. 
+So the first `Command` I wanted to implement was `SaveObjectToS3Command`. 
 
 In CQRS a command object is very deliberately named in a way to indicate it's intent.  A command itself is nothing more than a meta data representation of intent. Commands can be serialised and logged which can give a number of benefits not possible with other patterns.  It makes debugging issues easier, and you can see the exact content of commands the user tried to execute.  Also in the event of a system failure `Commands` can be replayed later.  Entire systems can be restored from scratch to a good working state just by replaying command histories!
 
