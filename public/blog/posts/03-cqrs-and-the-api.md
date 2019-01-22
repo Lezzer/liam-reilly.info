@@ -176,7 +176,7 @@ Note:  The key is generated here in the API and returned to the user.  The key c
 
 ### Other Commands
 
-Implementing other commands done in the exact same way.  The Vault API needs a 2nd `Command`. Enter `DeleteObjectFromS3Command`.
+Implementing other commands is done in the exact same way.  The Vault API needs a 2nd `Command`. Enter `DeleteObjectFromS3Command`.
 
 This command is even simpler.  The user only needs to pass an 'ObjectId' for the object (file) that we stored in S3.
 
