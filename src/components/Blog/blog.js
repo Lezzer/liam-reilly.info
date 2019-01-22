@@ -11,7 +11,9 @@ export default class Blog extends Component
                     day={"22"}
                     title={"CQRS and the API"}
                     content={[
-                        "..."
+                        "In the previous post I concentrated on the resources required to host an API in Fargate in AWS, and the Terraform needed to create those resources.",
+                        "By the end of the post, whilst I had an API running inside of Fargate, accessible via a load balancer at /vault.  The API didn't do anything useful yet.",
+                        "So when I next sat down to work on Vault I decided to concentrate on implementing the API."
                     ]}
                     link={"/blog/03-cqrs-and-the-api.md"}
                 />
