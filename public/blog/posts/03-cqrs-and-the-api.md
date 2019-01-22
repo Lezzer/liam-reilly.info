@@ -183,8 +183,11 @@ Implementing other commands is done in the exact same way.  The Vault API needs 
 This command is even simpler.  The user only needs to pass an `ObjectId` for the object (file) which we stored in S3.
 
 ```
-public class DeleteObjectFromS3Command : Command
+public class DeleteObjectFromS3Command : ICommand
 {
+    public Guid CommandId => Guid.NewGuid();
+    public string CommandName => "DeleteObjectFromS3Command"
+    
     public string ObjectId { get; set; }
 }
 ```
