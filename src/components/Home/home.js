@@ -8,6 +8,16 @@ export default class Home extends Component
             <div>
                 <Update
                     month={"Jan"}
+                    day={"22"}
+                    title={"Blog updated!  CQRS and the API."}
+                    content={[
+                        "New blog post about the Vault API and CQRS!"
+                    ]}
+                    link={{post_text: "", url: "/blog/03-cqrs-and-the-api.md", url_text: "Check it out"}}
+                />
+                
+                <Update
+                    month={"Jan"}
                     day={"17"}
                     title={"Resume page updated."}
                     content={[
