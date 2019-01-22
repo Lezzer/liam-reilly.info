@@ -4,9 +4,9 @@
 
 * * *
 
-In the previous post I concentrated on the resources required to host an API in [Fargate](https://aws.amazon.com/fargate/) in [AWS](https://aws.amazon.com/), and the [Terraform](https://www.terraform.io/) needed to create those resources.  
+In the previous post I concentrated on the resources required to host an API in [Fargate](https://aws.amazon.com/fargate/) on [AWS](https://aws.amazon.com/), and the [Terraform](https://www.terraform.io/) needed to create those resources.  
 
-By the end of the post, whilst I had an API running inside of Fargate, accessible via a load balancer at `/vault`.  The API didn't do anything useful yet. 
+By the end of the post, whilst I had an API running inside of Fargate, accessible via a load balancer at `/vault`.  The API didn't yet do anything useful. 
 
 So when I next sat down to work on Vault I decided to concentrate on implementing the API.
 
@@ -30,7 +30,7 @@ Another use case for the API is to query/view/retrieve objects, which could be u
 
 One pattern I've used before and really like for a number of reasons is [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation).
 
-Whilst this pattern can be extremely complex and very hard to grok overall.  In it's most basic form it can be very simple to understand and to start using. 
+Whilst this pattern can be extremely complex and very hard to grok overall.  In its most basic form it can be very simple to understand and to start using. 
 
 The very clear segregation of commands and queries gives a very clear distinction across your code base and makes your code very self documenting. It's easy to see just from the file structure which classes will perform an action that does something (a command), and which classes will return something (a query).
 
@@ -38,7 +38,7 @@ When I started to implement the API I chose to do it very incrementally.  The fi
 
 So my first command was clear. `SaveObjectToS3Command`. 
 
-In CQRS a command object is very deliberately named in a way to indicate it's intent.  A command itself is nothing more than a meta data representation of intent. Commands can be serialised and logged which can give a number of benefits not possibly with other patterns.  It makes debugging issues easier, and you can see the exact content of commands the user tried to execute.  Also in the event of a system failure `Commands` can be replayed later.  Entire systems can be restored from scratch to a good working state just by replaying command histories!
+In CQRS a command object is very deliberately named in a way to indicate it's intent.  A command itself is nothing more than a meta data representation of intent. Commands can be serialised and logged which can give a number of benefits not possible with other patterns.  It makes debugging issues easier, and you can see the exact content of commands the user tried to execute.  Also in the event of a system failure `Commands` can be replayed later.  Entire systems can be restored from scratch to a good working state just by replaying command histories!
 
 But I digress, let's focus on the basic implementation for Vault. 
 
@@ -54,6 +54,7 @@ public interface ICommand
 }
 ```
 
+The code below is the complete code for our command.  You may be wondering where its method is? How does it do anything. This can't be any use surely? 
 
 ```
 public class SaveObjectToS3Command : ICommand
@@ -68,11 +69,9 @@ public class SaveObjectToS3Command : ICommand
 }
 ```
 
-The above code is the complete code for our command.  You may be wondering where it's method is? How does it do anything. This can't be any use surely? 
-
 As I said earlier, in CQRS each command is just the meta data needed to signal intent.  A command is then passed to a `CommandHandler` which will do the work.
 
-I have the following `Interface` for handling commands:
+I have the following `Interface` for handling commands
 
 ```
 public interface ICommandHandler<in TCommand> where TCommand: ICommand
@@ -81,7 +80,7 @@ public interface ICommandHandler<in TCommand> where TCommand: ICommand
 }
 ```
 
-Which allows us to configure [IoC](https://en.wikipedia.org/wiki/Inversion_of_control) in a way that every concrete implementation of `ICommand` is handled by a specific `CommandHandler`.
+which allows us to configure [IoC](https://en.wikipedia.org/wiki/Inversion_of_control) in a way that every concrete implementation of `ICommand` is handled by a specific `CommandHandler`.
 
 Our `SaveObjectToS3CommandHandler` looks (roughly) like this:
 
@@ -123,6 +122,8 @@ public class SaveObjectToS3CommandHandler: ICommandHandler<SaveObjectToS3Command
 ```
 
 This takes the meta data from the `Command` creates an S3 `PutObjectRequest`, and awaits the operation to complete.  I have removed additional code such as logging/error handling for the purposes of this post.
+
+Note:  You will notice the `IS3ClientFactory`.  This is just a simple factory object that creates a client that can talk to S3 using my S3 credentials.
 
 
 ### API
@@ -239,4 +240,4 @@ This action is much simpler.  We create the command, pass the `id` of the object
 
 ### Wrapping Up
 
-In this post you've learned the basics of `CQRS` and how I've chosen to use it to store and to delete objects in S3.  In the next post which should be up shortly.  I will introduce more commands which will store meta documents in DynamoDB.
+In this post you've learned the basics of `CQRS`.  Or at least the `Command` side of `CQRS` and how I've chosen to use it to store and to delete objects in S3.  In the next post which should be up shortly.  I will introduce more commands which will store meta documents in DynamoDB, and also show you how I implemented some `Query` objects that aid these commands and allow a user to find things they are entitled to see.
