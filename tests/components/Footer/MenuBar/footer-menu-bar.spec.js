@@ -89,23 +89,5 @@ describe('the menu renders as expected', () => {
         const homeProps = home.props();
         expect(homeProps.children.props.children).toBe(expectedUri);
     });
-
-    it('the fifth link points to gitub', () => {
-        const expectedUri = 'https://github.com/liam-reilly/';
-        const menu = wrapper.find('ul');
-        const home = menu.childAt(4);
-
-        const homeProps = home.props();
-        expect(homeProps.children.props.to).toBe(expectedUri);
-    });
-
-    it('the fifth link points says github', () => {
-        const expectedUri = 'github';
-        const menu = wrapper.find('ul');
-        const home = menu.childAt(4);
-
-        const homeProps = home.props();
-        expect(homeProps.children.props.children).toBe(expectedUri);
-    });
 });
 
