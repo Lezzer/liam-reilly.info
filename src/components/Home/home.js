@@ -8,6 +8,16 @@ export default class Home extends Component
             <div>
                 <Update
                     month={"Jan"}
+                    day={"29"}
+                    title={"Blog updated!  CQRS and the API continued!"}
+                    content={[
+                        "New blog post covering the Query side of CQRS, with some more Commands and a bit of Terraform to boot!"
+                    ]}
+                    link={{post_text: "", url: "/blog/04-cqrs-and-the-api-continued.md", url_text: "Check it out"}}
+                />
+                
+                <Update
+                    month={"Jan"}
                     day={"22"}
                     title={"Blog updated!  CQRS and the API."}
                     content={[

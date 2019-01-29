@@ -8,6 +8,16 @@ export default class Blog extends Component
             <div>
                 <PostNotification
                     month={"Jan"}
+                    day={"28"}
+                    title={"CQRS and the API continued"}
+                    content={[
+                        "In the previous post I talked about the CQRS design pattern, and demonstrated a couple of Commands that I had implemented in the Vault API.",
+                        "In this post I will add a couple of additional Commands but I will also show you how Queries work too.  I will end on a bit of Terraform for good measure :)"
+                    ]}
+                    link={"/blog/04-cqrs-and-the-api-continued.md"}
+                />
+                <PostNotification
+                    month={"Jan"}
                     day={"22"}
                     title={"CQRS and the API"}
                     content={[

@@ -24,15 +24,15 @@ DynamoDB is a great NoSQL product provided by Amazon.  Using this I could easily
 
 ### CQRS
 
-As I thought about the way in which the user would interact with the API, it was obvious that the UX would be very task oriented.  The user uploads a file, the user deletes a file etc. Those are very clearly commands which the user performs.  
+As I thought about the way in which the user would interact with the API, it was obvious that the UX would be very task oriented.  The user uploads a file, the user deletes a file etc. Those are very clearly `Commands` which the user performs.  
 
-Another use case for the API is to query/view/retrieve objects, which could be used to populate the UI for example.  This is very clearly a query or a series of queries.
+Another use case for the API is to query/view/retrieve objects, which could be used to populate the UI for example.  This is very clearly a `Query` or a series of queries.
 
 One pattern I've used before and really like for a number of reasons is [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation).
 
 Whilst this pattern can be extremely complex and very hard to grok overall, in its most basic form it can be very simple to understand and to start using. 
 
-The very distinct segregation of commands and queries, combined with the right folder structure across your code base, makes your code very self documenting. It's easy to see just from the file structure which classes will perform an action that does something (a command), and which classes will return something (a query).
+The very distinct segregation of `commands` and `queries`, combined with the right folder structure across your code base, makes your code very self documenting. It's easy to see just from the file structure which classes will perform an action that does something (a command), and which classes will return something (a query).
 
 When I started to implement the API I chose to do it very incrementally.  The first objective was to store a file in S3.  The accompanying document relating to this in DynamoDB could come later.
 
