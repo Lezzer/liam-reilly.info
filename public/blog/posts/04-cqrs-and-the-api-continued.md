@@ -362,7 +362,7 @@ So how did we get our DynamoDB table and our S3 bucket in the first place?  The 
 
 #### S3 Bucket
 
-The S3 bucket is created with the following simple piece of Terraform.  This will create a bucket, denying all access by default.  It will also enable serverside encryption at rest, using the key were created in KMS.
+The S3 bucket is created with the following simple piece of Terraform.  This will create a bucket, denying all access by default.  It will also enable server side encryption at rest, using the key we created in KMS.
 
 ```
 resource "aws_s3_bucket" "vault-bucket" {
@@ -406,9 +406,11 @@ EOF
 
 #### DynamoDB Table
 
-The Terraform below will create a table for our `Documents`.  I defined the hash_key as `id` and the range_key as `document_owner`.  This essentially means we have a composite key of id+document_owner.
+The Terraform below will create a table for our `Documents`.  I defined the hash_key as `id` and the range_key as `document_owner`.  This essentially means we have a composite key of `id`+`document_owner`.
 
-The problem with this is I cannot query documents because I do not know the `id` values. I need to query based on document_owner.  This is why I also created a `global_secondary_index`.  This uses `document_owner` as the hash_key.  This allowed me to search all documents that belong to the `document_owner` I supply.
+The problem with this is I cannot query documents because I do not know the `id` values. I need to query based on `document_owner` alone.  
+
+This is why I also created a `global_secondary_index`.  This uses `document_owner` as the hash_key.  This allowed me to search all documents that belong to the `document_owner` I supply.
 
 This is perfect for our `GetDocumentsFromDynamoDbByUserQuery` query.
 
@@ -467,6 +469,6 @@ One final note.  Server side encryption is also enabled on the DynamoDB table. H
 
 ### Wrapping Up
 
-That's been quite a post and covers quite a log of the API so far.  I will write one more post on the API next time.  Just putting it all together. So you can see the complete workings of the API.  
+That's been quite a post and covers quite a lot of the API so far.  I will write one more post on the API next time.  Just putting it all together. So you can see the complete workings of the API.  
 
 If you've been paying attention you will have noticed that I have not yet shown you how to delete an `Object` and associated `Documents`.  This uses a combination of `Queries` & `Commands`.
