@@ -8,7 +8,7 @@ export default class Blog extends Component
             <div>
                 <PostNotification
                     month={"Jan"}
-                    day={"28"}
+                    day={"29"}
                     title={"CQRS and the API continued"}
                     content={[
                         "In the previous post I talked about the CQRS design pattern, and demonstrated a couple of Commands that I had implemented in the Vault API.",
