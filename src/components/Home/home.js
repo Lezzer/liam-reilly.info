@@ -7,6 +7,20 @@ export default class Home extends Component
         return (
             <div>
                 <Update
+                    month={"Jul"}
+                    day={"4"}
+                    title={"Apologies. Big changes. Very busy!"}
+                    content={[
+                        "So a lot's happened since my last update.  I decided to leave the world of full time employment and start on my own adventure!",
+                        "So back in February I decided to set up my own company - Alchemist Labs.",
+                        "As you might expect this has kept me extremely busy and my Vault project fell to the back of my priorities list :(",
+                        "It is still a product I want to use personally though so I will finish it eventually and write up the final blog pieces to complete the series.",
+                        "If you read this please check out my company website and reach out if you think we could work together!"
+                    ]}
+                    link={{post_text: "You can find Alchemist Labs ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
+                />
+                
+                <Update
                     month={"Jan"}
                     day={"29"}
                     title={"Blog updated!  CQRS and the API continued!"}
