@@ -1,42 +1,42 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
-  build:
-    working_directory: ~/code/
+  terraform-review:
+    working_directory: ~/build
+
     docker:
-      - image: circleci/node:10.12.0
+      - image: hashicorp/terraform:latest
+
     steps:
       - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: update-npm
-          command: sudo npm i       
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          name: terraform init
+          command: terraform init
+          working_directory: ~/build/deploy/terraform/eu-west-1
+
       - run:
-          name: generate zip file variable name
-          command: |
-            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_SHA1}.zip' >> $BASH_ENV
-            source $BASH_ENV
-      - run: echo ${ZIP_FILE_NAME}
-      - run: 
-          name: build the code 
-          command: npm run build
-      - run:
-          name: create project zip
-          command: zip -r9 ${ZIP_FILE_NAME} ./dist/ ./package.json ./package-lock.json
+          name: terraform plan
+          command: sh ./terraform-plan.sh
+          working_directory: ~/build/deploy/scripts
+
       - persist_to_workspace:
-          root: /home/circleci/code
+          root: /root/build
           paths:
             - ./
-  test:
+
+  terraform-apply:
+    working_directory: /home/circleci/terraform/deploy/scripts
+
+    docker:
+      - image: hashicorp/terraform:latest
+
+    steps:
+      - attach_workspace:
+          at: /home/circleci/terraform
+      - run:
+          name: apply terraform
+          command: sh ./terraform-apply.sh
+
+  deploy-site:
     working_directory: ~/code/
     docker:
       - image: circleci/node:10.12.0
@@ -45,54 +45,32 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-      - run: sudo npm i
+      - run:
+          name: update-npm
+          command: sudo npm i
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npm run tests
-             
-  deploy:
-    docker:
-      - image: circleci/python:jessie-node
-      
-    working_directory: ~/code/
-    steps:
-      - attach_workspace:
-          at: /home/circleci/code
       - run:
-          name: generate zip file variable name
-          command: |
-            echo 'export ZIP_FILE_NAME=liam-reilly.info-${CIRCLE_SHA1}.zip' >> $BASH_ENV
-            echo 'export SOURCE_LABEL=liam-reilly.info-source-${CIRCLE_SHA1}' >> $BASH_ENV
-            source $BASH_ENV
-      - run: echo ${ZIP_FILE_NAME}          
-      - run: echo ${SOURCE_LABEL}          
-      - run:
-          name: install awscli
-          command: sudo pip install awscli
-      - run:
-          name: deploy to S3
-          command: aws s3 cp ${ZIP_FILE_NAME} s3://elasticbeanstalk-eu-west-2-701350138046/${ZIP_FILE_NAME}
-      - run:
-          name: create application version
-          command: aws elasticbeanstalk create-application-version --application-name "liam.reilly-info" --version-label ${SOURCE_LABEL} --source-bundle S3Bucket="elasticbeanstalk-eu-west-2-701350138046",S3Key="${ZIP_FILE_NAME}" --region "eu-west-2"
-      - run:
-          name: deploy new version
-          command: aws elasticbeanstalk update-environment --application-name "liam.reilly-info" --environment-name "liam-reilly-info" --version-label ${SOURCE_LABEL} --region "eu-west-2"
+          name: package and deploy
+          command: sh ./deploy/scripts/deploy.sh ${CIRCLE_SHA1}
+
+      - persist_to_workspace:
+          root: /home/circleci/code
+          paths:
+            - ./
+
 workflows:
   version: 2
-  build_test_deploy:
+  review_apply:
     jobs:
-      - build
-      - test
+      - terraform-review
       - hold:
           type: approval
           requires:
-            - build
-            - test
-      - deploy:
+            - terraform-review
+      - terraform-apply:
           requires:
             - hold
-
-
+      - deploy-site
