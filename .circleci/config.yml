@@ -95,9 +95,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: build the code
-          command: npm run build
-      - run:
           name: install awscli
           command: sudo pip install awscli
       - run:
