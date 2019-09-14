@@ -140,5 +140,5 @@ workflows:
           requires:
             - terraform-review
       - terraform-apply:
-          - requires:
-              - hold-terraform
+          requires:
+            - hold-terraform
