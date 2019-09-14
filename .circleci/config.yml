@@ -133,12 +133,6 @@ workflows:
             - build
             - test
       - terraform-review
-      - review:
-          type: approval
-          requires:
-            - build
-            - test
-            - terraform-review
-#        - terraform-apply:
-#            requires:
-#              - hold
+  terraform:
+    jobs:
+      - terraform-review
