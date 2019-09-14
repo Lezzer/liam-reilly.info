@@ -142,4 +142,6 @@ workflows:
       - terraform-apply:
           requires:
             - hold-terraform
-      - deploy-site
+      - deploy-site:
+          requires:
+            - terraform-apply
