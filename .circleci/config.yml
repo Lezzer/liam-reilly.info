@@ -132,9 +132,9 @@ workflows:
           requires:
             - build
             - test
-#      - terraform-review:
-#          - requires:
-#              - hold-code
+      - terraform-review:
+          - requires:
+              - hold-code
 #      - hold:
 #          type: approval
 #          requires:
