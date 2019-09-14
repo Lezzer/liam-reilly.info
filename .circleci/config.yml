@@ -116,18 +116,12 @@ workflows:
           requires:
             - build
             - test
-  review_apply:
-    jobs:
       - terraform-review
       - hold:
           type: approval
           requires:
             - terraform-review
-      - terraform-apply:
-          requires:
-            - hold
-  deploy_code:
-      jobs:
-        deploy-site:
-          requires:
-            - terraform-apply
+        - terraform-apply:
+            requires:
+              - hold
+      - deploy-site
