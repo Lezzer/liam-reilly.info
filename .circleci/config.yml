@@ -110,9 +110,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: package
-          command: sh ./deploy/scripts/package.sh ${CIRCLE_SHA1}
-      - run:
           name: deploy
           command: sh ./deploy/scripts/deploy.sh ${CIRCLE_SHA1}
 
