@@ -135,3 +135,10 @@ workflows:
       - terraform-review:
           requires:
             - hold-code
+      - hold-terraform:
+          type: approval
+          requires:
+            - terraform-review
+      - terraform-apply:
+          - requires:
+              - hold-terraform
