@@ -98,6 +98,9 @@ jobs:
           name: build the code
           command: npm run build
       - run:
+          name: install awscli
+          command: sudo pip install awscli
+      - run:
           name: deploy
           command: sh ./deploy/scripts/deploy.sh ${CIRCLE_SHA1}
 
