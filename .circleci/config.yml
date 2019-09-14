@@ -132,7 +132,6 @@ workflows:
           requires:
             - build
             - test
-      - terraform-review
-  terraform:
-    jobs:
-      - terraform-review
+      - terraform-review:
+          requires:
+            - hold-code
