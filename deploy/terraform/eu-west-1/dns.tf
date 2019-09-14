@@ -1,9 +1,6 @@
-resource "aws_route53_zone" "hosted_zone" {
-  name = var.dns_zone
-}
 
 resource "aws_route53_record" "website_record" {
-  zone_id = aws_route53_zone.hosted_zone.zone_id
+  zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
   name    = var.dns_zone
   type    = "A"
 
@@ -15,7 +12,7 @@ resource "aws_route53_record" "website_record" {
 }
 
 resource "aws_route53_record" "www_website_record" {
-  zone_id = aws_route53_zone.hosted_zone.zone_id
+  zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
   name    = "www.${var.dns_zone}"
   type    = "A"
 
@@ -27,7 +24,7 @@ resource "aws_route53_record" "www_website_record" {
 }
 
 resource "aws_route53_record" "naked_redirect_record" {
-  zone_id = aws_route53_zone.hosted_zone.zone_id
+  zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
   name    = "@"
   type    = "A"
   ttl     = 300
@@ -41,7 +38,7 @@ resource "aws_route53_record" "naked_redirect_record" {
 }
 
 resource "aws_route53_record" "email_record" {
-  zone_id = aws_route53_zone.hosted_zone.zone_id
+  zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
   name    = var.dns_zone
   type    = "MX"
   ttl     = 300
