@@ -4,8 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import Home from "../Home/home";
 import Resume from "../Resume/resume";
 import Contact from "../Contact/contact";
-import Blog from "../Blog/blog";
-import Post from "../Blog/Post/post";
 import NotFound from "../NotFound/not-found";
 
 export default class Content extends Component
@@ -16,8 +14,6 @@ export default class Content extends Component
                 <Switch>
                     <Route exact={true} path={'/'} component={Home} />
                     <Route path={'/resume/'} component={Resume} />
-                    <Route path={'/blog/:post'} component={Post} />
-                    <Route exact={true} path={'/blog/'} component={Blog} />
                     <Route path={'/contact/'} component={Contact} />
                     <Route component={NotFound} />
                 </Switch>

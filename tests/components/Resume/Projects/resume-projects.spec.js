@@ -9,7 +9,6 @@ describe('the resume projects component renders as expected', () => {
 
     const wrapper = shallow(<ResumeProjects/>);
 
-
     it('renders without crashing', () => expect(wrapper.length).toBe(1));
 
     it('contains a header', () => {
@@ -17,11 +16,17 @@ describe('the resume projects component renders as expected', () => {
         expect(header.length).toBe(1);
     });
 
-    it('contains 3x font awesome icons', () => {
+    it('contains 5x font awesome icons', () => {
         const items = wrapper.find(FontAwesomeIcon);
-        expect(items.length).toBe(4);
+        expect(items.length).toBe(5);
     });
-    
+
+    it('contains an unordered list with 1x alchemist projects', () => {
+        const ul = wrapper.find("#alchemist");
+        const items = ul.children().length;
+        expect(items).toBe(1);
+    });
+
     it('contains an unordered list with 3x zuto projects', () => {
         const ul = wrapper.find("#zuto");
         const items = ul.children().length;

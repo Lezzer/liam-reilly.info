@@ -12,10 +12,10 @@ describe('the menu renders as expected', () => {
 
     it('renders without crashing', () => expect(wrapper.length).toBe(1));
 
-    it('it contains 5x links', () => {
+    it('it contains 4x links', () => {
         const menu = wrapper.find('ul');
 
-        expect(menu.children().length).toEqual(5);
+        expect(menu.children().length).toEqual(4);
     });
 
     it('the first link points to home', () => {
@@ -54,37 +54,19 @@ describe('the menu renders as expected', () => {
         expect(homeProps.children.props.children).toBe(expectedUri);
     });
 
-    it('the third link points to blog', () => {
-        const expectedUri = '/blog/';
-        const menu = wrapper.find('ul');
-        const home = menu.childAt(2);
-
-        const homeProps = home.props();
-        expect(homeProps.children.props.to).toBe(expectedUri);
-    });
-
-    it('the third link points says blog', () => {
-        const expectedUri = 'blog';
-        const menu = wrapper.find('ul');
-        const home = menu.childAt(2);
-
-        const homeProps = home.props();
-        expect(homeProps.children.props.children).toBe(expectedUri);
-    });
-
-    it('the fourth link points to contact', () => {
+    it('the third link points to contact', () => {
         const expectedUri = '/contact/';
         const menu = wrapper.find('ul');
-        const home = menu.childAt(3);
+        const home = menu.childAt(2);
 
         const homeProps = home.props();
         expect(homeProps.children.props.to).toBe(expectedUri);
     });
 
-    it('the fourth link points says contact', () => {
+    it('the third link points says contact', () => {
         const expectedUri = 'contact';
         const menu = wrapper.find('ul');
-        const home = menu.childAt(3);
+        const home = menu.childAt(2);
 
         const homeProps = home.props();
         expect(homeProps.children.props.children).toBe(expectedUri);

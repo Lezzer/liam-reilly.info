@@ -4,7 +4,6 @@ import Content from '../../../src/components/MainContent/content';
 import { shallow } from 'enzyme';
 import Home from '../../../src/components/Home/home';
 import Resume from '../../../src/components/Resume/resume';
-import Blog from '../../../src/components/Blog/blog';
 import Contact from '../../../src/components/Contact/contact';
 
 import '../../setup';
@@ -30,7 +29,6 @@ describe('the content section renders as expected', () => {
 
         expect(pathMap['/']).toBe(Home);
         expect(pathMap['/resume/']).toBe(Resume);
-        expect(pathMap['/blog/']).toBe(Blog);
         expect(pathMap['/contact/']).toBe(Contact);
     });
 });

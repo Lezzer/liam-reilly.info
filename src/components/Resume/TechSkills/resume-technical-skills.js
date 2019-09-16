@@ -18,11 +18,11 @@ export default class ResumeTechnicalSkills extends Component{
                     <li>Messaging: <span>SQS, SNS</span></li>
                     <li>Testing: <span>NUnit, Jest, Enzyme, Stubby</span></li>
                     <li>DevOps: <span>Terraform, Docker</span></li>
-                    <li>CI/CD: <span>CircleCI, GoCD</span></li>
+                    <li>CI/CD: <span>CircleCI, GoCD, Jenkins</span></li>
                     <li>Version control: <span>Git</span></li>
                 </ul>
                 
-                <p>** The list above only includes tech used daily in my current role **</p>
+                <p>** The list above is limited to more recently used technologies and is by no means exhaustive**</p>
             </div>
         );
     }

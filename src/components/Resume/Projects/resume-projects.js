@@ -11,6 +11,11 @@ export default class ResumeProjects extends Component{
             <div className={css.projects}>
                 <h2>projects</h2>
 
+                <h3><FontAwesomeIcon icon={faAt} spin={false} className={css.font_awesome_icon}/>Alchemist Labs</h3>
+                <ul id={'alchemist'}>
+                    <li>Digital Transformation:<span>Consulted on Digital Transformation for a large Manchester based e-commerce enterprise. Successfully migrating their mission critical Hybris system from IBM WebSphere and supporting Oracle RAC databases to AWS. This involved over 200 service interfaces and the final solution used just about all that AWS has to offer, from EC2 to Fargate. RDS to Elasticsearch. The enterprise AWS setup involved many different AWS accounts utilising Transit Gateway, and included 5 completely separate environments (dev, qa, sit, preprod, prod).  Built all new CI/CD pipelines on Jenkins to ensure the Java micro services could be tested automatically, and changes could be deployed automatically many times a day without manual intervention.  All AWS infrastructure was created and managed using Terraform to ensure all infrastructure was code and correctly tracked through Git source control (GitLab).</span></li>
+                </ul>
+
                 <h3><FontAwesomeIcon icon={faAt} spin={false} className={css.font_awesome_icon}/>Ditto Music</h3>
                 <ul id={'ditto'}>
                     <li>AWS Infrastructure:<span>Built an entirely new AWS Infrastructure using Terraform.  This included 4x different AWS accounts. Infrastructure, Dev, QA & Prod.  Was responsible for all aspects of the infrastructure and securing all resources, including configurations for both site to site and point to site VPN.</span></li>
@@ -19,7 +24,6 @@ export default class ResumeProjects extends Component{
                     <li>Network Logging and Service Alerting: <span>Built a logging api and supporting package used in all our applications/services to push all log data to Elasticseach.  Then used Cloudwatch Alarms to monitor various metrics wich would raise alarms, publish to SNS and then trigger a series of Lambda functions to push alerts out to various people/places based on severity, including Slack channels/SMS/email.</span></li>
                     <li>Ditto Vault:<span>My 10% time project which allows users to store/retrieve passwords/documents.  The system stored documents in DynamoDb so was queryable in the ReactJS based web front end, and all user documents were stored in S3.  Both DynamoDb and S3 documents/objects were encrypted by KMS.</span></li>
                 </ul>
-
 
                 <h3><FontAwesomeIcon icon={faAt} spin={false} className={css.font_awesome_icon}/>Zuto</h3>
                 <ul id={'zuto'}>
