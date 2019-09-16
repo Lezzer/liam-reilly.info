@@ -84,22 +84,27 @@ jobs:
 
 workflows:
   version: 2
-  build_test:
+  test_terraform_deploy:
     jobs:
       - test
-      - terraform-review
-      - hold-terraform:
+      - hold:
           type: approval
           requires:
             - test
+      - terraform-review:
+          requires:
+            - hold
+      - hold-terraform:
+          type: approval
+          requires:
             - terraform-review
       - terraform-apply:
           requires:
             - hold-terraform
-      - hold-code:
+      - hold-deployment:
           type: approval
           requires:
             - terraform-apply
       - deploy-site:
           requires:
-            - hold-code
+            - hold-deployment
