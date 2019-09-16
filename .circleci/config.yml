@@ -36,30 +36,6 @@ jobs:
           name: apply terraform
           command: sh ./terraform-apply.sh
 
-  build:
-    working_directory: ~/code/
-    docker:
-      - image: circleci/node:10.12.0
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: update-npm
-          command: sudo npm i
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: build the code
-          command: npm run build
-      - persist_to_workspace:
-          root: /home/circleci/code
-          paths:
-            - ./
-
   test:
     working_directory: ~/code/
     docker:
@@ -110,13 +86,11 @@ workflows:
   version: 2
   build_test:
     jobs:
-      - build
       - test
       - terraform-review
       - hold-terraform:
           type: approval
           requires:
-            - build
             - test
             - terraform-review
       - terraform-apply:
