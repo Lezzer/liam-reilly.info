@@ -50,3 +50,13 @@ resource "aws_route53_record" "email_record" {
     "40 ASPMX3.GOOGLEMAIL.COM.",
   ]
 }
+
+resource "aws_route53_record" "keybase" {
+  zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
+  name    = "keybase"
+  type    = "TXT"
+  ttl     = 300
+  records = [
+    "keybase-site-verification=FeXPtFfAAcXVbRhS3cSdTviXK7gyIm9-AMmRU-lecn0"
+  ]
+}
