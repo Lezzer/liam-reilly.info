@@ -53,7 +53,7 @@ resource "aws_route53_record" "email_record" {
 
 resource "aws_route53_record" "keybase" {
   zone_id = data.aws_route53_zone.website_hosted_zone.zone_id
-  name    = ""
+  name    = var.dns_zone
   type    = "TXT"
   ttl     = 300
   records = [
