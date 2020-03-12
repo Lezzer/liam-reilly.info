@@ -18,7 +18,7 @@ export default class Footer extends Component
                     <FooterMenuBar/>
                 </div>
                 <div className={css.copy}>
-                    © Liam Reilly 2019
+                    © Liam Reilly 2020
                 </div>
             </div>
         );
