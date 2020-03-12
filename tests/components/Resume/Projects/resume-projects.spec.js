@@ -21,10 +21,10 @@ describe('the resume projects component renders as expected', () => {
         expect(items.length).toBe(5);
     });
 
-    it('contains an unordered list with 1x alchemist projects', () => {
+    it('contains an unordered list with 4x alchemist projects', () => {
         const ul = wrapper.find("#alchemist");
         const items = ul.children().length;
-        expect(items).toBe(1);
+        expect(items).toBe(4);
     });
 
     it('contains an unordered list with 3x zuto projects', () => {

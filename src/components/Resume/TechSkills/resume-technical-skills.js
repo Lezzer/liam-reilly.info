@@ -11,9 +11,9 @@ export default class ResumeTechnicalSkills extends Component{
                 
                 <ul>
                     <li>Cloud Infrastructure: <span>Amazon Web Services</span></li>
-                    <li>Languages: <span>C# (.NET Core 2.x)</span></li>
-                    <li>Web: <span>React, Redux, GraphQL, Webpack, ES6, ASP.NET MVC, WebAPI</span></li>
-                    <li>Data Stores: <span>Elasticsearch, Elasticache (Redis), DynamoDB, MSSQL/MySQL (Amazon RDS)</span></li>
+                    <li>Languages: <span>C# (.NET Core 3.1)</span></li>
+                    <li>Web: <span>React, NextJS/Gatsby, GraphQL, Webpack, ES6, ASP.NET MVC, WebAPI</span></li>
+                    <li>Data Stores: <span>Elasticsearch, Elasticache (Redis), DynamoDB, MSSQL/MySQL (Amazon RDS), S3</span></li>
                     <li>Serverless: <span>Lambda, Fargate/ECS</span></li>
                     <li>Messaging: <span>SQS, SNS</span></li>
                     <li>Testing: <span>NUnit, Jest, Enzyme, Stubby</span></li>

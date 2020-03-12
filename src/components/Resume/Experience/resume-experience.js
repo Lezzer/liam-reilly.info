@@ -14,7 +14,7 @@ export default class ResumeExperience extends Component{
                     location={"Manchester"}
                     start={"2019"}
                     end={"Present"}
-                    position={"Managing Director"}
+                    position={"Managing Director & Principal Software Engineer"}
                     />
                         
                 <ResumeJobHistoryItem
