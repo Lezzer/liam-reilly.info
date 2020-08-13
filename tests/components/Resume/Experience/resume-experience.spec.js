@@ -17,9 +17,9 @@ describe('the resume statement component renders as expected', () => {
         expect(header.length).toBe(1);
     });
     
-    it('contains 8x job-history-items', () => {
+    it('contains 10x job-history-items', () => {
 
         const items = wrapper.find(ResumeJobHistoryItem).length;
-        expect(items).toBe(9);
+        expect(items).toBe(10);
     });
 });

@@ -15,7 +15,15 @@ export default class ResumeExperience extends Component{
                     start={"2019"}
                     end={"Present"}
                     position={"Managing Director & Principal Software Engineer"}
-                    />
+                />
+
+                <ResumeJobHistoryItem
+                    company={"Aidiation Ltd"}
+                    location={"Abu Dhabi"}
+                    start={"2020"}
+                    end={"Present"}
+                    position={"Co-founder / Director / Principal Cloud/Software Engineer"}
+                />
                         
                 <ResumeJobHistoryItem
                     company={"Ditto Music"}
