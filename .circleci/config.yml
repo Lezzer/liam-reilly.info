@@ -84,7 +84,7 @@ jobs:
 
 workflows:
   version: 2
-  test_terraform_deploy:
+  deploy_website_to_aws:
     jobs:
       - test
       - hold:
