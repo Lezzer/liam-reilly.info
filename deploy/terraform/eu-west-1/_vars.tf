@@ -14,7 +14,7 @@ variable "app_owner" {
 variable "dns_zone" {
   description = "Name of dns zone to create alias in"
   default     = "liam-reilly.info"
-  type        = "string"
+  type        = string
 }
 
 variable "cloudfront_distribution_origin_id" {
