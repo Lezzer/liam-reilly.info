@@ -4,7 +4,7 @@ import { faEnvelope, faPhoneVolume, faLocationArrow } from '@fortawesome/fontawe
 
 import css from './resume-header.css';
 
-export default class ResumeHeader extends Component{
+export default class ResumeHeader extends Component {
     
     render() {
         return (
@@ -15,15 +15,10 @@ export default class ResumeHeader extends Component{
                         hire@liam-reilly.info
                     </span>
 
-                    <span id={"phone"}>
-                        <FontAwesomeIcon icon={faPhoneVolume} />
-                        07802 385 455
-                    </span>
-
                     <span id={"location"} className={css.location}>
                         <FontAwesomeIcon icon={faLocationArrow} />
                         manchester
-                    </span>
+                </span>
                 </div>
             </div>
         );

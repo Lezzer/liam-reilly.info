@@ -23,20 +23,6 @@ describe('the resume header renders as expected', () => {
         expect(props.children[1]).toBe("hire@liam-reilly.info");
     });
 
-
-    it('should contain a phone font awesome icon', () => {
-        const span = wrapper.find("#phone");
-        const props = span.props();
-
-        expect(props.children[0].props.icon.iconName).toBe('phone-volume');
-    });
-    it('should contain a phone span', () => {
-        const span = wrapper.find("#phone");
-        const props = span.props();
-
-        expect(props.children[1]).toBe("07802 385 455");
-    });
-
     it('should contain a location font awesome icon', () => {
         const span = wrapper.find("#location");
         const props = span.props();

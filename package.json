@@ -9,7 +9,8 @@
     "start-dev": "webpack-dev-server --hot --inline",
     "start": "node dist/server.js",
     "go": "npm run build && npm run start",
-    "tests": "jest"
+    "tests": "jest",
+    "watch": "jest --watch"
   },
   "repository": {
     "type": "git",
