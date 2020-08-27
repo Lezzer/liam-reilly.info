@@ -7,33 +7,28 @@ export default class Home extends Component
         return (
             <div>
                 <Update
-                    month={"Sept"}
-                    day={"16"}
-                    title={"Website changes"}
+                    month={"August"}
+                    day={"27"}
+                    title={"Update - Part One"}
                     content={[
-                        "I have decided to remove the blog content from this site.",
-                        "Going forward I shall be producing blog content over on the Alchemist Labs blog.",
-                        "The blog has not launched yet but will be coming in the near future.",
-                        "Owning and running a new business takes all my time now and it no longer makes sense to duplicate my effort.",
-
+                        "It's been a long time since I gave an update on here but things have been going from strength to strength.",
+                        "Around 18 months ago I launched my own company Alchemist Labs which has been my day job ever since.",
+                        "We have a super top-secret new product in the works, and a new website to launch soon.",
+                        "More details to follow..."
                     ]}
                     link={{post_text: "You can find Alchemist Labs ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
                 />
-
                 <Update
-                    month={"Jul"}
-                    day={"4"}
-                    title={"Apologies. Big changes. Very busy!"}
+                    month={"August"}
+                    day={"27"}
+                    title={"Update - Part Two"}
                     content={[
-                        "So a lot's happened since my last update.  I decided to leave the world of full time employment and start on my own adventure!",
-                        "So back in February I decided to set up my own company - Alchemist Labs.",
-                        "As you might expect this has kept me extremely busy and my Vault project fell to the back of my priorities list :(",
-                        "It is still a product I want to use personally though so I will finish it eventually and write up the final blog pieces to complete the series.",
-                        "If you read this please check out my company website and reach out if you think we could work together!"
+                        "Around February this year I co-founded an exciting new global AI company called Aidiation.",
+                        "We are deep into development of our first product right now, and we have some interesting and big ideas to announce soon.",
+                        "More details to follow..."
                     ]}
-                    link={{post_text: "You can find Alchemist Labs ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
+                    link={{post_text: "You can find AIDIATION ", url: "http://www.aidiation.tech/", url_text: "here"}}
                 />
-
             </div>
         );
     }
