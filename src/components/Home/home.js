@@ -16,7 +16,7 @@ export default class Home extends Component
                         "We have a super top-secret new product in the works, and a new website to launch soon.",
                         "More details to follow..."
                     ]}
-                    link={{post_text: "You can find Alchemist Labs ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
+                    link={{post_text: "You can find ALCHEMIST LABS ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
                 />
                 <Update
                     month={"Aug"}
