@@ -7,7 +7,7 @@ export default class Home extends Component
         return (
             <div>
                 <Update
-                    month={"August"}
+                    month={"Aug"}
                     day={"27"}
                     title={"Update - Part One"}
                     content={[
@@ -19,7 +19,7 @@ export default class Home extends Component
                     link={{post_text: "You can find Alchemist Labs ", url: "http://www.alchemistlabs.tech/", url_text: "here"}}
                 />
                 <Update
-                    month={"August"}
+                    month={"Aug"}
                     day={"27"}
                     title={"Update - Part Two"}
                     content={[
