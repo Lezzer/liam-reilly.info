@@ -13,7 +13,6 @@
 .header img {
     height: 8rem;
     border-radius: 1rem;
-    border: #ff0000 solid thin;
     transition: height 1s ease;
     margin-top: .5rem;
 }
