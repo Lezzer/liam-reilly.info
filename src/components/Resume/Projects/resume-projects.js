@@ -37,8 +37,8 @@ export default class ResumeProjects extends Component{
                 
                 <h3><FontAwesomeIcon icon={faAt} spin={false} className={css.font_awesome_icon}/>SoNQ</h3>
                 <ul id={'sonq'}>
-                    <li>CQRS:<span>Rearchitected and replaced the in-house CQRS implementation which I inherited, correctly separating concerns.  The original implementation had commands, command handlers & validation all combined into a single class. Separating these, resulted in a much cleaner, maintainable and true CQRS implementation. Where validation decorators were used to wrap command handlers. This was easily configurable using dependency injection.</span></li>
-                    <li>Routing Slip Saga:<span>Replaced confusing legacy code, which had become a myriad of commands calling commands, with a fully distributed Saga utilising the Routing Slip Pattern.  My implementation supported both RabbitMQ and Azure Service Bus message brokers, and was easily interchangeable using dependency injection.</span></li>
+                    <li>CQRS:<span>Re-architected and correctly implemented the in-house CQRS system which I inherited.</span></li>
+                    <li>Routing Slip Saga:<span>Analysed confusing legacy code which had become a myriad of commands calling commands and replaced with a fully distributed Saga utilising the Routing Slip Pattern.  Supporting both RabbitMQ and Azure Service Bus message brokers based on environment using dependency injection.</span></li>
                     <li>OpenID Connect / OAuth2 Authentication / Authorisation / Single Sign-On: <span>Implemented a centralised OpenID Connect/OAuth2 authentication/authorisation system using IdentityServer.  This replaced the existing bespoke login system used in all web applications. Enabling single sign-on for users using Azure AD/Google/Facebook/Twitter etc. </span></li>
                 </ul>
 

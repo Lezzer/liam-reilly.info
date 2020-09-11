@@ -22,7 +22,7 @@ export default class ResumeExperience extends Component{
                     location={"Abu Dhabi"}
                     start={"2020"}
                     end={"Present"}
-                    position={"Co-founder / Director / Principal Cloud/Software Engineer"}
+                    position={"Co-founder / CTO"}
                 />
                         
                 <ResumeJobHistoryItem
