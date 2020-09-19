@@ -20,6 +20,6 @@ describe('the resume statement component renders as expected', () => {
     it('contains 10x job-history-items', () => {
 
         const items = wrapper.find(ResumeJobHistoryItem).length;
-        expect(items).toBe(10);
+        expect(items).toBe(9);
     });
 });
