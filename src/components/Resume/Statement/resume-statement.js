@@ -15,7 +15,7 @@ export default class ResumeStatement extends Component{
 
                 <p>Analytical, recognising new opportunities, spotting problems and recommending/building software solutions to help streamline business processes to meet business requirements.</p>
 
-                <p>This led to founding Alchemist Labs and co-founding Aidiation Ltd, building new software products and sharing experience to help other companies improve their competitive edge in this new cloud first, mobile first world.</p>
+                <p>This led to founding Alchemist Labs, building new software products and sharing experience to help other companies improve their competitive edge in this new cloud first, mobile first world.</p>
 
             </div>
         );
