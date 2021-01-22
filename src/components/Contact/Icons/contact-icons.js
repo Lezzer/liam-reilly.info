@@ -32,7 +32,7 @@ export default class ContactIcons extends Component
                     </a>
                 </div>
                 <div>
-                    <a href={"https://twitter.com/___lezzer___"} target={"_blank"}>
+                    <a href={"https://twitter.coom/ragingnull"} target={"_blank"}>
                         <div className={css.circle}>
                             <div>
                                 <FontAwesomeIcon icon={faTwitter} spin={false} />
