@@ -10,9 +10,9 @@ export default class FooterMenuBar extends Component
                 <h1>Navigation</h1>
                 <ul>
                     <li><Link to={'/'}>home</Link></li>
-                    <li><Link to={'/resume/'}>resume</Link></li>
-                    <li><Link to={'/contact/'}>contact</Link></li>
-                    <li><a href={'https://github.com/liam-reilly/'} target={'_blank'}>github</a></li>
+                    <li><Link to={'/resume'}>resume</Link></li>
+                    <li><Link to={'/contact'}>contact</Link></li>
+                    <li><a href={'https://github.com/liam-reilly'} target={'_blank'}>github</a></li>
                 </ul>
             </div>
         );

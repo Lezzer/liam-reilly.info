@@ -9,8 +9,8 @@ export default class MenuBar extends Component
             <div className={css.menu_bar}>
                 <ul>
                     <li><Link to={'/'}>home</Link></li>
-                    <li><Link to={'/resume/'}>resume</Link></li>
-                    <li><Link to={'/contact/'}>contact</Link></li>
+                    <li><Link to={'/resume'}>resume</Link></li>
+                    <li><Link to={'/contact'}>contact</Link></li>
                 </ul>
             </div>
         );

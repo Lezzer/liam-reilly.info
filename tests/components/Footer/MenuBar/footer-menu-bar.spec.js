@@ -37,7 +37,7 @@ describe('the menu renders as expected', () => {
     });
 
     it('the second link points to resume', () => {
-        const expectedUri = '/resume/';
+        const expectedUri = '/resume';
         const menu = wrapper.find('ul');
         const home = menu.childAt(1);
 
@@ -55,7 +55,7 @@ describe('the menu renders as expected', () => {
     });
 
     it('the third link points to contact', () => {
-        const expectedUri = '/contact/';
+        const expectedUri = '/contact';
         const menu = wrapper.find('ul');
         const home = menu.childAt(2);
 
