@@ -1,41 +1,11 @@
 {
   "name": "liam-reilly.info",
-  "version": "1.0.0",
-  "description": "Home of Liam Reilly & various tech content",
-  "main": "webpack.config.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start-dev": "webpack-dev-server --hot --inline",
-    "start": "node dist/server.js",
-    "go": "npm run build && npm run start",
-    "tests": "jest",
-    "watch": "jest --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lezzer/liam-reilly.info.git"
-  },
-  "author": "Liam Reilly",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liam-reilly/liam-reilly.info/issues"
-  },
-  "homepage": "https://github.com/liam-reilly/liam-reilly.info#readme",
-  "devDependencies": {
-    "clean-webpack-plugin": "^0.1.19",
-    "copy-webpack-plugin": "^4.5.3",
-    "css-loader": "^1.0.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "expect": "^23.6.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.6.0",
-    "jest-enzyme": "^7.0.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.10.3"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "latest",
@@ -43,40 +13,10 @@
     "@fortawesome/fontawesome-free-solid": "latest",
     "@fortawesome/fontawesome-svg-core": "latest",
     "@fortawesome/react-fontawesome": "latest",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
-    "babel-loader": "7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "express": "^4.16.4",
-    "path": "^0.12.7",
-    "prop-types": "^15.6.2",
-    "raw-loader": "^0.5.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-ga": "^2.5.3",
-    "react-helmet": "^5.2.0",
-    "react-markdown": "^4.0.3",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "react-router-scroll-top": "^0.1.1",
-    "redux": "^4.0.1"
-  },
-  "jest": {
-    "automock": false,
-    "bail": false,
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "tests/**/*.{js,jsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
-    ],
-    "clearMocks": true,
-    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
+    "next": "10.0.5",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
   }
 }
