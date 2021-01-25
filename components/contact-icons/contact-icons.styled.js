@@ -1,15 +1,11 @@
 import styled from "styled-components"
-import { device } from "../../style/device"
 
 const StyledContactIcons = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 5rem;
-
-  @media only screen and ${device.laptop} {
-    flex-direction: row;
-  }
+  max-width: 50rem;
 `
 
 export default StyledContactIcons

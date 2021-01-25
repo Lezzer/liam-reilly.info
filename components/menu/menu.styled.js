@@ -8,12 +8,13 @@ const StyledMenu = styled.ul`
   text-transform: uppercase;
   margin: 1rem;
   padding: 0;
+  height: 2rem;
   
   a {
     font-size: 1.6rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-right: 1px solid ${({theme}) => theme.highlight};
+    border-right: 2px solid ${({theme}) => theme.highlight};
   }
   
   a:last-child {
@@ -21,6 +22,8 @@ const StyledMenu = styled.ul`
   }
 
   @media only screen and ${device.tablet} {
+    height: 3rem;
+
     a {
       font-size: 2.5rem;
     }

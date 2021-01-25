@@ -2,20 +2,20 @@ import styled from "styled-components"
 import {device} from "../../style/device"
 
 const StyledHeader = styled.section`
-    background-color: ${({theme}) => theme.header};
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    grid-area: header;
+  display: grid;
+  grid-area: header;
+  background-color: ${({theme}) => theme.header};
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 
-    img {
-      align-self: center;
-      height: 10rem;
-      border-radius: 1rem;
-      transition: height 1s ease;
-      margin: .5rem;
-    }
+  img {
+    align-self: center;
+    height: 10rem;
+    border-radius: 1rem;
+    transition: height 1s ease;
+    margin: .5rem;
+  }
 
   @media only screen and ${device.laptop} {
     img {

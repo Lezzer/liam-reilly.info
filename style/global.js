@@ -2,17 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   
 body {
-  display: grid;
-  //grid-area: content;
-  height:  100vh;
-  width:  100vw;
-  grid-template-rows:1fr auto 1fr;
-  grid-template-columns: auto;
-  grid-template-areas:
-        "header"
-        "content"
-        "footer";
-  
+  //display: grid;
+  ////grid-area: content;
+  //height:  100vh;
+  //width:  100vw;
+  //grid-template-rows:1fr auto 1fr;
+  //grid-template-columns: auto;
+  //grid-template-areas:
+  //      "header"
+  //      "content"
+  //      "footer";
+  //
   background-color ${({theme}) => theme.background};
   padding: 0;
   margin: 0;

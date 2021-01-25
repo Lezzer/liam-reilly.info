@@ -2,9 +2,10 @@ import styled from "styled-components"
 import { device } from "../../style/device"
 
 const StyledFooter = styled.section`
-  background-color: ${({theme}) => theme.footer};
   display: grid;
   grid-area: footer;
+  
+  background-color: ${({theme}) => theme.footer};
   color: ${({theme}) => theme.alternativeColor};
   
   .footer {

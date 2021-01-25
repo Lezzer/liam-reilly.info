@@ -1,6 +1,6 @@
 import React from "react"
 import StyledContactIcons from "./contact-icons.styled"
-import { faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
+import { faInstagram, faTwitter, faLinkedinIn, faMastodon } from '@fortawesome/fontawesome-free-brands';
 import { faEnvelope } from '@fortawesome/fontawesome-free-solid';
 import ContactIcon from "../contact-icon"
 
@@ -11,9 +11,9 @@ const ContactIcons = () => <StyledContactIcons>
         logo={faLinkedinIn}
     />
     <ContactIcon
-        url={"mailto:website.enquiry@liam-reilly.info"}
-        text={"Email"}
-        logo={faEnvelope}
+        url={"https://fosstodon.org/@liam_reilly"}
+        text={"Fosstodon"}
+        logo={faMastodon}
     />
     <ContactIcon
         url={"https://twitter.com/ragingnull"}
@@ -24,6 +24,11 @@ const ContactIcons = () => <StyledContactIcons>
         url={"https://www.instagram.com/___lezzer___/"}
         text={"Instagram"}
         logo={faInstagram}
+    />
+    <ContactIcon
+        url={"mailto:website.enquiry@liam-reilly.info"}
+        text={"Email"}
+        logo={faEnvelope}
     />
 </StyledContactIcons>
 
