@@ -18,7 +18,7 @@ const IndexPage = () => (
                     month={"Jan"}
                     day={"23"}
                     year={"2021"}
-                    title={"Website rebuild!"}
+                    title={"New Website!"}
                     content={[
                         "After years of neglect I decided to completely rebuild and slightly re-design this website.",
                         "The website has now been re-built using the very latest versions of NextJS & React.",

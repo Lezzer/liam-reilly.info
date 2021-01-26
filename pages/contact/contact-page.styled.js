@@ -29,6 +29,11 @@ const StyledContactPage = styled.section`
   
   @media only screen and ${device.laptop} {
     
+    .icons {
+      padding: 10rem;
+      max-width: 100rem;
+    }
+    
     .title {
       font-size: 5rem;
     }
