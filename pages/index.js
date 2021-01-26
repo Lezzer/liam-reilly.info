@@ -43,7 +43,7 @@ const IndexPage = () => (
                     link={{ post_text: "You can find ALCHEMIST LABS ", url: "http://www.alchemistlabs.tech/", url_text: "here" }}
                 />
             </Page>
-            {/*<Footer/>*/}
+            <Footer/>
         </SiteContainer>
     </React.Fragment>
 );

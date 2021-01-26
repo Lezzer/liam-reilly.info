@@ -3,7 +3,7 @@ import { device } from "../../style/device"
 
 const StyledContactIcon = styled.div`
   svg {
-    font-size: 6rem;
+    font-size: 4.5rem;
     color: ${({theme}) => theme.background};
   }
 
@@ -15,18 +15,17 @@ const StyledContactIcon = styled.div`
     border-radius: 50%;
     background-color: ${({theme}) => theme.alternativeHighlight};
     margin: 1rem 1rem 1rem 1rem;
-    width: 14rem;
-    height: 14rem;
+    width: 8.55rem;
+    height: 8.55rem;
   }
 
   .circle span {
     color: white;
-    font-size: 1.6rem;
-    margin-top: 1rem;
+    font-size: 1.2rem;
   }
   
   .brand_label {
-    padding-top: 1rem;
+    padding-top: .5rem;
   }
 
   @media only screen and ${device.tablet} {
@@ -38,6 +37,15 @@ const StyledContactIcon = styled.div`
       width: 20rem;
       height: 20rem;
     }
+    .circle span {
+      font-size: 2.2rem;
+    }
+
+
+    .brand_label {
+      padding-top: 1.5rem;
+    }
+    
   }
 `
 
