@@ -4,7 +4,7 @@ import { device } from "../../style/device"
 const StyledPost = styled.article`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: 1rem auto 2rem auto;
   padding: 1rem;
   background-color: ${({theme}) => theme.background};
@@ -15,7 +15,7 @@ const StyledPost = styled.article`
   .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between
   }
 
   hr {
@@ -29,6 +29,7 @@ const StyledPost = styled.article`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     align-items: center;
     background-color: ${({theme}) => theme.alternativeHighlight};
     color: ${({theme}) => theme.background};
@@ -38,10 +39,12 @@ const StyledPost = styled.article`
   }
 
   .title {
+    display: flex;
     color: ${({theme}) => theme.alternativeHighlight};
-    margin: 0 0 0 1rem;
-    font-size: 1rem;
-    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: underline;
   }
   
   p {
@@ -70,7 +73,9 @@ const StyledPost = styled.article`
 
   @media only screen and ${device.laptop} {
     font-size: 2rem;
-
+    width: 86%;
+    margin: 1rem auto 2rem auto;
+    
     .calendar {
       min-width: 5rem;
       min-height: 5rem;
@@ -79,7 +84,6 @@ const StyledPost = styled.article`
     
     .title {
       font-size: 3rem;
-      padding: 1rem;
     }
 
     p {
