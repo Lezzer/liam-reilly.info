@@ -5,7 +5,6 @@ const StyledSiteContainer = styled.section`
   height: 100vh;
   width: 100vw;
   grid-template-rows: 1fr auto 1fr;
-  grid-template-columns: auto;
   grid-template-areas:
         "header"
         "content"

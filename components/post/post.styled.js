@@ -1,18 +1,20 @@
 import styled from "styled-components"
 import { device } from "../../style/device"
 
-const StyledPost = styled.div`
+const StyledPost = styled.article`
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 1rem auto 1rem auto;
+  margin: 1rem auto 2rem auto;
   padding: 1rem;
+  background-color: ${({theme}) => theme.background};
+  box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
   border: 2px solid ${({theme}) => theme.alternativeHighlight};
   font-size: 1.4rem;
   
   .header {
-    display: grid;
-    grid-template-columns: 5rem auto 5rem;
+    display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -26,19 +28,20 @@ const StyledPost = styled.div`
   .calendar {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-width: 5rem;
-    min-height: 5rem;
+    align-items: center;
     background-color: ${({theme}) => theme.alternativeHighlight};
     color: ${({theme}) => theme.background};
-    font-size: 1.75rem;
+    font-size: 1rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   .title {
     color: ${({theme}) => theme.alternativeHighlight};
     margin: 0 0 0 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
+    width: 50%;
   }
   
   p {
@@ -65,15 +68,22 @@ const StyledPost = styled.div`
     color: #C21F39;
   }
 
-  @media only screen and ${device.tablet} {
+  @media only screen and ${device.laptop} {
     font-size: 2rem;
+
+    .calendar {
+      min-width: 5rem;
+      min-height: 5rem;
+      font-size: 1.75rem;
+    }
+    
+    .title {
+      font-size: 3rem;
+      padding: 1rem;
+    }
 
     p {
       line-height: 3rem;
-    }
-
-    .title {
-      font-size: 3rem;
     }
     
     .post_link {

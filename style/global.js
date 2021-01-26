@@ -1,23 +1,26 @@
 import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
-  
+
+html { 
+  height: 100%; 
+  width: 100%
+}
+
 body {
-  //display: grid;
-  ////grid-area: content;
-  //height:  100vh;
-  //width:  100vw;
-  //grid-template-rows:1fr auto 1fr;
-  //grid-template-columns: auto;
-  //grid-template-areas:
-  //      "header"
-  //      "content"
-  //      "footer";
-  //
+  min-height: 100%;
+  min-width: 100%;
   background-color ${({theme}) => theme.background};
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  //font-family: Lato Black, Ubuntu, sans-serif;
+}
+
+
+ul {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 
 a {
@@ -31,10 +34,11 @@ a {
 
   
   //@font-face {
-  //  font-family: 'Ubuntu Bold';
+  //  font-family: 'Lato Black';
   //  src: 
-  //    url('/static/fonts/Ubuntu-Bold.ttf') format('truetype'),
+  //    url('/static/fonts/Lato-Black.ttf') format('truetype'),
   //}
+
   //
   //@font-face {
   //  font-family: 'Ubuntu Bold Italic';

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledResumePage = styled.section`
-  background-color: yellow;
+  margin-top: 5rem;
 `
 
 export default StyledResumePage

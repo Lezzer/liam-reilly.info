@@ -12,7 +12,7 @@ const ContactIcons = () => <StyledContactIcons>
     />
     <ContactIcon
         url={"https://fosstodon.org/@liam_reilly"}
-        text={"Fosstodon"}
+        text={"Mastodon"}
         logo={faMastodon}
     />
     <ContactIcon

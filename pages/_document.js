@@ -13,9 +13,9 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta charSet="UTF-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    {/*<meta name="viewport" content="width=device-width, initial-scale=1.0"/>*/}
                     <title>liam-reilly.info</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+                    {/*<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>*/}
                     <meta name="msapplication-TileColor" content="#b91d47"/>
                     <meta name="theme-color" content="#ffffff"/>
                     <meta property="og:image" content="https://www.liam-reilly.info/static/liam-reilly-info.png"/>

@@ -2,9 +2,10 @@ import styled from "styled-components"
 import { device } from "../../style/device"
 
 const StyledContactPage = styled.section`
-  display: grid;
-  grid-area: content;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
+  justify-content: center;
   
   .title {
     text-align: center;

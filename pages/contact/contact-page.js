@@ -3,8 +3,9 @@ import Head from "next/head";
 import Header from "../../components/header"
 import Footer from "../../components/footer"
 import ContactIcons from "../../components/contact-icons"
-import StyledContactPage from "./contact-page.styled"
 import SiteContainer from "../../components/site-container";
+import Page from "../../components/page";
+import StyledContactPage from "./contact-page.styled";
 
 const ContactPage = () => (
     <React.Fragment>
@@ -13,10 +14,12 @@ const ContactPage = () => (
         </Head>
         <SiteContainer>
             <Header/>
-            <StyledContactPage>
-                <h1 className={"title"}>Get in touch</h1>
-                <ContactIcons/>
-            </StyledContactPage>
+            <Page>
+                <StyledContactPage>
+                    <h1 className={"title"}>Get in touch</h1>
+                    <ContactIcons/>
+                </StyledContactPage>
+            </Page>
             <Footer/>
         </SiteContainer>
     </React.Fragment>
