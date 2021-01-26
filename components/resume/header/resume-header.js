@@ -7,7 +7,7 @@ const ResumeHeader = () => <StyledResumeHeader>
         <FontAwesomeIcon icon={faEnvelope} spin={false} />
         hire@liam-reilly.info
     </span>
-    <span>
+    <span className={"location"}>
         <FontAwesomeIcon icon={faLocationArrow} />
         manchester
     </span>

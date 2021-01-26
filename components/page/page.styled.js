@@ -6,7 +6,7 @@ const StyledPage = styled.section`
   grid-area: content;
   
   background-color: ${({theme}) => theme.background};
-  padding: 2rem 1.25rem;
+  padding: .5rem .5rem;
 
 
   @media only screen and ${device.laptop} {

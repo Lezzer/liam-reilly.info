@@ -18,7 +18,7 @@ const ContactPage = () => (
             <Header/>
             <Page>
                 <StyledContactPage>
-                    <h1 className={"title"}>Get in touch</h1>
+                    <h1 className={"title"}>Get in touch!</h1>
 
                     <div className={"icons"}>
                         <ContactIcon

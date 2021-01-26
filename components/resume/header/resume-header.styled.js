@@ -1,32 +1,34 @@
 import styled from "styled-components";
+import {device} from "../../../style/device";
 
 const StyledResumeHeader = styled.section`
-  text-align: center;
-  width: 100%;
-  font-size: 1.1rem;
   font-weight: 300;
 
+  display: flex;
+  justify-content: space-around;
+  
   span {
     font-weight: 200;
+    font-size: 1.2rem;
   }
   
   svg {
-    padding-right: 4px;
+    padding-right: 5px;
   }
   
   .location {
     text-transform: capitalize;
   }
 
-  @media only screen and (min-width: 960px) {
-    font-size: 2rem;
+  @media only screen and ${device.laptop} {
     
     span {
-      padding: 0 2rem;
+      font-size: 2.5rem; 
+      padding: 1rem;
     }
     
     svg {
-      padding-right: 10px;
+      font-size: 2rem;
     }
 
   }

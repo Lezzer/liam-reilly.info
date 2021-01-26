@@ -5,6 +5,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import StyledResumePage from "./resume-page.styled";
 import Resume from "../../components/resume";
+import Page from "../../components/page";
 
 const PageResume = () => (
     <React.Fragment>
@@ -13,9 +14,11 @@ const PageResume = () => (
         </Head>
         <SiteContainer>
             <Header/>
-            <StyledResumePage>
-                <Resume/>
-            </StyledResumePage>
+            <Page>
+                <StyledResumePage>
+                    <Resume/>
+                </StyledResumePage>
+            </Page>
             <Footer/>
         </SiteContainer>
     </React.Fragment>
