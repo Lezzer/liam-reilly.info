@@ -22,6 +22,7 @@ const StyledResumeTechSkills = styled.section`
   ul li {
     font-weight: bold;
     padding-bottom: 1rem;
+    list-style: none;
   }
   
   ul li span {
@@ -39,12 +40,9 @@ const StyledResumeTechSkills = styled.section`
 
     ul {
       font-size: 1.2rem;
-      padding: 0;
-      list-style: none;
     }
 
     ul li {
-      font-weight: bold;
       padding-bottom: 1rem;
     }
 
@@ -55,13 +53,13 @@ const StyledResumeTechSkills = styled.section`
 
     p {
       padding: 0;
+      margin-top: 0;
       font-size: 1rem;
+      font-weight: 500;
     }
-
 
     h2 {
       font-size: 3rem;
-      font-weight: 400;
       margin: 2rem;
     }
   }

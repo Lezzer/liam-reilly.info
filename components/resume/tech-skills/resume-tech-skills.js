@@ -15,7 +15,7 @@ const ResumeTechSkills = () => <StyledResumeTechSkills>
         <li>Dev/Git Ops: <span>Terraform, CircleCI, GitLab, GoCD, ArgoCD, Jenkins</span></li>
     </ul>
 
-    <p>** The list above is limited to more recently used technologies and is by no means exhaustive**</p>
+    <p>** This list is limited to more recently used technologies and is by no means exhaustive. **</p>
 </StyledResumeTechSkills>
 
 export default ResumeTechSkills
