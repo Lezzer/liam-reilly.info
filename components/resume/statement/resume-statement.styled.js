@@ -18,6 +18,10 @@ const StyledResumeStatement = styled.section`
   @media only screen and ${device.laptop} {
     width: 90%;
     
+    p {
+      font-size: 1.4rem;
+    }
+    
     h2 {
       font-size: 3rem;
       font-weight: 400;
