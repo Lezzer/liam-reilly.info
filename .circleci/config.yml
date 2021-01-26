@@ -72,8 +72,6 @@ workflows:
   deploy_website_to_aws:
     jobs:
       - terraform-review:
-          requires:
-            - hold
       - hold-terraform:
           type: approval
           requires:
