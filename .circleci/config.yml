@@ -47,7 +47,7 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: update-npm
-          command: sudo npm i
+          command: npm i
       - save_cache:
           paths:
             - node_modules
