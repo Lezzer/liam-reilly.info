@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+mkdir ./out
 npm run export
 
 # Fix for NextJS not doing relative paths!
