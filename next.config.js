@@ -4,7 +4,7 @@ module.exports = {
         { dev, dir, outDir, distDir, buildId }
     ) {
         return {
-            '/': { page: '/' },
+            '/': { page: '/index' },
             '/resume': { page: '/resume' },
             '/contact': { page: '/contact' }
         }
