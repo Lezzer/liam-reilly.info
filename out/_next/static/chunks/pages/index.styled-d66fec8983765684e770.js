@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[16],{Vfcp:function(n,e,i){"use strict";i.r(e);var _=i("vOnD").c.section.withConfig({displayName:"indexstyled__StyledIndexPage",componentId:"sc-1sjb9lk-0"})([""]);e.default=_},YxDT:function(n,e,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/index.styled",function(){return i("Vfcp")}])}},[["YxDT",0,1,2]]]);
