@@ -29,8 +29,12 @@ const StyledContactPage = styled.section`
   
   @media only screen and ${device.laptop} {
     
+    h1 {
+      margin-bottom: 1rem;
+    }
+    
     .icons {
-      padding: 10rem;
+      padding: 5rem 10rem;
       max-width: 100rem;
     }
     

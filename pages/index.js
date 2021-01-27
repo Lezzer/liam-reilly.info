@@ -16,7 +16,7 @@ const IndexPage = () => (
             <Page>
                 <Post
                     month={"Jan"}
-                    day={"23"}
+                    day={"27"}
                     year={"2021"}
                     title={"New Website!"}
                     content={[
