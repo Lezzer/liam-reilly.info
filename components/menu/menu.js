@@ -5,17 +5,17 @@ import Link from "next/link"
 const Menu = () => <StyledMenu>
     <ul className={"menu"}>
         {/*<li>*/}
-        {/*    <Link href="./">*/}
+        {/*    <Link href="/">*/}
         {/*    <a>home</a>*/}
         {/*    </Link>*/}
         {/*</li>*/}
         {/*<li>*/}
-        {/*    <Link href="./resume">*/}
+        {/*    <Link href="/resume">*/}
         {/*    <a>resume</a>*/}
         {/*    </Link>*/}
         {/*</li>*/}
         {/*<li>*/}
-        {/*    <Link href="./contact">*/}
+        {/*    <Link href="/contact">*/}
         {/*    <a>contact</a>*/}
         {/*    </Link>*/}
         {/*</li>*/}
