@@ -39,7 +39,7 @@ jobs:
   deploy-site:
     working_directory: ~/code/
     docker:
-      - image: circleci/python:jessie-node
+      - image: circleci/python:latest-node
     steps:
       - checkout
       - restore_cache:
