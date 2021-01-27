@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[17],{uOtl:function(n,u,t){"use strict";t.r(u);var _=t("7t1B");t.d(u,"default",(function(){return _.default}))},"ujS+":function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/resume",function(){return t("uOtl")}])}},[["ujS+",0,1,6,2,3,4,5,8]]]);
