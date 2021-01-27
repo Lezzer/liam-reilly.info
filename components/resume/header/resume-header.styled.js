@@ -30,7 +30,6 @@ const StyledResumeHeader = styled.section`
     svg {
       font-size: 2rem;
     }
-
   }
 `
 

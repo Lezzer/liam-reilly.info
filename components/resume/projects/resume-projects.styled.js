@@ -19,12 +19,13 @@ const StyledResumeProjects = styled.section`
     display: flex;
     align-items: center;
     font-size: 1.6rem;
-    margin: 1rem 0 .5rem 0 ;
+    margin: 1rem 0 .5rem 0;
   }
 
   .font_awesome_icon {
     padding-right: .5rem;
     font-size: 2.5rem;
+    color: ${({theme}) => theme.alternativeHighlight};
   }
   
   ul {
@@ -59,7 +60,7 @@ const StyledResumeProjects = styled.section`
     }
 
     ul li {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
 
     ul li span {
@@ -78,6 +79,37 @@ const StyledResumeProjects = styled.section`
       font-size: 3rem;
       margin: 2rem;
     }
+  }
+
+  @media only print {
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0 0;
+    }
+    
+    p {
+      font-size: .75rem;
+      margin: .5rem;
+    }
+
+    ul li {
+      font-size: .75rem;
+      padding-bottom: .55rem;
+    }
+
+    .font_awesome_icon {
+      padding-right: .5rem;
+      font-size: 1.2rem;
+      color: ${({theme}) => theme.foreground};
+    }
+    
   }
 `
 

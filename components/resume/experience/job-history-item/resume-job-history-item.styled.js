@@ -18,7 +18,7 @@ const StyledResumeJobHistoryItem = styled.div`
   }
   
   span {
-    color: ${({theme}) => theme.alternativeHighlight};
+    color: ${({theme}) => theme.footer};
   }
   
   li:after {
@@ -43,6 +43,29 @@ const StyledResumeJobHistoryItem = styled.div`
       content: " // ";
       padding: 1rem;
       font-size: 3rem;
+    }
+
+  }
+
+  @media only print {
+    font-size: .75rem;
+
+    li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+
+    li:after {
+      content: " // ";
+      padding: .5rem;
+      font-size: 1rem;
+      color: ${({theme}) => theme.foreground};
+    }
+
+    span {
+      padding: .5rem 0;
+      color: ${({theme}) => theme.footer};
     }
 
   }

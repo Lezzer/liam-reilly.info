@@ -38,7 +38,15 @@ const StyledResume = styled.article`
       width: 90%;
     }
   }
-  
+
+
+  @media only print {
+
+    hr {
+      margin: .5rem 0 1rem 0;
+    }
+    
+  }
 `
 
 export default StyledResume

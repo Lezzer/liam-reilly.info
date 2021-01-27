@@ -24,6 +24,11 @@ const StyledHeader = styled.section`
       margin: 1.25rem 0 0.8rem 0;
     }
   }
+  
+  @media only print {
+    display: none;
+  }
+  
 `
 
 export default StyledHeader

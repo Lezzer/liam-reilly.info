@@ -10,7 +10,7 @@ import Page from "../../components/page";
 const PageResume = () => (
     <React.Fragment>
         <Head>
-            <title>Resume:  liam-reilly.info</title>
+            <title>Liam Reilly - Resume</title>
         </Head>
         <SiteContainer>
             <Header/>

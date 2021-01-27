@@ -29,6 +29,21 @@ const StyledResumeStatement = styled.section`
     }
   }
   
+  @media only print {
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin: .25rem;
+    }
+    
+    p {
+      font-size: .75rem;
+      margin: .5rem;
+    }
+    
+  }
+  
 `
 
 export default StyledResumeStatement

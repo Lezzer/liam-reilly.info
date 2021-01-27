@@ -13,6 +13,7 @@ export const theme = {
     footer: colors.grey,
     footerCopy: colors.nearlyBlack,
     background: colors.veryWhite,
+    foreground: colors.black,
     highlight: colors.red,
     alternativeColor: colors.silver,
     alternativeHighlight: colors.darkRed,

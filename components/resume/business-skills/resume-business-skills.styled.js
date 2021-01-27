@@ -43,7 +43,7 @@ const StyledResumeBusinessSkills = styled.section`
     }
 
     ul li {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
 
     ul li span {
@@ -61,6 +61,25 @@ const StyledResumeBusinessSkills = styled.section`
     h2 {
       font-size: 3rem;
       margin: 2rem;
+    }
+  }
+
+  @media only print {
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin: .25rem;
+    }
+
+    p {
+      font-size: .75rem;
+      margin: .5rem;
+    }
+
+    ul li {
+      font-size: .75rem;
+      padding-bottom: .4rem;
     }
   }
 `
