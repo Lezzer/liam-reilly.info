@@ -4,10 +4,9 @@ import StyledResumeJobHistoryItem from "./resume-job-history-item.styled";
 const ResumeJobHistoryItem = props => <StyledResumeJobHistoryItem>
     <ul>
         <li>{props.company}</li>
-        <li >{props.location}</li>
-        <li >{props.start} - {props.end}</li>
+        <li>{props.position}</li>
     </ul>
-    <span>{props.position}</span>
+    <span>{props.start} - {props.end}</span>
 </StyledResumeJobHistoryItem>
 
 ResumeJobHistoryItem.propTypes = {

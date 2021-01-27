@@ -64,7 +64,7 @@ const ResumeExperience = () => <StyledResumeExperience>
         company={"Huntleigh Renray"}
         location={"Winsford"}
         start={"2004"}
-        end={"2006"}
+        end={"2005"}
         position={"Software Developer"}
     />
 

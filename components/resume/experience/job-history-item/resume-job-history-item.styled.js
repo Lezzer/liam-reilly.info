@@ -4,17 +4,23 @@ import {device} from "../../../../style/device";
 const StyledResumeJobHistoryItem = styled.div`
   width: 100%;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: normal;
 
   ul {
     padding: 0;
     margin-bottom: .52em;
-    font-weight: bold;
   }
   
   li {
     display: block;
     list-style: none;
+  }
+  
+  li:first-child {
+    font-weight: bold;
+    padding: 0.2rem 0;
+    color: ${({theme}) => theme.alternativeHighlight};
   }
   
   span {
@@ -38,6 +44,10 @@ const StyledResumeJobHistoryItem = styled.div`
     li {
       display: inline;
     }
+
+    li:first-child {
+      color: ${({theme}) => theme.foreground};
+    }
     
     li:after {
       content: " // ";
@@ -54,6 +64,10 @@ const StyledResumeJobHistoryItem = styled.div`
       display: inline;
       margin: 0;
       padding: 0;
+    }
+
+    li:first-child {
+      color: ${({theme}) => theme.foreground};
     }
 
     li:after {

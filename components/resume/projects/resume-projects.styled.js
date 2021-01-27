@@ -25,7 +25,6 @@ const StyledResumeProjects = styled.section`
   .font_awesome_icon {
     padding-right: .5rem;
     font-size: 2.5rem;
-    color: ${({theme}) => theme.alternativeHighlight};
   }
   
   ul {
@@ -55,6 +54,11 @@ const StyledResumeProjects = styled.section`
   @media only screen and ${device.laptop} {
     width: 90%;
 
+    .font_awesome_icon {
+      padding-right: .5rem;
+      font-size: 3.5rem;
+    }
+    
     ul {
       font-size: 1.2rem;
     }
@@ -107,7 +111,6 @@ const StyledResumeProjects = styled.section`
     .font_awesome_icon {
       padding-right: .5rem;
       font-size: 1.2rem;
-      color: ${({theme}) => theme.foreground};
     }
     
   }

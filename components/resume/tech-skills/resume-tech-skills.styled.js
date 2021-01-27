@@ -65,7 +65,6 @@ const StyledResumeTechSkills = styled.section`
   }
 
   @media only print {
-
     h2 {
       font-size: 1.75rem;
       font-weight: 400;
