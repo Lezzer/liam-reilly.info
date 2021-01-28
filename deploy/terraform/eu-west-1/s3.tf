@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = var.dns_zone
+  bucket = var.bucket_name
   acl    = "public-read"
 
   tags = {

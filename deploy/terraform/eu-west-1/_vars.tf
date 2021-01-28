@@ -11,6 +11,12 @@ variable "app_owner" {
   default     = "liam-reilly.info"
 }
 
+variable "bucket_name" {
+  description = "Name S3 bucket for the website files to live in"
+  default     = "liam-reilly.info"
+  type        = string
+}
+
 variable "dns_zone" {
   description = "Name of dns zone to create alias in"
   default     = "liam-reilly.info"
