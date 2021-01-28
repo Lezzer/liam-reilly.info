@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../../components/header"
-import Footer from "../../components/footer"
-import SiteContainer from "../../components/site-container";
-import Page from "../../components/page";
-import StyledContactPage from "./contact-page.styled";
-import ContactIcon from "../../components/contact-icon";
+import Header from "../components/header"
+import Footer from "../components/footer"
+import SiteContainer from "../components/site-container";
+import Page from "../components/page";
+import StyledContactPage from "./contact.styled";
+import ContactIcon from "../components/contact-icon";
 import {faInstagram, faLinkedinIn, faMastodon, faTwitter} from "@fortawesome/fontawesome-free-brands";
 import {faEnvelope} from "@fortawesome/fontawesome-free-solid";
 

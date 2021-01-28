@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { device } from "../../style/device"
+import { device } from "../style/device"
 
 const StyledContactPage = styled.section`
   display: flex;
