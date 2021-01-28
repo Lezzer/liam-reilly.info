@@ -6,6 +6,11 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = local.origin_domain_name
     origin_id   = var.cloudfront_distribution_origin_id
+
+    s3_origin_config {
+
+      origin_access_identity = ""
+    }
   }
 
   aliases = [
