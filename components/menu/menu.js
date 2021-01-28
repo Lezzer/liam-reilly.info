@@ -24,26 +24,6 @@ const Menu = () => <StyledMenu>
                 <a>github</a>
             </Link>
         </li>
-        {/*<li>*/}
-        {/*    /!*<Link href="/">*!/*/}
-        {/*        <a href={"./index.html"}>home</a>*/}
-        {/*    /!*</Link>*!/*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*    /!*<Link href="/resume">*!/*/}
-        {/*        <a href={"./resume.html"}>resume</a>*/}
-        {/*    /!*</Link>*!/*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*    /!*<Link href="/contact">*!/*/}
-        {/*        <a href={"./contact.html"}>contact</a>*/}
-        {/*    /!*</Link>*!/*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*    <Link href="https://github.com/liam-reilly" target={'_blank'}>*/}
-        {/*        <a>github</a>*/}
-        {/*    </Link>*/}
-        {/*</li>*/}
     </ul>
 </StyledMenu>
 
