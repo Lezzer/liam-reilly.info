@@ -7,8 +7,6 @@ resource "aws_s3_bucket" "website_bucket" {
     Environment = terraform.workspace
   }
 
-  policy = data.aws_iam_policy_document.s3_policy.json
-
   website {
     index_document = "index.html"
     error_document = "index.html"
