@@ -13,7 +13,6 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta charSet="UTF-8"/>
-                    <title>liam-reilly.info</title>
                     <meta name="msapplication-TileColor" content="#b91d47"/>
                     <meta name="theme-color" content="#ffffff"/>
                     <meta property="og:image" content="https://www.liam-reilly.info/static/liam-reilly-info.png"/>
