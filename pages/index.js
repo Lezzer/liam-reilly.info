@@ -6,7 +6,7 @@ import Post from "../components/post"
 import SiteContainer from "../components/site-container";
 import Page from "../components/page";
 
-const IndexPage = () => (
+const Index = () => (
     <React.Fragment>
         <Head>
             <title>liam-reilly.info</title>
@@ -48,4 +48,4 @@ const IndexPage = () => (
     </React.Fragment>
 );
 
-export default IndexPage;
+export default Index;

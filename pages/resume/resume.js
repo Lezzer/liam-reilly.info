@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import Resume from "../components/resume";
 import Page from "../components/page";
 
-const ResumePage = () => (
+const Index = () => (
     <React.Fragment>
         <Head>
             <title>Liam Reilly - Resume</title>
@@ -21,5 +21,4 @@ const ResumePage = () => (
     </React.Fragment>
 );
 
-
-export default ResumePage
+export default Index

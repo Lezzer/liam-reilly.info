@@ -3,6 +3,7 @@ const colors = {
     nearlyBlack: '#1c1c1c',
     grey:  '#33333C',
     silver: '#B1B1B1',
+    invisiSilver: 'rgba(0,0,0,0.075)',
     veryWhite: '#ffffff',
     red: '#ff0000',
     darkRed: '#C21F39'
@@ -17,4 +18,5 @@ export const theme = {
     highlight: colors.red,
     alternativeColor: colors.silver,
     alternativeHighlight: colors.darkRed,
+    printSeparator: colors.invisiSilver
 };

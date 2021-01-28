@@ -9,7 +9,7 @@ import ContactIcon from "../components/contact-icon";
 import {faInstagram, faLinkedinIn, faMastodon, faTwitter} from "@fortawesome/fontawesome-free-brands";
 import {faEnvelope} from "@fortawesome/fontawesome-free-solid";
 
-const ContactPage = () => (
+const Index = () => (
     <React.Fragment>
         <Head>
             <title>Contact Me:  liam-reilly.info</title>
@@ -54,4 +54,4 @@ const ContactPage = () => (
     </React.Fragment>
 );
 
-export default ContactPage;
+export default Index;

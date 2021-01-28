@@ -16,8 +16,8 @@ const StyledResume = styled.article`
 
   hr {
     display: block;
-    border: 0 solid #000;
-    border-bottom: 1px solid rgba(0,0,0,0.075);
+    border: 0 solid ${({theme}) => theme.footer};
+    border-bottom: 1px solid ${({theme}) => theme.alternativeHighlight};
     margin: 1.25rem 0;
     width: 100%;
   }
@@ -33,7 +33,6 @@ const StyledResume = styled.article`
     }
 
     hr {
-      border-bottom: 1px solid rgba(0,0,0,0.075);
       margin: 1.25rem 0 1rem 0;
       width: 90%;
     }
@@ -44,6 +43,7 @@ const StyledResume = styled.article`
 
     hr {
       margin: .5rem 0 1rem 0;
+      border-bottom: 1px solid ${({theme}) => theme.printSeparator};
     }
     
   }

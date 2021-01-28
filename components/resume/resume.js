@@ -25,7 +25,6 @@ const Resume = () => <StyledResume>
     <hr/>
 
     <ResumeExperience/>
-    <hr/>
 </StyledResume>
 
 export default Resume
