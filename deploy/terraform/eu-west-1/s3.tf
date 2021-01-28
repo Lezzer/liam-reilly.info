@@ -11,27 +11,7 @@ resource "aws_s3_bucket" "website_bucket" {
 
   website {
     index_document = "index.html"
-    error_document = "error.html"
-
-    routing_rules = <<EOF
-[{
-    "Condition": {
-        "KeyPrefixEquals": "resume/"
-    },
-    "Redirect": {
-        "ReplaceKeyPrefixWith": "/"
-    }
-},
-{
-    "Condition": {
-        "KeyPrefixEquals": "contact/"
-    },
-    "Redirect": {
-        "ReplaceKeyPrefixWith": "/"
-    }
-}
-]
-EOF
+    error_document = "index.html"
   }
 }
 
@@ -45,7 +25,10 @@ data "aws_iam_policy_document" "bucket_policy" {
       identifiers = ["*"]
     }
 
-    actions   = ["s3:GetObject"]
+    actions   = [
+      "s3:GetObject",
+      "s3:GetObjectVersion"
+    ]
     resources = ["arn:aws:s3:::${var.dns_zone}/*"]
   }
 }
