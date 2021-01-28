@@ -2,14 +2,17 @@ locals {
   origin_domain_name = "${var.bucket_name}.s3.${var.aws_region}.amazonaws.com"
 }
 
+resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
+  comment = "Cloudfront access identity for liam-reilly.info S3 bucket"
+}
+
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = local.origin_domain_name
     origin_id   = var.cloudfront_distribution_origin_id
 
     s3_origin_config {
-
-      origin_access_identity = ""
+      origin_access_identity = aws_cloudfront_origin_access_identity.origin_access_identity.cloudfront_access_identity_path
     }
   }
 
@@ -22,7 +25,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   viewer_certificate {
     acm_certificate_arn      = aws_acm_certificate_validation.cert.certificate_arn
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1.2_2018"
+    minimum_protocol_version = "TLSv1.2_2019"
   }
 
   custom_error_response {

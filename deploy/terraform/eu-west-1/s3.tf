@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "website_bucket" {
     Environment = terraform.workspace
   }
 
-  policy = data.aws_iam_policy_document.bucket_policy.json
+  policy = data.aws_iam_policy_document.s3_policy.json
 
   website {
     index_document = "index.html"
@@ -15,20 +15,19 @@ resource "aws_s3_bucket" "website_bucket" {
   }
 }
 
-data "aws_iam_policy_document" "bucket_policy" {
+data "aws_iam_policy_document" "s3_policy" {
   statement {
-    sid    = "Allow-Web-Access"
-    effect = "Allow"
+    actions   = ["s3:GetObject"]
+    resources = ["${aws_s3_bucket.website_bucket.arn}/*"]
 
     principals {
       type        = "AWS"
-      identifiers = ["*"]
+      identifiers = [aws_cloudfront_origin_access_identity.origin_access_identity.iam_arn]
     }
-
-    actions   = [
-      "s3:GetObject",
-      "s3:GetObjectVersion"
-    ]
-    resources = ["arn:aws:s3:::${var.dns_zone}/*"]
   }
+}
+
+resource "aws_s3_bucket_policy" "bucket_policy" {
+  bucket = aws_s3_bucket.website_bucket.id
+  policy = data.aws_iam_policy_document.s3_policy.json
 }
