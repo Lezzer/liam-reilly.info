@@ -1,6 +1,6 @@
 locals {
   origin_domain_name = "${var.bucket_name}.s3.${var.aws_region}.amazonaws.com"
-  s3_website_endpoint = "http://${var.bucket_name}.s3-website-${var.aws_region}.amazonaws.com"
+  s3_website_endpoint = "${var.bucket_name}.s3-website-${var.aws_region}.amazonaws.com"
 }
 
 resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
