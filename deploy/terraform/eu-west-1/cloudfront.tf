@@ -1,6 +1,7 @@
 locals {
   origin_domain_name = "${var.bucket_name}.s3.${var.aws_region}.amazonaws.com"
   s3_website_endpoint = "${var.bucket_name}.s3-website.amazonaws.com"
+  origin_id = "S3-Website-${var.bucket_name}.s3-website.amazonaws.com"
 }
 
 resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
@@ -10,7 +11,7 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = local.s3_website_endpoint
-    origin_id   = var.cloudfront_distribution_origin_id
+    origin_id   = local.origin_id
 
     s3_origin_config {
       origin_access_identity = aws_cloudfront_origin_access_identity.origin_access_identity.cloudfront_access_identity_path
