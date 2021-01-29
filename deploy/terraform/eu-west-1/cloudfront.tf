@@ -8,7 +8,7 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name = var.cloudfront_distribution_origin_id
+    domain_name = local.origin_domain_name
     origin_id   = var.cloudfront_distribution_origin_id
 
     s3_origin_config {
