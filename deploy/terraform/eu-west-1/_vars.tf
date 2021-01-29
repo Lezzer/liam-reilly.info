@@ -19,5 +19,5 @@ variable "dns_zone" {
 
 variable "cloudfront_distribution_origin_id" {
   description = "Name of the cloudfront distribution"
-  default     = "liam-reilly.info"
+  default     = "https://www.liam-reilly.info"
 }
