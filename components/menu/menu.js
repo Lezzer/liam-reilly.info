@@ -20,6 +20,11 @@ const Menu = () => <StyledMenu>
             </Link>
         </li>
         <li>
+            <Link href="/books" as="/books">
+                <a>books</a>
+            </Link>
+        </li>
+        <li>
             <Link href="https://github.com/liam-reilly" target={'_blank'}>
                 <a>github</a>
             </Link>
