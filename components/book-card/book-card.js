@@ -22,7 +22,7 @@ BookCard.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-    isbn: PropTypes.string.isRequired,
+    isbn: PropTypes.number.isRequired,
 }
 
 export default BookCard

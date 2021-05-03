@@ -13,7 +13,6 @@ const BookListStyled = styled.ul`
 const BookRowStyled = styled.div`
     display: grid;
     grid-template-areas: 
-            "year . month"
             "card card card";
   
   @media only screen and ${device.tablet} {
@@ -23,25 +22,8 @@ const BookRowStyled = styled.div`
   
 `
 
-const TimelineYearStyled = styled.h1`
-  grid-area: year;
-
-  font-size: 2.5rem;
-  text-align: center;
-`
-
-const TimelineMonthStyled = styled.h1`
-  grid-area: month;
-  
-  font-size: 2.5rem;
-  text-align: center;
-  text-transform: uppercase;
-`
-
 export {
     BookTimelineStyled,
     BookListStyled,
-    BookRowStyled,
-    TimelineYearStyled,
-    TimelineMonthStyled
+    BookRowStyled
 }

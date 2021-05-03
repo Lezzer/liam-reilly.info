@@ -2,24 +2,26 @@ import { PropTypes } from "prop-types"
 import {
     BookTimelineStyled,
     BookRowStyled,
-    TimelineYearStyled,
-    TimelineMonthStyled, BookListStyled,
+    BookListStyled,
 } from "./book-timeline.styled"
 import BookCard from "../book-card";
 import BookTimelineJoint from "../book-timeline-joint";
+import BookTimelineDate from "../book-timeline-date";
 
 const BookTimeline = ({ previousBooks, currentBook }) => <BookTimelineStyled>
     <BookListStyled>
         {
             previousBooks && previousBooks.map((book, index) => <li key={`${book.title}-${index}`}>
+                <BookTimelineDate
+                    year={book.year}
+                    month={book.month}
+                />
                 <BookRowStyled>
-                    <TimelineYearStyled>{book.year}</TimelineYearStyled>
                     <BookCard
                         title={book.title}
                         author={book.author}
                         isbn={book.isbn}
                         url={book.url}/>
-                    <TimelineMonthStyled>{book.month}</TimelineMonthStyled>
                 </BookRowStyled>
                 <BookTimelineJoint/>
             </li>)
@@ -40,7 +42,7 @@ BookTimeline.propTypes = {
         title: PropTypes.string.isRequired,
         author: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        isbn: PropTypes.string.isRequired,
+        isbn: PropTypes.number.isRequired,
         year: PropTypes.number,
         month: PropTypes.string
     })),
@@ -48,7 +50,7 @@ BookTimeline.propTypes = {
         title: PropTypes.string.isRequired,
         author: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        isbn: PropTypes.string.isRequired,
+        isbn: PropTypes.number.isRequired,
     })
 }
 

@@ -13,7 +13,7 @@ const BookCardStyled = styled.div`
     "author author author"
     "link link link";
   justify-content: center;
-
+  
   :hover {
     animation-duration: 1ms;
     animation-name: grow;
@@ -58,14 +58,18 @@ const TitleStyled = styled.h1`
 const AuthorStyled = styled.h2`
   grid-area: author;
 
-  margin: .5rem;
+  margin: .5rem 0;
   font-size: 1.5rem;
+
+  @media only screen and ${device.tablet} {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
 `
 
 const IsbnStyled = styled.a`
   grid-area: link;
 
-  margin: .5rem;
   font-size: 1.25rem;
 `
 

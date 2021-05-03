@@ -4,7 +4,6 @@ import SiteContainer from "../../components/site-container";
 import Header from "../../components/header";
 import Page from "../../components/page";
 import BookTimeline from "../../components/book-timeline";
-import BookCard from "../../components/book-card";
 
 const Index = () => (
   <React.Fragment>
