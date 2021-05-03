@@ -4,6 +4,7 @@ import SiteContainer from "../../components/site-container";
 import Header from "../../components/header";
 import Page from "../../components/page";
 import BookTimeline from "../../components/book-timeline";
+import BookCard from "../../components/book-card";
 
 const Index = () => (
   <React.Fragment>
@@ -13,7 +14,7 @@ const Index = () => (
       <SiteContainer>
           <Header/>
           <Page>
-            <BookTimeline books={[
+            <BookTimeline previousBooks={[
                 {
                     title: "Behind the Mask",
                     author: "Tyson Fury",
@@ -85,7 +86,14 @@ const Index = () => (
                     isbn: 9781847941497,
                     url: "https://images.isbndb.com/covers/14/97/9781847941497.jpg",
                 }
-            ]}/>
+            ]}
+            currentBook={{
+                title: "12 Rules For life",
+                author: "Jordan B. Peterson",
+                isbn: 9780141988511,
+                url: "https://images.isbndb.com/covers/85/11/9780141988511.jpg"
+            }}
+            />
           </Page>
       </SiteContainer>
   </React.Fragment>

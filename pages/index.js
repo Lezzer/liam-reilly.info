@@ -20,9 +20,7 @@ const Index = () => (
                     year={"2021"}
                     title={"Google... FLoC off!"}
                     content={[
-                        "Just a quick update.  I added the headers to the site which opt out of Google's invasive Federated Learning of Cohorts (FLoC).",
-                        "",
-
+                        "Just a quick update.  I added the headers to the site which opt out of Google's invasive Federated Learning of Cohorts (FLoC)."
                     ]}
                     link={{ post_text: "You can learn more about FLoC ", url: "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea", url_text: "here", external: true }}
                 />
