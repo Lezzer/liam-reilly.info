@@ -16,6 +16,18 @@ const Index = () => (
             <Page>
                 <Post
                     month={"May"}
+                    day={"03"}
+                    year={"2021"}
+                    title={"Google... FLoC off!"}
+                    content={[
+                        "Just a quick update.  I added the headers to the site which opt out of Google's invasive Federated Learning of Cohorts (FLoC).",
+                        "",
+
+                    ]}
+                    link={{ post_text: "You can learn more about FLoc ", url: "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea", url_text: "here", external: true }}
+                />
+                <Post
+                    month={"May"}
                     day={"02"}
                     year={"2021"}
                     title={"Books!"}
@@ -24,10 +36,11 @@ const Index = () => (
                         "I find myself to be much happier and productive when I do this!",
                         "Because I'm reading so many books now I wanted a way to keep track so I figured why not use this website to keep track.",
                         "So today I've added a new books page, with a simple timeline showing the books I've read so far in 2021.",
-                        "It's very simple for now but I might expand it and make it a bit more useful in the future."
+                        "It's very simple for now but I might expand it and make it a bit more useful in the future.",
+                        "Please take a look and get in touch if you have any recommendations or want to talk about something I've read."
 
                     ]}
-                    link={{ post_text: "Please take a look and get in touch if you have any recommendations or simply want to talk about something I've read!"}}
+                    link={{ post_text: "See the books I've been reading ", url: "/books/", url_text: "here" }}
                 />
                 <Post
                     month={"Jan"}

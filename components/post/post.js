@@ -2,17 +2,8 @@ import React from "react"
 import { PropTypes } from "prop-types"
 import StyledPost from "./post.styled"
 
-const Post = ({month, day, year, title, content, link}) => {
-
-    const renderLinkIfSupplied = () => {
-        if (!link) return "";
-
-        return <span className={"post_link"}>{link.post_text}
-                <a href={link.url}>{link.url_text}</a>
-               </span>
-    }
-
-    return <StyledPost>
+const Post = ({month, day, year, title, content, link}) =>
+    <StyledPost>
         <div className={"header"}>
             <div className={"calendar"}>
                 <span>{day}</span>
@@ -29,10 +20,11 @@ const Post = ({month, day, year, title, content, link}) => {
         </div>
         <hr/>
         {
-            renderLinkIfSupplied()
+            link && link.external
+                ? <span className={"post_link"}>{link.post_text}<a href={link.url} target={"_blank"}>{link.url_text}</a></span>
+                : <span className={"post_link"}>{link.post_text}<a href={link.url}>{link.url_text}</a></span>
         }
     </StyledPost>
-}
 
 Post.propTypes = {
     month: PropTypes.string.isRequired,
@@ -42,7 +34,8 @@ Post.propTypes = {
         show: PropTypes.bool,
         post_text: PropTypes.string,
         url: PropTypes.string,
-        url_text: PropTypes.string
+        url_text: PropTypes.string,
+        external: PropTypes.bool
     })
 }
 
