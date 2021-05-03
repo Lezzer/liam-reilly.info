@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import SiteContainer from "../../components/site-container";
-import Header from "../../components/header";
-import Page from "../../components/page";
-import BookTimeline from "../../components/book-timeline";
+import SiteContainer from "../components/site-container";
+import Header from "../components/header";
+import Page from "../components/page";
+import BookTimeline from "../components/book-timeline";
 
 const BooksPage = () => (
   <React.Fragment>
