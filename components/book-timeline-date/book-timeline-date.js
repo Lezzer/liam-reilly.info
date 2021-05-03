@@ -7,11 +7,9 @@ import {
 
 const BookTimelineDate = ({year, month}) => {
 
-    const hideRow = (month === undefined)
+    const hide = (month === undefined)
 
-    console.log(hideRow)
-
-    return <BookTimelineDateStyled test={hideRow} >
+    return <BookTimelineDateStyled hideRow={hide} >
         <TimelineYearStyled>{year}</TimelineYearStyled>
         <TimelineMonthStyled>{month}</TimelineMonthStyled>
     </BookTimelineDateStyled>;

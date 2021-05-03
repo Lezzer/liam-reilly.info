@@ -4,7 +4,7 @@ const BookTimelineDateStyled = styled.div`
   display: grid;
   grid-template-areas: 
             "year month .";
-  height: ${ ({ test }) => test === true ? "0" : "auto"};
+  height: ${ ({ hideRow }) => hideRow === true ? "0" : "auto"};
 `
 
 const TimelineYearStyled = styled.h1`
