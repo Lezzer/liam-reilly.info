@@ -5,7 +5,7 @@ import Header from "../components/header";
 import Page from "../components/page";
 import BookTimeline from "../components/book-timeline";
 
-const BooksPage = () => (
+const Books = () => (
   <React.Fragment>
       <Head>
           <title>The books I've read:  liam-reilly.info</title>
@@ -16,7 +16,7 @@ const BooksPage = () => (
             <BookTimeline books={[
                 {
                     title: "Behind the Mask",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FS%2Faplus-media%2Fvc%2Fbe810dcd-9bd2-40ed-b4b9-560bbaea32de.__CR0%2C0%2C300%2C300_PT0_SX300_V1___.jpg&f=1&nofb=1",
+                    url: "https://images-na.ssl-images-amazon.com/images/I/51QBnqLjv-L._SX323_BO1,204,203,200_.jpg",
                     year: 2021,
                     month: "jan"
                 },
@@ -69,4 +69,4 @@ const BooksPage = () => (
   </React.Fragment>
 );
 
-export default BooksPage
+export default Books

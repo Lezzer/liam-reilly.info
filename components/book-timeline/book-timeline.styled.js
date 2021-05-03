@@ -58,7 +58,6 @@ const TimelineYearStyled = styled.h1`
   font-size: 2.5rem;
   justify-items: center;
 `
-
 const TimelineBookStyled = styled.div`
   grid-area: book;
 
@@ -67,6 +66,11 @@ const TimelineBookStyled = styled.div`
   align-items: center;
   text-align: center;
 `
+
+const TimelineBookImageStyled = styled.img`
+  display: block;
+`
+
 
 const TimelineMonthStyled = styled.h1`
   grid-area: month;
@@ -83,6 +87,7 @@ export {
     SpacerRowStyled,
     TimelineYearStyled,
     TimelineBookStyled,
+    TimelineBookImageStyled,
     TimelineMonthStyled,
     TopLineStyled,
     MiddleLineStyled,

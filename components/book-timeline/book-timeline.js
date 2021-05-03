@@ -6,6 +6,7 @@ import {
     TimelineYearStyled,
     TimelineMonthStyled,
     TimelineBookStyled,
+    TimelineBookImageStyled,
     TopLineStyled,
     MiddleLineStyled,
     BottomLineStyled
@@ -17,7 +18,7 @@ const BookTimeline = ({ books }) => <BookTimelineStyled>
             <BookRowStyled>
                 <TimelineYearStyled>{book.year}</TimelineYearStyled>
                 <TimelineBookStyled>
-                    <img src={book.url}/>
+                    <TimelineBookImageStyled src={book.url}/>
                 </TimelineBookStyled>
                 <TimelineMonthStyled>{book.month}</TimelineMonthStyled>
             </BookRowStyled>
