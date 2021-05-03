@@ -1,8 +1,8 @@
 locals {
-  origin_domain_name = "${var.bucket_name}.s3.${var.aws_region}.amazonaws.com"
+  origin_domain_name           = "${var.bucket_name}.s3.${var.aws_region}.amazonaws.com"
   origin_domain_name_no_region = "${var.bucket_name}.s3.amazonaws.com"
-  s3_website_endpoint = "${var.bucket_name}.s3-website.amazonaws.com"
-  origin_id = "S3-Website-${var.bucket_name}.s3-website.amazonaws.com"
+  s3_website_endpoint          = "${var.bucket_name}.s3-website.amazonaws.com"
+  origin_id                    = "S3-Website-${var.bucket_name}.s3-website.amazonaws.com"
 }
 
 resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
@@ -32,7 +32,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   custom_error_response {
-    error_code = 404
+    error_code    = 404
+    response_code = 200
+    error_caching_min_ttl = 0
+    response_page_path = "/"
   }
 
   enabled = true
