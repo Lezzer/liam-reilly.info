@@ -35,7 +35,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     error_code    = 404
     response_code = 200
     error_caching_min_ttl = 0
-    response_page_path = "/"
+    response_page_path = "/index.html"
   }
 
   enabled = true
