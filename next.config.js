@@ -19,7 +19,8 @@ module.exports = {
         return {
             '/': { page: '/' },
             '/resume': { page: '/resume' },
-            '/contact': { page: '/contact' }
+            '/contact': { page: '/contact' },
+            '/books': { page: '/books' }
         }
     },
     trailingSlash: true

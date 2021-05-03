@@ -2,39 +2,37 @@ import { PropTypes } from "prop-types"
 import {
     BookTimelineStyled,
     BookRowStyled,
-    SpacerRowStyled,
     TimelineYearStyled,
-    TimelineMonthStyled,
-    TimelineBookStyled,
-    TimelineBookImageStyled,
-    TopLineStyled,
-    MiddleLineStyled,
-    BottomLineStyled
+    TimelineMonthStyled, BookListStyled,
 } from "./book-timeline.styled"
+import BookCard from "../book-card";
+import BookTimelineJoint from "../book-timeline-joint";
 
 const BookTimeline = ({ books }) => <BookTimelineStyled>
-    {
-        books && books.map((book, index) => <li key={`${book.title}-${index}`}>
-            <BookRowStyled>
-                <TimelineYearStyled>{book.year}</TimelineYearStyled>
-                <TimelineBookStyled>
-                    <TimelineBookImageStyled src={book.url}/>
-                </TimelineBookStyled>
-                <TimelineMonthStyled>{book.month}</TimelineMonthStyled>
-            </BookRowStyled>
-            <SpacerRowStyled>
-                <TopLineStyled>|</TopLineStyled>
-                <MiddleLineStyled>|</MiddleLineStyled>
-                <BottomLineStyled>|</BottomLineStyled>
-            </SpacerRowStyled>
-        </li>)
-    }
+    <BookListStyled>
+        {
+            books && books.map((book, index) => <li key={`${book.title}-${index}`}>
+                <BookRowStyled>
+                    <TimelineYearStyled>{book.year}</TimelineYearStyled>
+                    <BookCard
+                        title={book.title}
+                        author={book.author}
+                        isbn={book.isbn}
+                        url={book.url}/>
+                    <TimelineMonthStyled>{book.month}</TimelineMonthStyled>
+                </BookRowStyled>
+                <BookTimelineJoint/>
+            </li>)
+        }
+    </BookListStyled>
 </BookTimelineStyled>
 
 BookTimeline.propTypes = {
     books: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
+        isbn: PropTypes.string.isRequired,
         year: PropTypes.number,
         month: PropTypes.string
     }))

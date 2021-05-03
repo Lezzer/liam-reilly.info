@@ -16,52 +16,74 @@ const Index = () => (
             <BookTimeline books={[
                 {
                     title: "Behind the Mask",
-                    url: "https://images-na.ssl-images-amazon.com/images/I/51QBnqLjv-L._SX323_BO1,204,203,200_.jpg",
+                    author: "Tyson Fury",
+                    isbn: 9781529124866,
+                    url: "https://images.isbndb.com/covers/48/66/9781529124866.jpg",
                     year: 2021,
                     month: "jan"
                 },
                 {
                     title: "The Furious Method",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bookstation.ie%2Fwp-content%2Fuploads%2F2020%2F09%2FThe-Furious-Method-Tyson-Fury.jpg&f=1&nofb=1"
+                    author: "Tyson Fury",
+                    isbn: 9781529125924,
+                    url: "https://images.isbndb.com/covers/59/24/9781529125924.jpg"
                 },
                 {
                     title: "The Second Sleep",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.od-cdn.com%2FImageType-400%2F0111-1%2F3E8%2F1E4%2FE4%2F%257B3E81E4E4-44E6-41E2-8767-217ED901406D%257DImg400.jpg&f=1&nofb=1"
+                    author: "Robert Harris",
+                    isbn: 9781787460966,
+                    url: "https://images.isbndb.com/covers/09/66/9781787460966.jpg"
                 },
                 {
                     title: "The 48 Laws of Power",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FI%2F41PfHefFq1L._AA300_.jpg&f=1&nofb=1"
+                    author: "Robert Greene",
+                    isbn: 9781861972781,
+                    url: "https://images.isbndb.com/covers/27/81/9781861972781.jpg"
                 },
                 {
                     title: "The 48 Laws of Power",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FI%2F41PfHefFq1L._AA300_.jpg&f=1&nofb=1",
+                    author: "Robert Greene",
+                    isbn: 9781861972781,
+                    url: "https://images.isbndb.com/covers/27/81/9781861972781.jpg",
                     month: "feb"
                 },
                 {
                     title: "The 48 Laws of Power",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FI%2F41PfHefFq1L._AA300_.jpg&f=1&nofb=1",
+                    author: "Robert Greene",
+                    isbn: 9781861972781,
+                    url: "https://images.isbndb.com/covers/27/81/9781861972781.jpg",
                     month: "mar"
                 },
                 {
                     title: "The 50th Law",
-                    url: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.contentreserve.com%2FImageType-400%2F0293-1%2F28C%2F84C%2FC6%2F%257B28C84CC6-DA2D-47B9-8BD3-3FDF5C549380%257DImg400.jpg&f=1&nofb=1"
+                    author: "50 Cent & Robert Greene",
+                    isbn: 9781846680793,
+                    url: "https://images.isbndb.com/covers/07/93/9781846680793.jpg"
                 },
                 {
                     title: "Be More Pirate",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-r.fishpond.com.au%2F0161%2F541%2F486%2F1231618764%2F6.jpeg&f=1&nofb=1",
+                    author: "Sam Conniff Allende",
+                    isbn: 9780241307885,
+                    url: "https://images.isbndb.com/covers/78/85/9780241307885.jpg",
                     month: "apr"
                 },
                 {
                     title: "The Madness of Crowds",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbilder.akademibokhandeln.se%2Fimages_akb%2F9781635579949_383%2Fthe-madness-of-crowds-gender-race-and-identity&f=1&nofb=1",
+                    author: "Douglas Murray",
+                    isbn: 9781472979575,
+                    url: "https://images.isbndb.com/covers/95/75/9781472979575.jpg",
                 },
                 {
                     title: "Rich Dad Poor Dad",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.od-cdn.com%2FImageType-400%2F6251-1%2F078%2FE22%2FAD%2F%257B078E22AD-42E7-49AD-A10C-2F00195DC889%257DImg400.jpg&f=1&nofb=1",
+                    author: "Robert T. Kiyosaki",
+                    isbn: 9781612680194,
+                    url: "https://images.isbndb.com/covers/28/56/9789463982856.jpg",
                 },
                 {
                     title: "Never Split the Difference",
-                    url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftextbookcentre.com%2Fmedia%2Fcache%2Ffe%2F99%2Ffe992acd5e53f42e1a902b5d3e75f670.jpg&f=1&nofb=1",
+                    author: "Chriss Voss with Tahl Raz",
+                    isbn: 9781847941497,
+                    url: "https://images.isbndb.com/covers/14/97/9781847941497.jpg",
                 }
             ]}/>
           </Page>

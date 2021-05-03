@@ -24,7 +24,7 @@ const Index = () => (
                         "",
 
                     ]}
-                    link={{ post_text: "You can learn more about FLoc ", url: "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea", url_text: "here", external: true }}
+                    link={{ post_text: "You can learn more about FLoC ", url: "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea", url_text: "here", external: true }}
                 />
                 <Post
                     month={"May"}
@@ -32,15 +32,13 @@ const Index = () => (
                     year={"2021"}
                     title={"Books!"}
                     content={[
-                        "I've been reading a lot this year. I like to start each day reading a chapter or two of a book rather than doom scroll social media.",
-                        "I find myself to be much happier and productive when I do this!",
-                        "Because I'm reading so many books now I wanted a way to keep track so I figured why not use this website to keep track.",
-                        "So today I've added a new books page, with a simple timeline showing the books I've read so far in 2021.",
-                        "It's very simple for now but I might expand it and make it a bit more useful in the future.",
+                        "I've been reading a lot this year. I like to start each day reading a chapter or two of a book rather than doom scroll social media. I find myself to be much happier and productive when I do this!",
+                        "Because I'm reading so many books now I wanted a way to keep track so I figured why not use this website to keep track. So today I've added a new books page, with a simple timeline showing the books I've read so far in 2021.",
+                        "It's very simple for now but I plan to expand it and make it a bit more useful in the future.",
                         "Please take a look and get in touch if you have any recommendations or want to talk about something I've read."
 
                     ]}
-                    link={{ post_text: "See the books I've been reading ", url: "/books/", url_text: "here" }}
+                    link={{ post_text: "See the books I've been reading ", url: "/books", url_text: "here" }}
                 />
                 <Post
                     month={"Jan"}
