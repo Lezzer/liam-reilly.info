@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import SiteContainer from "../components/site-container";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import ResumeComponent from "../components/resume";
-import Page from "../components/page";
+import SiteContainer from "../../components/site-container";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import Resume from "../../components/resume";
+import Page from "../../components/page";
 
-const Resume = () => (
+const Index = () => (
     <React.Fragment>
         <Head>
             <title>Liam Reilly - Resume</title>
@@ -14,11 +14,11 @@ const Resume = () => (
         <SiteContainer>
             <Header/>
             <Page>
-                <ResumeComponent/>
+                <Resume/>
             </Page>
             <Footer/>
         </SiteContainer>
     </React.Fragment>
 );
 
-export default Resume
+export default Index

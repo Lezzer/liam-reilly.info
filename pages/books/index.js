@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import SiteContainer from "../components/site-container";
-import Header from "../components/header";
-import Page from "../components/page";
-import BookTimeline from "../components/book-timeline";
+import SiteContainer from "../../components/site-container";
+import Header from "../../components/header";
+import Page from "../../components/page";
+import BookTimeline from "../../components/book-timeline";
 
-const Books = () => (
+const Index = () => (
   <React.Fragment>
       <Head>
           <title>The books I've read:  liam-reilly.info</title>
@@ -69,4 +69,4 @@ const Books = () => (
   </React.Fragment>
 );
 
-export default Books
+export default Index
