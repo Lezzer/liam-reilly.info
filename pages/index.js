@@ -36,7 +36,7 @@ const Index = () => (
                         "Please take a look and get in touch if you have any recommendations or want to talk about something I've read."
 
                     ]}
-                    link={{ post_text: "See the books I've been reading ", url: "/books", url_text: "here" }}
+                    link={{ post_text: ""}}
                 />
                 <Post
                     month={"Jan"}
