@@ -12,10 +12,7 @@ module.exports = {
             },
         ]
     },
-    exportPathMap: async function (
-        defaultPathMap,
-        { dev, dir, outDir, distDir, buildId }
-    ) {
+    exportPathMap: async function () {
         return {
             '/': { page: '/' },
             '/resume': { page: '/resume' },
@@ -23,5 +20,5 @@ module.exports = {
             '/books': { page: '/books' }
         }
     },
-    trailingSlash: false
+    trailingSlash: true
 }
