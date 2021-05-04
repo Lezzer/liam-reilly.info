@@ -81,7 +81,7 @@ const Index = () => (
                 },
                 {
                     title: "Never Split the Difference",
-                    author: "Chriss Voss with Tahl Raz",
+                    author: "Chris Voss with Tahl Raz",
                     isbn: 9781847941497,
                     url: "https://images.isbndb.com/covers/14/97/9781847941497.jpg",
                 }

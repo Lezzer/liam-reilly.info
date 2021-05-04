@@ -5,22 +5,22 @@ import Link from "next/link"
 const Menu = () => <StyledMenu>
     <ul className={"menu"}>
         <li>
-            <Link href="/">
+            <Link href="/" as="/">
             <a>home</a>
             </Link>
         </li>
         <li>
-            <Link href="/resume">
+            <Link href="/resume/" as="/resume/">
             <a>resume</a>
             </Link>
         </li>
         <li>
-            <Link href="/contact">
+            <Link href="/contact/" as="/contact/">
             <a>contact</a>
             </Link>
         </li>
         <li>
-            <Link href="/books">
+            <Link href="/books/" as="/books/">
                 <a>books</a>
             </Link>
         </li>

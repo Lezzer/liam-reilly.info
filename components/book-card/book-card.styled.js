@@ -20,13 +20,13 @@ const BookCardStyled = styled.div`
     background-color: darkgray;
   }
 
-  @media only screen and ${device.tablet} {
+  @media only screen and ${device.laptopL} {
     grid-template-areas: 
     "cover title"
     "cover author"
     "cover link";
     "cover .";
-    grid-template-columns: 12vw 30vw;
+    grid-template-columns: 12rem 30rem;
     grid-template-rows: 4rem 4rem 4rem 6rem;
   }
  `
@@ -37,7 +37,7 @@ const CoverStyled = styled.img`
   height: 15rem;
   padding: .5rem 0;
 
-  @media only screen and ${device.tablet} {
+  @media only screen and ${device.laptopL} {
     height: 18rem;
     padding: 1rem;
   }
@@ -47,30 +47,36 @@ const TitleStyled = styled.h1`
   grid-area: title;
 
   margin: .5rem .5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 
-  @media only screen and ${device.tablet} {
-    margin: 1rem 0;
-    font-size: 2.5rem;
+  @media only screen and ${device.laptopL} {
+    margin: 1rem 2.25rem;
+    font-size: 1.75rem;
   }
 `
 
 const AuthorStyled = styled.h2`
   grid-area: author;
 
-  margin: .5rem 0;
-  font-size: 1.5rem;
+  margin: .5rem .5rem;
+  font-size: 1.25rem;
 
-  @media only screen and ${device.tablet} {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+  @media only screen and ${device.laptopL} {
+    margin: 1rem 2.25rem;
+    font-size: 1.55rem;
   }
 `
 
 const IsbnStyled = styled.a`
   grid-area: link;
 
+  margin: .5rem .5rem;
   font-size: 1.25rem;
+
+  @media only screen and ${device.laptopL} {
+    margin: 1rem 2.25rem;
+    font-size: 1.35rem;
+  }
 `
 
 export {

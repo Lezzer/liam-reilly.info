@@ -15,11 +15,6 @@ const BookRowStyled = styled.div`
     grid-template-areas: 
             "card card card";
   
-  @media only screen and ${device.tablet} {
-    grid-template-areas: "year card month";
-    grid-template-columns: 10vw auto 10vw;
-  }
-  
 `
 
 export {
