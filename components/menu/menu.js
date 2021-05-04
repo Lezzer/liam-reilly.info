@@ -10,17 +10,17 @@ const Menu = () => <StyledMenu>
             </Link>
         </li>
         <li>
-            <Link href="/resume" as="/resume.html">
+            <Link href="/resume" as="/resume">
             <a>resume</a>
             </Link>
         </li>
         <li>
-            <Link href="/contact" as="/contact.html">
+            <Link href="/contact" as="/contact">
             <a>contact</a>
             </Link>
         </li>
         <li>
-            <Link href="/books" as="/books.html">
+            <Link href="/books" as="/books">
                 <a>books</a>
             </Link>
         </li>
