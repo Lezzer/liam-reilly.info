@@ -12,13 +12,13 @@ module.exports = {
             },
         ]
     },
-    // exportPathMap: async function () {
-    //     return {
-    //         '/': { page: '/' },
-    //         '/resume': { page: '/resume/' },
-    //         '/contact': { page: '/contact/' },
-    //         '/books': { page: '/books/' }
-    //     }
-    // },
+    exportPathMap: async function () {
+        return {
+            '/': { page: '/' },
+            '/resume/': { page: '/resume' },
+            '/contact/': { page: '/contact' },
+            '/books/': { page: '/books' }
+        }
+    },
     trailingSlash: true
 }
