@@ -23,5 +23,5 @@ module.exports = {
             '/books': { page: '/books' }
         }
     },
-    trailingSlash: true
+    trailingSlash: false
 }
