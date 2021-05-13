@@ -84,13 +84,19 @@ const Index = () => (
                     author: "Chris Voss with Tahl Raz",
                     isbn: 9781847941497,
                     url: "https://images.isbndb.com/covers/14/97/9781847941497.jpg",
+                },
+                {
+                    title: "12 Rules For life",
+                    author: "Jordan B. Peterson",
+                    isbn: 9780141988511,
+                    url: "https://images.isbndb.com/covers/85/11/9780141988511.jpg"
                 }
             ]}
             currentBook={{
-                title: "12 Rules For life",
-                author: "Jordan B. Peterson",
-                isbn: 9780141988511,
-                url: "https://images.isbndb.com/covers/85/11/9780141988511.jpg"
+                title: "The Consuming Instinct",
+                author: "Dr Gad Saad",
+                isbn: 9781616144296,
+                url: "https://images.isbndb.com/covers/42/96/9781616144296.jpg"
             }}
             />
           </Page>
