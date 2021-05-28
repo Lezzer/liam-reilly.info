@@ -62,7 +62,7 @@ const AuthorStyled = styled.h2`
   font-size: 1.25rem;
 
   @media only screen and ${device.laptopL} {
-    margin: 1rem 2.25rem;
+    margin: 6rem 2.25rem;
     font-size: 1.55rem;
   }
 `
@@ -74,7 +74,7 @@ const IsbnStyled = styled.a`
   font-size: 1.25rem;
 
   @media only screen and ${device.laptopL} {
-    margin: 1rem 2.25rem;
+    margin: 5rem 2.25rem;
     font-size: 1.35rem;
   }
 `

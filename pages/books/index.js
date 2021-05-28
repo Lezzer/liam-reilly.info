@@ -90,13 +90,19 @@ const Index = () => (
                     author: "Jordan B. Peterson",
                     isbn: 9780141988511,
                     url: "https://images.isbndb.com/covers/85/11/9780141988511.jpg"
+                },
+                {
+                    title: "The Consuming Instinct",
+                    author: "Dr Gad Saad",
+                    isbn: 9781616144296,
+                    url: "https://images.isbndb.com/covers/42/96/9781616144296.jpg"
                 }
             ]}
             currentBook={{
-                title: "The Consuming Instinct",
+                title: "The Parasitic Mind: How Infectious Ideas Are Killing Common Sense",
                 author: "Dr Gad Saad",
-                isbn: 9781616144296,
-                url: "https://images.isbndb.com/covers/42/96/9781616144296.jpg"
+                isbn: 9781621579595,
+                url: "https://images.isbndb.com/covers/95/95/9781621579595.jpg"
             }}
             />
           </Page>
