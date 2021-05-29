@@ -27,11 +27,6 @@ const Index = () => (
                             logo={faLinkedinIn}
                         />
                         <ContactIcon
-                            url={"https://fosstodon.org/@liam_reilly"}
-                            text={"Mastodon"}
-                            logo={faMastodon}
-                        />
-                        <ContactIcon
                             url={"https://twitter.com/ragingnull"}
                             text={"Twitter"}
                             logo={faTwitter}
