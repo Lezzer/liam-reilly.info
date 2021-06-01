@@ -42,7 +42,7 @@ BookTimeline.propTypes = {
         title: PropTypes.string.isRequired,
         author: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        isbn: PropTypes.number.isRequired,
+        isbn: PropTypes.string.isRequired,
         year: PropTypes.number,
         month: PropTypes.string
     })),
@@ -50,7 +50,7 @@ BookTimeline.propTypes = {
         title: PropTypes.string.isRequired,
         author: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        isbn: PropTypes.number.isRequired,
+        isbn: PropTypes.string.isRequired,
     })
 }
 

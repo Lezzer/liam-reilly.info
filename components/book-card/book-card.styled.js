@@ -72,7 +72,11 @@ const IsbnStyled = styled.a`
 
   margin: .5rem .5rem;
   font-size: 1.25rem;
-
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #C21F39;
+  text-underline-position: under;
+  
   @media only screen and ${device.laptopL} {
     margin: 5rem 2.25rem;
     font-size: 1.35rem;
