@@ -12,12 +12,29 @@ const StyledPost = styled.article`
   border: 2px solid ${({theme}) => theme.alternativeHighlight};
   font-size: 1.4rem;
   
+  blockquote{
+    border-left: #C21F39 solid 3px;
+    line-height: 2rem;
+    padding-left: 1rem;
+    margin: 1rem;
+  }
+  
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between
   }
 
+  h1 {
+    text-decoration: underline ;
+    text-decoration-color: #C21F39;
+  }
+  
+  strong {
+    text-decoration: underline ;
+    text-decoration-color: #C21F39;
+  }
+  
   hr {
     display: block;
     border: 0 solid #000;
@@ -57,6 +74,29 @@ const StyledPost = styled.article`
   p:last-child {
     margin-bottom: 1rem;
   }
+  
+  ul {
+    padding-inline-start: 0;
+    padding: 1rem;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  
+  li {
+    svg { 
+      font-size: 1.2rem;
+      color: red 
+    }
+    
+    span:before {
+      content: ' '
+    }
+    span {
+      font-size: 1.2rem;
+      font-weight: lighter;
+    }
+  }
 
   .post_link {
     font-size: 1.4rem;
@@ -75,6 +115,12 @@ const StyledPost = styled.article`
     font-size: 2rem;
     width: 86%;
     margin: 1rem auto 2rem auto;
+
+    blockquote{
+      border-left: #C21F39 solid 5px;
+      line-height: 5rem;
+      padding-left: 2rem;
+    }
     
     .calendar {
       min-width: 5rem;
@@ -89,6 +135,21 @@ const StyledPost = styled.article`
     p {
       line-height: 3rem;
     }
+
+    ul {
+      line-height: 3rem;
+    }
+
+    li {
+      svg {
+        font-size: 1.8rem;
+        color: red
+      }
+      span {
+        font-size: 1.8rem;
+      }
+    }
+    
     
     .post_link {
       font-size: 2rem;

@@ -110,13 +110,19 @@ const Index = () => (
                     isbn: "978-1-621-57959-5",
                     url: "https://images.isbndb.com/covers/95/95/9781621579595.jpg",
                     month: "jun"
+                },
+                {
+                    title: "Beyond Order: 12 More Rules for Life",
+                    author: "Jordan B. Peterson",
+                    isbn: "978-0-593-45308-7",
+                    url: "https://images.isbndb.com/covers/30/87/9780593453087.jpg"
                 }
             ]}
             currentBook={{
-                title: "Beyond Order: 12 More Rules for Life",
-                author: "Jordan B. Peterson",
-                isbn: "978-0-593-45308-7",
-                url: "https://images.isbndb.com/covers/30/87/9780593453087.jpg"
+                title: "A State of Fear: How the UK government weaponised fear during the Covid-19 pandemic",
+                author: "Laura Dodsworth",
+                isbn: "978-1-780-66720-1",
+                url: "https://m.media-amazon.com/images/I/41bfwWHD9bS._SL160_.jpg"
             }}
             />
           </Page>

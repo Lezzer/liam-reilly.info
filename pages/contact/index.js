@@ -6,40 +6,30 @@ import SiteContainer from "../../components/site-container";
 import Page from "../../components/page";
 import StyledContactPage from "./index.styled";
 import ContactIcon from "../../components/contact-icon";
-import {faInstagram, faLinkedinIn, faMastodon, faTwitter} from "@fortawesome/fontawesome-free-brands";
-import {faEnvelope} from "@fortawesome/fontawesome-free-solid";
+import { faLinkedinIn } from "@fortawesome/fontawesome-free-brands";
+import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 
 const Index = () => (
     <React.Fragment>
         <Head>
-            <title>Contact Me:  liam-reilly.info</title>
+            <title>Contact Me: liam-reilly.info</title>
         </Head>
         <SiteContainer>
             <Header/>
             <Page>
                 <StyledContactPage>
-                    <h1 className={"title"}>Get in touch!</h1>
+                    <h1 className={ "title" }>Get in touch!</h1>
 
-                    <div className={"icons"}>
+                    <div className={ "icons" }>
                         <ContactIcon
-                            url={"https://www.linkedin.com/in/liam-reilly-84256437/"}
-                            text={"LinkedIn"}
-                            logo={faLinkedinIn}
+                            url={ "https://www.linkedin.com/in/liam-reilly-84256437/" }
+                            text={ "LinkedIn" }
+                            logo={ faLinkedinIn }
                         />
                         <ContactIcon
-                            url={"https://twitter.com/ragingnull"}
-                            text={"Twitter"}
-                            logo={faTwitter}
-                        />
-                        <ContactIcon
-                            url={"https://www.instagram.com/___lezzer___/"}
-                            text={"Instagram"}
-                            logo={faInstagram}
-                        />
-                        <ContactIcon
-                            url={"mailto:website.enquiry@liam-reilly.info"}
-                            text={"Email"}
-                            logo={faEnvelope}
+                            url={ "mailto:website.enquiry@liam-reilly.info" }
+                            text={ "Email" }
+                            logo={ faEnvelope }
                         />
                     </div>
                 </StyledContactPage>

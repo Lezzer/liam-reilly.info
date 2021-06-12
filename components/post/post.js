@@ -2,7 +2,7 @@ import React from "react"
 import { PropTypes } from "prop-types"
 import StyledPost from "./post.styled"
 
-const Post = ({month, day, year, title, content, link}) =>
+const Post = ({month, day, year, title, link, children}) =>
     <StyledPost>
         <div className={"header"}>
             <div className={"calendar"}>
@@ -14,9 +14,7 @@ const Post = ({month, day, year, title, content, link}) =>
         </div>
         <hr/>
         <div>
-            {
-                content.map((x, i) => <p key={i}>{x}</p>)
-            }
+            {children}
         </div>
         <hr/>
         {
