@@ -19,11 +19,12 @@ const Index = () => (
                 <Post
                     day={"12"}
                     month={"June"}
+                    year={"2021"}
                     title={"Troubling Times"}
                     link={{ post_text: "Find out more about the book ", url: "https://www.lauradodsworth.com/a-state-of-fear/", url_text: "here", external: true }}
                 >
                     <blockquote>Dare to think for yourself - Voltaire</blockquote>
-                    <p>We are truly living through troubling times right now.  Life's been pretty good in my lifetime. No world wars or even civil wars in England at least.  It's my belief that this changed in 2019.</p>
+                    <p>We are truly living through troubling times right now.  Life has been pretty good in my lifetime. No world wars or even civil wars in England at least.  It's my belief that this changed in 2019.</p>
                     <p>When you think of wars you probably think of tanks, bombs and fighting.  This is how wars are fought right?  This is how traditional wars <strong>were</strong> fought!</p>
                     <p>It's my honest belief we are currently living through World War 3 but because the style has changed most people just don't realise it's begun.</p>
                     <p>Wars are waged in secret. Corruption, propaganda and never ending marketing of fear are all that's required to defeat the enemy.  That enemy is you and me!</p>
