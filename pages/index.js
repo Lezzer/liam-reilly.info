@@ -17,6 +17,17 @@ const Index = () => (
             <Header/>
             <Page>
                 <Post
+                    day={"18"}
+                    month={"June"}
+                    year={"2021"}
+                    title={"Subscribe!"}
+                    anchor={"subscribe"}
+                    link={{ post_text: "You can also subscribe using this link to the Atom feed ", url: "https://www.liam-reilly.info/static/feed.xml", url_text: "here", external: true }}
+                >
+                    <p>I was thinking as I am now posting to this website more often it might be a good idea to add a feed.</p>
+                    <p>I've added a simple Atom feed to the website now. The permanent link can be found in the footer of the page.</p>
+                </Post>
+                <Post
                     day={"12"}
                     month={"June"}
                     year={"2021"}

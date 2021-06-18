@@ -36,14 +36,23 @@ const StyledFooter = styled.section`
   .copy {
     display: flex;
     bottom: 0;
-    padding-left: 1rem;
+    padding: 0 1rem;
     background-color: ${({theme}) => theme.footerCopy};
     height: 3rem;
-    justify-content: left;
     align-items: center;
     text-transform: uppercase;
+    justify-content: space-between;
     font-weight: bold;
     font-size: 1rem;
+    
+    svg {
+      font-size: 2rem;
+      cursor: pointer;
+      
+      :hover {
+        color: ${({theme}) => theme.highlight};
+      }
+    }
   }
 
   @media only screen and ${device.tablet} {

@@ -21,6 +21,33 @@
     <link rel="alternate" type="text/html" href="https://www.liam-reilly.info" />
     <icon>https://www.liam-reilly.info/static/liam-reilly-info.png</icon>
     <entry>
+        <id>AA110066-88B7-4303-A485-B5512F0814CF</id>
+        <title type="text">Subscribe using new Atom feed</title>
+        <summary type="text">New Atom feed</summary>
+        <published>2021-06-18T21:55:00</published>
+        <updated>2021-06-18T21:55:00</updated>
+        <author>
+            <name>Liam Reilly</name>
+            <uri>https://www.liam-reilly.info</uri>
+            <email>hire@liam-reilly.info</email>
+        </author>
+        <contributor>
+            <name>Liam Reilly</name>
+            <uri>https://www.liam-reilly.info</uri>
+            <email>hire@liam-reilly.info</email>
+        </contributor>
+        <link rel="alternate" type="text/html" href="https://www.liam-reilly.info/#subscribe" />
+        <link rel="enclosure" type="image/png" href="https://www.liam-reilly.info/static/liam-reilly-info.png" />
+        <category term="Updates" />
+        <rights type="text">© 2021 - Liam Reilly</rights>
+        <content type="html">
+            <![CDATA[
+                <p>I was thinking as I am now posting to this website more often it might be a good idea to add a feed.</p>
+                <p>I've added a simple Atom feed to the website now. The permanent link can be found in the footer of the page.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <id>D49F5858-F0CB-4B96-A62E-77DBD4130930</id>
         <title type="text">Troubling Times</title>
         <summary type="text">Dare to think for yourself - Voltaire</summary>

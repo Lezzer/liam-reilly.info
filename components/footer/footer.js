@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRss } from "@fortawesome/fontawesome-free-solid";
 import StyledFooter from "./footer.styled"
 
 const Footer = () => <StyledFooter>
@@ -12,7 +14,8 @@ const Footer = () => <StyledFooter>
         </div>
     </div>
     <div className={"copy"}>
-        © Liam Reilly 2021
+        <span>© Liam Reilly 2021</span>
+        <a id="atom" href="/static/feed.xml"><FontAwesomeIcon icon={faRss}/></a>
     </div>
 </StyledFooter>
 

@@ -27,6 +27,7 @@ const Post = ({month, day, year, title, anchor, link, children}) =>
 Post.propTypes = {
     month: PropTypes.string.isRequired,
     day: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     anchor: PropTypes.string.isRequired,
     link: PropTypes.shape({
