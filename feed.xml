@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-GB" xmlns="http://www.w3.org/2005/Atom">
+    <title type="text">liam-reilly.info</title>
+    <subtitle type="text">Latest updates from Liam Reilly.</subtitle>
+    <id>44B006F8-2BB0-43CE-83D2-52E5ADDD840B</id>
+    <rights type="text">© Liam Reilly</rights>
+    <updated>2021-06-18T19:58:21</updated>
+    <category term="Blog" />
+    <logo>https://liam-reilly.info/static/liam-reilly-info.png</logo>
+    <author>
+        <name>Liam Reilly</name>
+        <uri>https://liam-reilly.info</uri>
+        <email>hire@liam-reilly.info</email>
+    </author>
+    <contributor>
+        <name>Liam Reilly</name>
+        <uri>https://liam-reilly.info</uri>
+        <email>hire@liam-reilly.info</email>
+    </contributor>
+    <link rel="self" type="application/atom+xml" href="https://liam-reilly.info/feed.xml" />
+    <link rel="alternate" type="text/html" href="https://liam-reilly.info" />
+    <icon>https://liam-reilly.info/static/liam-reilly-info.png</icon>
+    <entry>
+        <id>0831EBEC-7775-4A13-9BFF-94553765B197</id>
+        <title type="text">Troubling Times</title>
+        <summary type="text">Dare to think for yourself - Voltaire</summary>
+        <published>2021-06-12T15:00:00</published>
+        <updated>2021-06-12T15:00:00</updated>
+        <author>
+            <name>Liam Reilly</name>
+            <uri>https://liam-reilly.info</uri>
+            <email>hire@liam-reilly.info</email>
+        </author>
+        <contributor>
+            <name>Liam Reilly</name>
+            <uri>https://liam-reilly.info</uri>
+            <email>hire@liam-reilly.info</email>
+        </contributor>
+        <link rel="alternate" type="text/html" href="https://liam-reilly.info/#TroublingTimes" />
+        <link rel="enclosure" type="image/png" href="https://liam-reilly.info/static/liam-reilly-info.png" />
+        <category term="Updates" />
+        <rights type="text">© 2021 - Liam Reilly</rights>
+        <media:thumbnail url="https://liam-reilly.info/static/liam-reilly-info.png" width="48" height="48" />
+    </entry>
+</feed>

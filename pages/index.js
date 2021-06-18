@@ -21,6 +21,7 @@ const Index = () => (
                     month={"June"}
                     year={"2021"}
                     title={"Troubling Times"}
+                    anchor={"TroublingTimes"}
                     link={{ post_text: "Find out more about the book ", url: "https://www.lauradodsworth.com/a-state-of-fear/", url_text: "here", external: true }}
                 >
                     <blockquote>Dare to think for yourself - Voltaire</blockquote>
@@ -43,6 +44,7 @@ const Index = () => (
                     day={"01"}
                     year={"2021"}
                     title={"Update"}
+                    anchor={"BeyondOrder"}
                     link={{ post_text: "You can learn more about Jordan B. Peterson ", url: "https://www.jordanbpeterson.com/", url_text: "here", external: true }}
                 >
                     <p>Another new month, another book delivery. I swear I will not purchase any more books for the rest of the year now!</p>
@@ -76,6 +78,7 @@ const Index = () => (
                     day={"28"}
                     year={"2021"}
                     title={"Update"}
+                    anchor={"ParasiticMind"}
                     link={{ post_text: "You can learn more about Dr Gad Saad ", url: "https://www.gadsaad.com/", url_text: "here", external: true }}
                 >
                     <p>I don't often read two books in a row from the same author or even on the exact same subject, but I find Gad Saad so interesting I've done just that again this month.</p>
@@ -88,9 +91,7 @@ const Index = () => (
                     day={"13"}
                     year={"2021"}
                     title={"New Book Day!"}
-                    content={[
-
-                    ]}
+                    anchor={"ConsumingInstinct"}
                     link={{ post_text: "You can learn more about Dr Gad Saad ", url: "https://www.gadsaad.com/", url_text: "here", external: true }}
                 >
                     <p>One of my most favourite personal moments these days is picking a new book to read from my ever growing bookshelf.</p>
@@ -105,6 +106,7 @@ const Index = () => (
                     day={"03"}
                     year={"2021"}
                     title={"Google... FLoC off!"}
+                    anchor={"FloC"}
                     link={{ post_text: "You can learn more about FLoC ", url: "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea", url_text: "here", external: true }}
                 >
                     <p> Just a quick update.  I added the headers to the site which opt out of Google's invasive Federated Learning of Cohorts (FLoC).</p>
@@ -114,6 +116,7 @@ const Index = () => (
                     day={"02"}
                     year={"2021"}
                     title={"Books!"}
+                    anchor={"Books"}
                     link={{ post_text: ""}}
                 >
                     <p>I've been reading a lot this year. I like to start each day reading a chapter or two of a book rather than doom scroll social media. I find myself to be much happier and productive when I do this!</p>
@@ -126,6 +129,7 @@ const Index = () => (
                     day={"27"}
                     year={"2021"}
                     title={"New Website!"}
+                    anchor={"NewWebsite"}
                     link={{ post_text: "CHECK OUT ", url: "http://www.alchemistlabs.tech/", url_text: "ALCHEMIST LABS" }}
                 >
                     <p>After years of neglect I decided to completely rebuild and slightly re-design this website.</p>
@@ -140,6 +144,7 @@ const Index = () => (
                     day={"27"}
                     year={"2020"}
                     title={"Update"}
+                    anchor={"AlchemistLabs"}
                     link={{ post_text: "You can find ALCHEMIST LABS ", url: "http://www.alchemistlabs.tech/", url_text: "here" }}
                 >
                     <p>It's been a long time since I gave an update on here but things have been going from strength to strength.</p>

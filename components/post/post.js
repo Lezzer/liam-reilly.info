@@ -2,14 +2,14 @@ import React from "react"
 import { PropTypes } from "prop-types"
 import StyledPost from "./post.styled"
 
-const Post = ({month, day, year, title, link, children}) =>
+const Post = ({month, day, year, title, anchor, link, children}) =>
     <StyledPost>
         <div className={"header"}>
             <div className={"calendar"}>
                 <span>{day}</span>
                 <span>{month}</span>
             </div>
-            <span className={"title"}>{title}</span>
+            <a href="#" id={anchor} className={"title"}>{title}</a>
             <span className={"calendar"}>{year}</span>
         </div>
         <hr/>
@@ -28,6 +28,7 @@ Post.propTypes = {
     month: PropTypes.string.isRequired,
     day: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    anchor: PropTypes.string.isRequired,
     link: PropTypes.shape({
         show: PropTypes.bool,
         post_text: PropTypes.string,
