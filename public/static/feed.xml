@@ -168,7 +168,7 @@
         <rights type="text">© 2021 - Liam Reilly</rights>
     </entry>
     <entry>
-        <id>62586875-3850-4C63-AE54-63BCD13014E3</id>
+        <id>C075399C-9BCA-4A43-999B-4C93BCBCF3B0</id>
         <title type="text">Alchemist Labs</title>
         <summary type="text">My new business</summary>
         <published>2020-07-27T15:00:00</published>
@@ -188,10 +188,11 @@
         <category term="Updates" />
         <rights type="text">© 2021 - Liam Reilly</rights>
         <content type="html">
+            <![CDATA[
             <p>It's been a long time since I gave an update on here but things have been going from strength to strength.</p>
             <p>Around 18 months ago I launched my own company Alchemist Labs which has been my day job ever since.</p>
             <p>We have a super top-secret new product in the works, and a new website to launch soon.</p>
-            <p>More details to follow...</p>
+            <p>More details to follow...</p>]]>
         </content>
     </entry>
 </feed>
