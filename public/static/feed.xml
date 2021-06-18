@@ -4,7 +4,7 @@
     <subtitle type="text">Latest updates from Liam Reilly.</subtitle>
     <id>44B006F8-2BB0-43CE-83D2-52E5ADDD840B</id>
     <rights type="text">© Liam Reilly</rights>
-    <updated>2021-06-18T19:58:21</updated>
+    <updated>2021-06-18T20:56:00</updated>
     <category term="Blog" />
     <logo>https://www.liam-reilly.info/static/liam-reilly-info.png</logo>
     <author>
@@ -187,5 +187,11 @@
         <link rel="enclosure" type="image/png" href="https://www.liam-reilly.info/static/liam-reilly-info.png" />
         <category term="Updates" />
         <rights type="text">© 2021 - Liam Reilly</rights>
+        <content type="html">
+            <p>It's been a long time since I gave an update on here but things have been going from strength to strength.</p>
+            <p>Around 18 months ago I launched my own company Alchemist Labs which has been my day job ever since.</p>
+            <p>We have a super top-secret new product in the works, and a new website to launch soon.</p>
+            <p>More details to follow...</p>
+        </content>
     </entry>
 </feed>
