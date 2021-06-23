@@ -86,7 +86,7 @@ const StyledPost = styled.article`
   li {
     svg { 
       font-size: 1.2rem;
-      color: red 
+      color: #C21F39 
     }
     
     span:before {
@@ -143,7 +143,7 @@ const StyledPost = styled.article`
     li {
       svg {
         font-size: 1.8rem;
-        color: red
+        color: #C21F39
       }
       span {
         font-size: 1.8rem;
