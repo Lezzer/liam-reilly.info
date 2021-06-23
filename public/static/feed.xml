@@ -35,7 +35,7 @@
             <pubDate>2021-06-18T21:55</pubDate>
             <description><![CDATA[
                 <p>I was thinking as I am now posting to this website more often it might be a good idea to add a feed.</p>
-                <p>I've added a simple Atom feed to the website now. The permanent link can be found in the footer of the page.</p>
+                <p>I've added a simple RSS 2.0 feed to the website now. The permanent link can be found in the footer of the page.</p>
                 ]]>
             </description>
         </item>
