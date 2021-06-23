@@ -17,15 +17,29 @@ const Index = () => (
             <Header/>
             <Page>
                 <Post
+                    day={"23"}
+                    month={"June"}
+                    year={"2021"}
+                    title={"The Founder!"}
+                    anchor={"mcdonalds"}
+                    link={{ post_text: "If you've not seen The Founder check it out on ", url: "https://www.imdb.com/title/tt4276820/", url_text: "IMDB", external: true }}
+                >
+                    <p>I recently watched a movie that I randomly found on Amazon Prime called 'The Founder'.  I knew nothing about it going in and ended up enjoying it immensely.  The movie tells the true story of the earliest days of Mcdonald's and how it came to be the multi national juggernaut that it is today.  If you've not seen it I definitely recommend it, and I will try to avoid spoilers in this post.</p>
+                    <p>As am ambitious business owner myself I was particularly intrigued by a character in the movie called Ray Kroc who was played brilliantly by Michael Keaton.</p>
+                    <p>A few weeks after watching the movie I was searching online for various entrepreneurial books, particularly auto biographies when I came across Grinding It Out by the man himself Ray Kroc.</p>
+                    <img alt="picture of the book Grinding It Out by Ray Kroc" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379150499l/498886.jpg"/>
+                    <p>So this is my current read. I'm very excited to read the story in more detail and to pick up some hints/tips and motivation to keep me focussed on my goals.</p>
+                </Post>
+                <Post
                     day={"18"}
                     month={"June"}
                     year={"2021"}
                     title={"Subscribe!"}
                     anchor={"subscribe"}
-                    link={{ post_text: "You can also subscribe using this link to the Atom feed ", url: "https://www.liam-reilly.info/static/feed.xml", url_text: "here", external: true }}
+                    link={{ post_text: "You can also subscribe using this link to the RSS feed ", url: "https://www.liam-reilly.info/static/feed.xml", url_text: "here", external: true }}
                 >
                     <p>I was thinking as I am now posting to this website more often it might be a good idea to add a feed.</p>
-                    <p>I've added a simple Atom feed to the website now. The permanent link can be found in the footer of the page.</p>
+                    <p>I've added a simple RSS 2.0 feed to the website now. The permanent link can be found in the footer of the page.</p>
                 </Post>
                 <Post
                     day={"12"}
