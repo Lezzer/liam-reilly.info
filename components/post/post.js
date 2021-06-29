@@ -9,7 +9,7 @@ const Post = ({month, day, year, title, anchor, link, children}) =>
                 <span>{day}</span>
                 <span>{month}</span>
             </div>
-            <a href="#" id={anchor} className={"title"}>{title}</a>
+            <a href={`#${anchor}`} id={anchor} className={"title"}>{title}</a>
             <span className={"calendar"}>{year}</span>
         </div>
         <hr/>
