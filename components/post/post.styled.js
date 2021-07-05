@@ -66,6 +66,14 @@ const StyledPost = styled.article`
   
   p {
     line-height: 2.5rem;
+
+    a {
+      color: #C21F39;
+      border-bottom: #C21F39 1px dashed;
+    }
+    a:visited {
+      color: #C21F39;
+    }
   }
 
   p:first-child {
@@ -74,15 +82,6 @@ const StyledPost = styled.article`
   p:last-child {
     margin-bottom: 1rem;
   }
-
-  a {
-    color: #C21F39;
-    border-bottom: #C21F39 1px dashed;
-  }
-  a:visited {
-    color: #C21F39;
-  }
-  
   
   ul {
     padding-inline-start: 0;
