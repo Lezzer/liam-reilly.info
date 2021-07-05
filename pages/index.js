@@ -17,6 +17,23 @@ const Index = () => (
             <Header/>
             <Page>
                 <Post
+                    day={"5"}
+                    month={"July"}
+                    year={"2021"}
+                    title={"Swoosh!"}
+                    anchor={"swoosh"}
+                    link={{ post_text: "Netflix might be making this into a ", url: "https://variety.com/2018/film/news/netflix-phil-knight-biopic-shoe-dog-1202887364/#!", url_text: "movie", external: true }}
+                >
+                    <p>As you might know from my previous <a href="#mcdonalds">post</a> I recently read the autobiography of Ray Kroc and how he built the McDonalds corporation.  I enjoyed this book a lot!  I told my girlfriend Fleur that I enjoyed this book more than any other book I'd read in my life.</p>
+                    <p>It's hard to imagine a world without McDonalds now, they are literally everywhere all over the world but you just don't really think about how that happened or the extraordinary hard work, persistence, risk taking, deal making etc that it took for this to come to be.  Ray Kroc explained all of this in so much detail and it's absolutely inspiring and motivating and it's true what they say "hard work pays off".</p>
+                    <p>So I went back to my bookshelf to choose my next book and it suddenly seemed obvious that my next read should be <strong>Shoe Dog: A Memoir by the Creator of NIKE</strong>.</p>
+                    <img alt="picture of the cover art for the book Shoe Dog by Phil Knight" src="https://images.isbndb.com/covers/67/01/9781471146701.jpg"/>
+
+                    <p>I've read a couple of chapters so far and whilst the backgrounds of the two men (Ray Kroc and Phil Knight) are very different, the lessons and stories in the book are the same.  They both have the same self belief, the same wish to build something big for themselves and the same dogged determination to succeed.  They both started with nothing and took chances and risked it all until eventaully they became two of the most successful entrepreneurs in history! </p>
+                    <p>So I read these stories everytime self doubt starts to creep in and I wonder if I'm wasting my time or making a mistake in my business.  I remind myself that mistakes are fine, as long as you keep going. </p>
+                    <p>Every business starts with an idea (or in my case with one man and hundreds of ideas) but if you keep going, moving forward everyday who knows where it will end up?</p>
+                </Post>
+                <Post
                     day={"29"}
                     month={"June"}
                     year={"2021"}

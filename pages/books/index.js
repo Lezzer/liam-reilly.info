@@ -122,13 +122,28 @@ const Index = () => (
                     author: "Laura Dodsworth",
                     isbn: "978-1-780-66720-1",
                     url: "https://m.media-amazon.com/images/I/41bfwWHD9bS._SL160_.jpg"
+                },
+                {
+                    title: "Grinding It Out:  The Making of McDonald's",
+                    author: "Ray Kroc",
+                    isbn: "978-0-312-92987-9",
+                    url: "https://images.isbndb.com/covers/02/80/9781250130280.jpg"
+                },
+                {
+                    title: "Grinding It Out:  The Making of McDonald's",
+                    author: "Ray Kroc",
+                    isbn: "978-0-312-92987-9",
+                    url: "https://images.isbndb.com/covers/02/80/9781250130280.jpg",
+                    month: "JUL"
                 }
             ]}
             currentBook={{
-                title: "Grinding It Out:  The Making of McDonald's",
-                author: "Ray Kroc",
-                isbn: "978-0-312-92987-9",
-                url: "https://images.isbndb.com/covers/02/80/9781250130280.jpg"
+                title: "Shoe Dog: A Memoir by the Creator of NIKE",
+                author: "Phil Knight",
+                isbn: "978-1-4711-4670-1",
+                url: "https://images.isbndb.com/covers/67/01/9781471146701.jpg",
+                year: "2021",
+                month: "JUL"
             }}
             />
           </Page>
