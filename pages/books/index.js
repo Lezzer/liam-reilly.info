@@ -135,15 +135,22 @@ const Index = () => (
                     isbn: "978-0-312-92987-9",
                     url: "https://images.isbndb.com/covers/02/80/9781250130280.jpg",
                     month: "JUL"
+                },
+                {
+                    title: "Shoe Dog: A Memoir by the Creator of NIKE",
+                    author: "Phil Knight",
+                    isbn: "978-1-4711-4670-1",
+                    url: "https://images.isbndb.com/covers/67/01/9781471146701.jpg",
+                    year: "2021",
+                    month: "JUL"
                 }
             ]}
             currentBook={{
-                title: "Shoe Dog: A Memoir by the Creator of NIKE",
-                author: "Phil Knight",
-                isbn: "978-1-4711-4670-1",
-                url: "https://images.isbndb.com/covers/67/01/9781471146701.jpg",
-                year: "2021",
-                month: "JUL"
+                title: "Hustle Harder, Hustle Smarter",
+                author: "Curtis Jackson",
+                isbn: "978-0-0629-5382-7",
+                url: "https://images.isbndb.com/covers/38/27/9780062953827.jpg",
+                year: "2021"
             }}
             />
           </Page>
