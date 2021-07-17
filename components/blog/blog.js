@@ -120,8 +120,9 @@ const Blog = ({ year, month }) => {
             </FilterButtonStyled>
         </BlogFilterStyled>
         {
-            posts?.map(p =>
-                <Post
+            posts === undefined
+                ? <h1>No posts found...</h1>
+                : posts?.map(p => <Post
                     day={ p.day }
                     month={ p.month }
                     year={ p.year }
@@ -132,8 +133,7 @@ const Blog = ({ year, month }) => {
                         url: p.link?.url,
                         url_text: p.link?.url_text,
                         external: p.link?.external
-                    } }
-                >
+                    } }>
                     {
                         <Markdown source={ p.content }/>
                     }
