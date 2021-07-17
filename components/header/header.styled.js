@@ -18,7 +18,7 @@ const StyledHeader = styled.section`
     margin: .5rem;
   }
 
-  @media only screen and ${device.laptop} {
+  @media only screen and ${device.tablet} {
     .avatar {
       height: 15rem;
       margin: 1.25rem 0 0.8rem 0;

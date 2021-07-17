@@ -119,9 +119,8 @@ const StyledPost = styled.article`
     color: #C21F39;
   }
 
-  @media only screen and ${device.laptop} {
+  @media only screen and ${device.tablet} {
     font-size: 2rem;
-    width: 86%;
     margin: 1rem auto 2rem auto;
 
     blockquote{

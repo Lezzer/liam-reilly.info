@@ -7,6 +7,7 @@ import SiteContainer from "../components/site-container";
 import Page from "../components/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/fontawesome-free-solid"
+import Blog from "../components/blog";
 
 const Index = () => (
     <React.Fragment>
@@ -16,6 +17,10 @@ const Index = () => (
         <SiteContainer>
             <Header/>
             <Page>
+                <Blog
+                    year="2021"
+                    month="none"
+                />
                 <Post
                     day={ "14" }
                     month={ "July" }

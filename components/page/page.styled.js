@@ -9,7 +9,7 @@ const StyledPage = styled.section`
   padding: .5rem .5rem;
 
 
-  @media only screen and ${device.laptop} {
+  @media only screen and ${device.tablet} {
     padding: 3rem 5rem;
   }
   

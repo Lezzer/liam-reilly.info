@@ -14,7 +14,6 @@ body {
   margin: 0;
   font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  //font-family: Lato Black, Ubuntu, sans-serif;
 }
 
 
