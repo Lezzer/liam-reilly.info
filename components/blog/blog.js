@@ -24,7 +24,7 @@ const Blog = ({ year, month }) => {
     }, [ yearFilter, monthFilter ])
 
     const getPosts = () => {
-        const blogs = require(`./${ yearFilter }.json`)
+        const blogs = require(`/public/static/blog/${ yearFilter }.json`)
         const months = blogs["months"]
         let filteredPosts = []
 
