@@ -8,18 +8,22 @@ import {
     FilterButtonStyled,
     H1Styled
 } from "./blog.styled";
+import Post from "../post";
+import Markdown from "../markdown/markdown";
 
 const Blog = ({ year, month }) => {
     const [ yearFilter, setYearFilter ] = useState(year)
     const [ monthFilter, setMonthFilter ] = useState(month)
+    const [ posts, setPosts ] = useState([])
 
-    const [ posts, setPosts] = useState([])
+    const filterYear = (filter) => setYearFilter(filter)
+    const filterMonth = (filter) => setMonthFilter(filter)
 
     useEffect(() => {
-        setPosts(getPosts(yearFilter, monthFilter))
-    }, [yearFilter, monthFilter])
+        setPosts(getPosts())
+    }, [ yearFilter, monthFilter ])
 
-    const getPosts = (year, month) => {
+    const getPosts = () => {
         const blogs = require(`./${ yearFilter }.json`)
         const months = blogs["months"]
         let filteredPosts = []
@@ -36,11 +40,7 @@ const Blog = ({ year, month }) => {
         return filteredPosts
     }
 
-    const filterYear = (filter) => setYearFilter(filter)
-    const filterMonth = (filter) => setMonthFilter(filter)
-
     return <div>
-        <h1>Liam's Blog</h1>
         <BlogFilterStyled>
             <H1Styled>Filter</H1Styled>
             {/*<FilterButtonStyled*/ }
@@ -48,20 +48,38 @@ const Blog = ({ year, month }) => {
             {/*    area={"all"}>Show All*/ }
             {/*</FilterButtonStyled>*/ }
             <FilterButtonStyled
-                active={yearFilter === "2021"}
+                active={ yearFilter === "2021" }
                 onClick={ () => filterYear("2021") }
                 area={ "twentyone" }>2021
             </FilterButtonStyled>
             <FilterButtonStyled
-                active={yearFilter === "2020"}
+                active={ yearFilter === "2020" }
                 onClick={ () => filterYear("2020") }
                 area={ "twentytwenty" }>2020
             </FilterButtonStyled>
         </BlogFilterStyled>
         {
-            posts.map(p => <p key={ p.title }>{ p.title }</p>)
+
+            posts.map(p =>
+                <Post
+                    day={ p.day }
+                    month={ p.month }
+                    year={ p.year }
+                    title={ p.title }
+                    anchor={ p.anchor }
+                    link={ {
+                        post_text: p.link?.post_text,
+                        url: p.link?.url,
+                        url_text: p.link?.url_text,
+                        external: p.link?.external
+                    } }
+                >
+                    {
+                        <Markdown source={ p.content }/>
+                    }
+                </Post>)
         }
-    </div>;
+    </div>
 }
 
 Blog.propTypes = {

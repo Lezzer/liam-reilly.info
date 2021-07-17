@@ -2,13 +2,14 @@ import styled from "styled-components"
 
 const BlogFilterStyled = styled.div`
   border: ${({theme}) => theme.alternativeHighlight} 2px solid;
-  box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
+   box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
   display: grid;
   grid-template-areas: 
           "title title"
           "twentyone twentytwenty";
   grid-template-rows: auto;
   grid-template-columns: auto auto;
+  margin-bottom: 2rem;
 `
 
 const H1Styled = styled.h1`

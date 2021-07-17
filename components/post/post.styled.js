@@ -42,6 +42,10 @@ const StyledPost = styled.article`
     width: 100%;
   }
 
+  img {
+    max-width: 750px;
+  }
+  
   .calendar {
     display: flex;
     flex-direction: column;
@@ -87,8 +91,7 @@ const StyledPost = styled.article`
     padding-inline-start: 0;
     padding: 1rem;
     list-style: none;
-    font-size: 1rem;
-    line-height: 2rem;
+    //line-height: 2rem;
   }
   
   li {

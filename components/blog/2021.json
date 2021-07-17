@@ -1,23 +1,194 @@
 {
   "months":
     {
-      "july": [
+      "jul": [
         {
+          "day": 16,
+          "month": "July",
+          "year": 2021,
           "title": "STEAM DECK... OR SWITCH PRO?",
-          "created": "2021-07-16T15:00",
-          "content": "16-steam-deck.md"
+          "created": "2021-07-17T15:00",
+          "content": "2021/07/17-steam-deck.md",
+          "link": {
+            "post_text": "Read about the Steam Deck ",
+            "url": "https://www.steamdeck.com/en/",
+            "url_text": "here",
+            "external": true
+          }
         },
         {
+          "day": 14,
+          "month": "July",
+          "year": 2021,
           "title": "Hustle...Smarter",
-          "created": "2021-07-14T12:00",
-          "content": "14-hustle.md"
+          "created": "2021-07-14T10:30",
+          "content": "2021/07/14-hustle-smarter.md",
+          "link": {
+            "post_text": "See what others are saying on ",
+            "url": "https://www.goodreads.com/book/show/43801262-hustle-harder-hustle-smarter",
+            "url_text": "Goodreads",
+            "external": true
+          }
+        },
+        {
+          "day": "05",
+          "month": "July",
+          "year": 2021,
+          "title": "Swoosh!",
+          "created": "2021-07-05T17:40",
+          "content": "2021/07/05-swoosh.md",
+          "link": {
+            "post_text": "Netflix might be making this into a ",
+            "url": "https://variety.com/2018/film/news/netflix-phil-knight-biopic-shoe-dog-1202887364/#!",
+            "url_text": "movie",
+            "external": true
+          }
         }
       ],
-      "june": [
+      "jun": [
         {
-          "title": "JUNE POST",
-          "created": "2021-07-16T15:00",
-          "content": "blah"
+          "day": 29,
+          "month": "June",
+          "year": 2021,
+          "title": "Apple AirPods No :(",
+          "created": "2021-06-29T16:28",
+          "content": "2021/06/29-airpods.md",
+          "link": {
+            "post_text": "I found other people reporting similar ",
+            "url": "https://discussions.apple.com/thread/250896003",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": 23,
+          "month": "June",
+          "year": 2021,
+          "title": "The Founder!",
+          "created": "2021-06-23T16:47",
+          "content": "2021/06/23-founder.md",
+          "link": {
+            "post_text": "If you've not seen The Founder check it out on ",
+            "url": "https://www.imdb.com/title/tt4276820/",
+            "url_text": "IMDB",
+            "external": true
+          }
+        },
+        {
+          "day": 18,
+          "month": "June",
+          "year": 2021,
+          "title": "Subscribe",
+          "created": "2021-06-18T21:55",
+          "content": "2021/06/18-subscribe-rss.md",
+          "link": {
+            "post_text": "You can also subscribe using this link to the RSS feed ",
+            "url": "https://www.liam-reilly.info/static/feed.xml",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": 12,
+          "month": "June",
+          "year": 2021,
+          "title": "Troubling Times",
+          "created": "2021-06-12T15:00",
+          "content": "2021/06/12-troubling-times.md",
+          "link": {
+            "post_text": "Find out more about the book ",
+            "url": "https://www.lauradodsworth.com/a-state-of-fear/",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": "01",
+          "month": "June",
+          "year": 2021,
+          "title": "Beyond Order",
+          "created": "2021-06-01T12:30",
+          "content": "2021/06/01-beyond-order.md",
+          "link": {
+            "post_text": "You can learn more about Jordan B. Peterson ",
+            "url": "https://www.jordanbpeterson.com/",
+            "url_text": "here",
+            "external": true
+          }
+        }
+      ],
+      "may": [
+        {
+          "day": 28,
+          "month": "May",
+          "year": 2021,
+          "title": "Parasitic Mind",
+          "created": "2021-05-28T17:00",
+          "content": "2021/05/28-parasitic-mind.md",
+          "link": {
+            "post_text": "You can learn more about Dr Gad Saad ",
+            "url": "https://www.gadsaad.com/",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": 13,
+          "month": "May",
+          "year": 2021,
+          "title": "Consuming Instinct",
+          "created": "2021-05-13T09:00",
+          "content": "2021/05/13-consuming-instinct.md",
+          "link": {
+            "post_text": "You can learn more about Dr Gad Saad ",
+            "url": "https://www.gadsaad.com/",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": "03",
+          "month": "May",
+          "year": 2021,
+          "title": "Google...FLoC Off!",
+          "created": "2021-05-03T15:00",
+          "content": "2021/05/03-floc-off.md",
+          "link": {
+            "post_text": "You can learn more about FLoC ",
+            "url": "https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": "02",
+          "month": "May",
+          "year": 2021,
+          "title": "Books!",
+          "created": "2021-05-02T12:00",
+          "content": "2021/05/02-books.md",
+          "link": {
+            "post_text": "Check out my book timeline ",
+            "url": "/books",
+            "url_text": "here",
+            "external": false
+          }
+        }
+      ],
+      "jan": [
+        {
+          "day": 27,
+          "month": "Jan",
+          "year": 2021,
+          "title": "New Website!",
+          "created": "2021-01-27T17:30",
+          "content": "2021/01/27-new-website.md",
+          "link": {
+            "post_text": "Check out ",
+            "url": "https://www.alchemistlabs.tech/",
+            "url_text": "ALCHEMIST LABS",
+            "external": true
+          }
         }
       ]
     }

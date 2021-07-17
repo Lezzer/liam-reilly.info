@@ -1,11 +1,20 @@
 {
   "months":
     {
-      "august": [
+      "aug": [
         {
-          "title": "UPDATE",
+          "day": 27,
+          "month": "Aug",
+          "year": 2020,
+          "title": "Update",
           "created": "2020-07-27T10:00",
-          "content": "27-update.md"
+          "content": "2020/01/27-update.md",
+          "link": {
+            "post_text": "You can find ALCHEMIST LABS ",
+            "url": "https://www.alchemistlabs.tech/",
+            "url_text": "here",
+            "external": true
+          }
         }
       ]
     }
