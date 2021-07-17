@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const BlogFilterStyled = styled.div`
   border: ${({theme}) => theme.alternativeHighlight} 2px solid;
-   box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
+  box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
   display: grid;
   grid-template-areas: 
           "title title title title title title title title title title title title title"
@@ -16,7 +16,8 @@ const BlogFilterStyled = styled.div`
 
 const H1Styled = styled.h1`
   grid-area: title;
-  color: ${({theme}) => theme.alternativeHighlight};
+  background-color: ${({theme}) => theme.alternativeHighlight};
+  color: ${({theme}) => theme.background};
   text-align: center;
   margin: 0;
   font-size: 1.4rem;
