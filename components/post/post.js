@@ -29,7 +29,7 @@ Post.propTypes = {
     day: PropTypes.string.isRequired,
     year: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    anchor: PropTypes.string.isRequired,
+    anchor: PropTypes.string,
     link: PropTypes.shape({
         show: PropTypes.bool,
         post_text: PropTypes.string,

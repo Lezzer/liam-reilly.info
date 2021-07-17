@@ -43,10 +43,6 @@ const Blog = ({ year, month }) => {
     return <div>
         <BlogFilterStyled>
             <H1Styled>Filter</H1Styled>
-            {/*<FilterButtonStyled*/ }
-            {/*    onClick={ () => filterMonth("none") }*/ }
-            {/*    area={"all"}>Show All*/ }
-            {/*</FilterButtonStyled>*/ }
             <FilterButtonStyled
                 active={ yearFilter === "2021" }
                 onClick={ () => filterYear("2021") }
@@ -57,10 +53,74 @@ const Blog = ({ year, month }) => {
                 onClick={ () => filterYear("2020") }
                 area={ "twentytwenty" }>2020
             </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "none" }
+                onClick={ () => filterMonth("none") }
+                area={ "all" }>ALL
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "jan" }
+                onClick={ () => filterMonth("jan") }
+                area={ "jan" }>JAN
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "feb" }
+                onClick={ () => filterMonth("feb") }
+                area={ "feb" }>FEB
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "mar" }
+                onClick={ () => filterMonth("mar") }
+                area={ "mar" }>MAR
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "apr" }
+                onClick={ () => filterMonth("apr") }
+                area={ "apr" }>APR
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "may" }
+                onClick={ () => filterMonth("may") }
+                area={ "may" }>MAY
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "jun" }
+                onClick={ () => filterMonth("jun") }
+                area={ "jun" }>JUN
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "jul" }
+                onClick={ () => filterMonth("jul") }
+                area={ "jul" }>JUL
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "aug" }
+                onClick={ () => filterMonth("aug") }
+                area={ "aug" }>AUG
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "sep" }
+                onClick={ () => filterMonth("sep") }
+                area={ "sep" }>SEPT
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "oct" }
+                onClick={ () => filterMonth("oct") }
+                area={ "oct" }>OCT
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "nov" }
+                onClick={ () => filterMonth("nov") }
+                area={ "nov" }>NOV
+            </FilterButtonStyled>
+            <FilterButtonStyled
+                active={ monthFilter === "dec" }
+                onClick={ () => filterMonth("dec") }
+                area={ "dec" }>DEC
+            </FilterButtonStyled>
         </BlogFilterStyled>
         {
-
-            posts.map(p =>
+            posts?.map(p =>
                 <Post
                     day={ p.day }
                     month={ p.month }
