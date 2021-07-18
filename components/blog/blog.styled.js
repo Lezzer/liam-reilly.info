@@ -5,9 +5,9 @@ const BlogFilterStyled = styled.div`
   box-shadow: .1rem .1rem 1rem .5rem ${({theme}) => theme.alternativeColor};
   display: grid;
   grid-template-areas: 
-          "title title title title title title title title title title title title title"
-          "twentyone twentyone twentyone twentyone twentyone twentyone twentyone twentytwenty twentytwenty twentytwenty twentytwenty twentytwenty twentytwenty"
-          "all jan feb mar apr may jun jul aug sep oct nov dec";
+    "title title title title title title title title title title title title title"
+    "twentyone twentyone twentyone twentyone twentyone twentyone twentyone twentytwenty twentytwenty twentytwenty twentytwenty twentytwenty twentytwenty"
+    "all jan feb mar apr may jun jul aug sep oct nov dec";
   
   grid-template-rows: auto;
   grid-template-columns: auto auto;
@@ -27,7 +27,7 @@ const H1Styled = styled.h1`
 `
 
 const FilterButtonStyled = styled.span`
-  grid-area: ${({area}) => area};
+  grid-area: ${ ({ area }) => area };
   color: ${({theme}) => theme.alternativeHighlight};
   cursor: pointer;
   margin: 0;

@@ -1,0 +1,60 @@
+{
+  "months":
+    {
+      "oct": [
+        {
+          "month": "oct",
+          "title": "Think and Grow Rich",
+          "author": "Napoleon Hill",
+          "isbn": "978-1-722-50123-5",
+          "url": "https://images.isbndb.com/covers/12/35/9781722501235.jpg"
+        }
+      ],
+      "nov": [
+        {
+          "month": "nov",
+          "title": "The Subtle Art of Not Giving A F*ck",
+          "author": "Mark Manson",
+          "isbn": "978-0-062-45771-4",
+          "url": "https://images.isbndb.com/covers/77/14/9780062457714.jpg"
+        },
+        {
+          "month": "nov",
+          "title": "Everything is F*cked: A Book about Hope",
+          "author": "Mark Manson",
+          "isbn": "978-0-062-88843-3",
+          "url": "https://m.media-amazon.com/images/I/416T7uchqcL._SL160_.jpg"
+        },
+        {
+          "month": "nov",
+          "title": "Permanent Record",
+          "author": "Edward Snowden",
+          "isbn": "978-1-250-77290-9",
+          "url": "https://images.isbndb.com/covers/29/09/9781250772909.jpg"
+        }
+      ],
+      "dec": [
+        {
+          "month": "dec",
+          "title": "1984",
+          "author": "George Orwell",
+          "isbn": "978-1-443-43497-3",
+          "url": "https://images.isbndb.com/covers/49/73/9781443434973.jpg"
+        },
+        {
+          "month": "dec",
+          "title": "Quitters Never Win",
+          "author": "Michael Bisping",
+          "isbn": "978-1-635-76914-2",
+          "url": "https://pictures.abebooks.com/isbn/9781635769142-us.jpg"
+        },
+        {
+          "month": "dec",
+          "title": "Part Reptile: UFC, MMA and Me\n",
+          "author": "Dan Hardy",
+          "isbn": "978-1-472-24382-9",
+          "url": "https://m.media-amazon.com/images/I/61tt2Ie9CRL._SL160_.jpg"
+        }
+      ]
+    }
+}
