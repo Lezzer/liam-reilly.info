@@ -16,7 +16,7 @@ const Index = () => (
             <Page>
                 <Blog
                     year="2021"
-                    month="none"
+                    month="jul"
                 />
             </Page>
             <Footer/>

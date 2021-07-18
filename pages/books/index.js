@@ -13,7 +13,7 @@ const Index = () => (
       <SiteContainer>
           <Header/>
           <Page>
-            <BookTimeline year={"2021"} month={"all"}/>
+            <BookTimeline year={"2021"} month={"jul"}/>
           </Page>
       </SiteContainer>
   </React.Fragment>
