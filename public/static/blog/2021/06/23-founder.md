@@ -8,7 +8,7 @@ As an ambitious business owner myself I was particularly intrigued by a characte
 called Ray Kroc who was played brilliantly by Michael Keaton.
 
 A few weeks after watching the movie I was searching online for various entrepreneurial books,
-particularly autobiographies when I came across <strong>Grinding It Out</strong> by the man
+particularly autobiographies when I came across **Grinding It Out** by the man
 himself Ray Kroc.
 
 ![picture of the book Grinding It Out by Ray Kroc](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379150499l/498886.jpg)

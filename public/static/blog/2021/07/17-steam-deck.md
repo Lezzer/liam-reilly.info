@@ -12,7 +12,7 @@ I am fortunate enough to own a very nice gaming PC, as well as multiple consoles
 have time.  With the way modern gaming has gone with the constant updates and operating system upgrades I find I really
 have to commit to gaming these days if I'm going to be gaming on my PC or a console.
 
-The one console I do find myself using alot though is my Nintendo Switch which I bought earlier in the year.  I love the
+The one console I do find myself using a lot though is my Nintendo Switch which I bought earlier in the year.  I love the
 flexibility of that device.  I love that I can just pick it up jump into a quick game immediately and I love that I can 
 do this anywhere.  In the office, in the kitchen and even in bed.
 
