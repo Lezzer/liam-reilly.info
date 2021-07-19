@@ -3,7 +3,22 @@
     {
       "jul": [
         {
-          "day": 16,
+          "day": 19,
+          "month": "July",
+          "year": 2021,
+          "anchor": "",
+          "title": "",
+          "created": "2021-07-19T16:00",
+          "content": "2021/07/19-how-to-pirate.md",
+          "link": {
+            "post_text": "You can join the revolution ",
+            "url": "https://www.bemorepirate.com/",
+            "url_text": "here",
+            "external": true
+          }
+        },
+        {
+          "day": 17,
           "month": "July",
           "year": 2021,
           "anchor": "steam-deck",
