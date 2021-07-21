@@ -1,4 +1,8 @@
-import { RatingStyled } from "./star-rating.styled";
+import {
+    RatingStyled,
+    EmptyStarStyled,
+    FilledStarStyled
+} from "./star-rating.styled";
 
 const StarRating = ({ stars }) => {
 
@@ -7,10 +11,22 @@ const StarRating = ({ stars }) => {
         starsArray.push("☆")
     }
 
+    const max = 5
+    const empty = max - stars
+
+    let emptyStarsArray = []
+    for (let i = 0; i < empty; i++) {
+        emptyStarsArray.push("☆")
+    }
+
     return <RatingStyled>
         {
             starsArray.map((star, index) =>
-                <span key={ index }>{star}</span>)
+                <FilledStarStyled key={`filled-star-${index}`}>{star}</FilledStarStyled>)
+        }
+        {
+            emptyStarsArray.map((star, index) =>
+                <EmptyStarStyled key={`empty-star-${index}`}>{star}</EmptyStarStyled>)
         }
     </RatingStyled>;
 }
