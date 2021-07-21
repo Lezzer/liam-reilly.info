@@ -6,6 +6,7 @@
           "month": "jan",
           "title": "Behind the Mask",
           "author": "Tyson Fury",
+          "stars": 3,
           "isbn": "978-1-529-12486-6",
           "url": "https://images.isbndb.com/covers/48/66/9781529124866.jpg"
         },
@@ -13,6 +14,7 @@
           "month": "jan",
           "title": "The Furious Method",
           "author": "Tyson Fury",
+          "stars": 3,
           "isbn": "978-1-529-12592-4",
           "url": "https://images.isbndb.com/covers/59/24/9781529125924.jpg"
         },
@@ -20,6 +22,7 @@
           "month": "jan",
           "title": "The Second Sleep",
           "author": "Robert Harris",
+          "stars": 3,
           "isbn": "978-1-787-46096-6",
           "url": "https://images.isbndb.com/covers/09/66/9781787460966.jpg"
         },
@@ -27,6 +30,7 @@
           "month": "jan",
           "title": "The 48 Laws of Power",
           "author": "Robert Greene",
+          "stars": 4,
           "isbn": "978-1-861-97278-1",
           "url": "https://images.isbndb.com/covers/27/81/9781861972781.jpg"
         }
@@ -36,6 +40,7 @@
           "month": "feb",
           "title": "The 48 Laws of Power",
           "author": "Robert Greene",
+          "stars": 4,
           "isbn": "978-1-861-97278-1",
           "url": "https://images.isbndb.com/covers/27/81/9781861972781.jpg"
         }
@@ -45,6 +50,7 @@
           "month": "mar",
           "title": "The 48 Laws of Power",
           "author": "Robert Greene",
+          "stars": 4,
           "isbn": "978-1-861-97278-1",
           "url": "https://images.isbndb.com/covers/27/81/9781861972781.jpg"
         },
@@ -52,6 +58,7 @@
           "month": "mar",
           "title": "The 50th Law",
           "author": "50 Cent & Robert Greene",
+          "stars": 4,
           "isbn": "978-1-846-68079-3",
           "url": "https://images.isbndb.com/covers/07/93/9781846680793.jpg"
         }
@@ -61,6 +68,7 @@
           "month": "apr",
           "title": "Be More Pirate",
           "author": "Sam Conniff Allende",
+          "stars": 5,
           "isbn": "978-0-241-30788-5",
           "url": "https://images.isbndb.com/covers/78/85/9780241307885.jpg"
         },
@@ -68,6 +76,7 @@
           "month": "apr",
           "title": "The Madness of Crowds",
           "author": "Douglas Murray",
+          "stars": 4,
           "isbn": "978-1-472-97957-5",
           "url": "https://images.isbndb.com/covers/95/75/9781472979575.jpg"
         },
@@ -75,6 +84,7 @@
           "month": "apr",
           "title": "Rich Dad Poor Dad",
           "author": "Robert T. Kiyosaki",
+          "stars": 4,
           "isbn": "978-1-612-68019-4",
           "url": "https://images.isbndb.com/covers/28/56/9789463982856.jpg"
         }
@@ -84,6 +94,7 @@
           "month": "may",
           "title": "Never Split the Difference",
           "author": "Chris Voss with Tahl Raz",
+          "stars": 5,
           "isbn": "978-1-847-94149-7",
           "url": "https://images.isbndb.com/covers/14/97/9781847941497.jpg"
         },
@@ -91,6 +102,7 @@
           "month": "may",
           "title": "12 Rules For life",
           "author": "Jordan B. Peterson",
+          "stars": 4,
           "isbn": "978-0-141-98851-1",
           "url": "https://images.isbndb.com/covers/85/11/9780141988511.jpg"
         },
@@ -98,6 +110,7 @@
           "month": "may",
           "title": "The Consuming Instinct",
           "author": "Dr Gad Saad",
+          "stars": 4,
           "isbn": "978-1-616-14429-6",
           "url": "https://images.isbndb.com/covers/42/96/9781616144296.jpg"
         },
@@ -105,6 +118,7 @@
           "month": "may",
           "title": "The Parasitic Mind: How Infectious Ideas Are Killing Common Sense",
           "author": "Dr Gad Saad",
+          "stars": 5,
           "isbn": "978-1-621-57959-5",
           "url": "https://images.isbndb.com/covers/95/95/9781621579595.jpg"
         }
@@ -114,6 +128,7 @@
           "month": "jun",
           "title": "The Parasitic Mind: How Infectious Ideas Are Killing Common Sense",
           "author": "Dr Gad Saad",
+          "stars": 5,
           "isbn": "978-1-621-57959-5",
           "url": "https://images.isbndb.com/covers/95/95/9781621579595.jpg"
         },
@@ -121,6 +136,7 @@
           "month": "jun",
           "title": "Beyond Order: 12 More Rules for Life",
           "author": "Jordan B. Peterson",
+          "stars": 4,
           "isbn": "978-0-593-45308-7",
           "url": "https://images.isbndb.com/covers/30/87/9780593453087.jpg"
         },
@@ -128,6 +144,7 @@
           "month": "jun",
           "title": "A State of Fear: How the UK government weaponised fear during the Covid-19 pandemic",
           "author": "Laura Dodsworth",
+          "stars": 5,
           "isbn": "978-1-780-66720-1",
           "url": "https://m.media-amazon.com/images/I/41bfwWHD9bS._SL160_.jpg"
         },
@@ -135,6 +152,7 @@
           "month": "jun",
           "title": "Grinding It Out:  The Making of McDonald's",
           "author": "Ray Kroc",
+          "stars": 5,
           "isbn": "978-0-312-92987-9",
           "url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379150499l/498886.jpg"
         }
@@ -144,6 +162,7 @@
           "month": "jul",
           "title": "Grinding It Out:  The Making of McDonald's",
           "author": "Ray Kroc",
+          "stars": 5,
           "isbn": "978-0-312-92987-9",
           "url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379150499l/498886.jpg"
         },
@@ -151,6 +170,7 @@
           "month": "jul",
           "title": "Shoe Dog: A Memoir by the Creator of NIKE",
           "author": "Phil Knight",
+          "stars": 5,
           "isbn": "978-1-471-14670-1",
           "url": "https://images.isbndb.com/covers/67/01/9781471146701.jpg"
         },
@@ -158,6 +178,7 @@
           "month": "jul",
           "title": "Hustle Harder, Hustle Smarter",
           "author": "Curtis Jackson",
+          "stars": 5,
           "isbn": "978-0-062-95382-7",
           "url": "https://images.isbndb.com/covers/38/27/9780062953827.jpg"
         },
@@ -165,6 +186,7 @@
           "month": "jul",
           "title": "How To: Be More Pirate",
           "author": "Sam Conniff, Alex Barker",
+          "stars": 1,
           "isbn": "978-1-916-05234-5",
           "url": "https://m.media-amazon.com/images/I/41v2SUkRCuL._SL160_.jpg"
         }

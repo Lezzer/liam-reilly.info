@@ -7,8 +7,11 @@ import {
     BooksFilterStyled,
     CalendarStyled,
     CoverImageStyled,
-    HeaderStyled, ISBNStyled, TitleStyled
+    HeaderStyled,
+    ISBNStyled,
+    TitleStyled
 } from "./book-timeline.styled";
+import StarRating from "../star-rating";
 
 const BookTimeline = ({ year, month }) => {
     const [ yearFilter, setYearFilter ] = useState(year)
@@ -134,6 +137,7 @@ const BookTimeline = ({ year, month }) => {
                 />
                 <TitleStyled>{ book.title }</TitleStyled>
                 <AuthorStyled>{ book.author }</AuthorStyled>
+                <StarRating stars={ book.stars }/>
                 <ISBNStyled>ISBN: <a>{ book.isbn }</a></ISBNStyled>
             </BookCardStyled>)
         }

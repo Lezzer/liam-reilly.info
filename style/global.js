@@ -1,37 +1,36 @@
 import { createGlobalStyle } from 'styled-components';
+
 export const GlobalStyles = createGlobalStyle`
 
-html { 
-  height: 100%; 
-  width: 100%;
-}
-
-body {
-  min-height: 100%;
-  min-width: 100%;
-  background-color ${({theme}) => theme.background};
-  padding: 0;
-  margin: 0;
-  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-
-ul {
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  html {
+    height: 100%;
+    width: 100%;
   }
 
-  
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: ${ ({ theme }) => theme.background };
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+
+  ul {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   //@font-face {
   //  font-family: 'Lato Black';
   //  src: 
@@ -81,6 +80,6 @@ a {
   //    url('/static/fonts/Ubuntu-Regular.ttf') format('truetype'),
   //}
   //    
-  
-  `;
+
+`;
 

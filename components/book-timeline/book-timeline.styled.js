@@ -19,6 +19,7 @@ const BookCardStyled = styled.div`
     "header header"
     "cover title"
     "cover author"
+    "cover rating"
     "cover isbn";
   margin: 1rem auto 2rem auto;
   padding: 1rem;
@@ -70,7 +71,6 @@ const AuthorStyled = styled.span`
   grid-area: author;
   font-size: 1.8rem;
   padding: .25rem 1rem;
-
 `
 
 const ISBNStyled = styled.span`

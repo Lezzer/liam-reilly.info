@@ -41,10 +41,6 @@ const StyledPost = styled.article`
     border-bottom: 1px solid #C21F39;
     width: 100%;
   }
-
-  img {
-    max-width: 750px;
-  }
   
   .calendar {
     display: flex;
@@ -71,6 +67,12 @@ const StyledPost = styled.article`
   p {
     line-height: 2.5rem;
 
+    img {
+      display: block;
+      max-width: 50%;
+      margin: auto;
+    }
+    
     a {
       color: #C21F39;
       border-bottom: #C21F39 1px dashed;
